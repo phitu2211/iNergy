@@ -108,6 +108,11 @@ html {
     min-height: 100%;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
 #footer .container-fluid {
     background: #3A3B3F url(../themes/assets/images/bg/stripes.png) repeat left top;
     margin: 0;
