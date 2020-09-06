@@ -1,7 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
+﻿a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
@@ -56,7 +53,6 @@ body {
     padding-top: 4px;
 }
 
-/* Provide sufficient contrast against white background */
 a {
     color: #0366d6;
 }
@@ -78,8 +74,6 @@ a {
     padding: 5px 10px;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
 html {
     font-size: 14px;
 }
@@ -101,17 +95,10 @@ button.accept-policy {
     line-height: inherit;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
 html {
     position: relative;
     min-height: 100%;
 }
-
-/* .row {
-    margin-right: 0;
-    margin-left: 0;
-} */
 
 #footer #main-footer {
     background: #3A3B3F url(../themes/assets/images/bg/stripes.png) repeat left top;
@@ -559,6 +546,10 @@ a.contact:hover {
     margin-right: -50px;
 }
 
+.title-2 {
+    font-weight: 400;
+    min-height: 80px;
+}
 
 @media (max-width: 300px) {
     .title-intro {
@@ -569,6 +560,10 @@ a.contact:hover {
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     #description {
         min-height: 220px !important;
+    }
+
+    .title-2 {
+        min-height: 130px;
     }
 
     .p-special {
@@ -582,16 +577,6 @@ a.contact:hover {
     }
 }
 
-@media (max-width: 576px) {
-    .contact1 {
-        width: 100px;
-    }
-
-    #first-contact {
-        text-align: right;
-    }
-}
-
 @media (min-width: 1200px) {
     #description {
         min-height: 150px !important;
@@ -599,6 +584,15 @@ a.contact:hover {
 }
 
 @media (max-width: 576px) {
+    .contact1 {
+        width: 100px;
+    }
+
+
+    #first-contact {
+        text-align: right;
+    }
+
     #nav div {
         padding: 8px;
         font-size: 15px;
@@ -646,9 +640,10 @@ a.contact:hover {
         text-align: center;
     }
 
+    /* 
     #description {
         min-height: auto !important;
-    }
+    } */
 
     .p-special {
         margin-right: 0px !important;
