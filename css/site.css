@@ -495,7 +495,7 @@ a.contact:hover {
     outline: none;
     color: #92C018;
     background-size: 100%, 100%;
-    background-image: url('/themes/assets/images/ico/slide-arrow-right.png');
+    background-image: url(../themes/assets/images/ico/slide-arrow-right.png);
 }
 
 .carousel-control-prev-icon {
@@ -504,7 +504,7 @@ a.contact:hover {
     color: #92C018;
     outline: none;
     background-size: 100%, 100%;
-    background-image: url('/themes/assets/images/ico/slide-arrow-left.png');
+    background-image: url(../themes/assets/images/ico/slide-arrow-left.png);
 }
 
 #list-manager>li::before {
