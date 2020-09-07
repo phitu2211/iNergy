@@ -634,6 +634,10 @@ a.contact:hover {
     html {
         font-size: 16px;
     }
+
+    .iframe-video {
+        height: 400px;
+    }
 }
 
 
@@ -642,6 +646,7 @@ a.contact:hover {
         display: flex;
         justify-content: center;
     }
+
 
     .inergyams20-benefits {
         text-align: center;
