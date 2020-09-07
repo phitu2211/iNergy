@@ -528,7 +528,7 @@ a.contact:hover {
 }
 
 #request-btn {
-    background: #00AAE5 url(../../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
+    background: #00AAE5 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
     border-radius: 0;
     color: #fff;
     padding-right: 25px;
