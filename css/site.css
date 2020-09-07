@@ -623,6 +623,13 @@ a.contact:hover {
     }
 }
 
+.btn-submit {
+    background-color: #92C018;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 1px;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
