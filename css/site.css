@@ -4,6 +4,8 @@
     word-break: break-all;
 }
 
+/* #f79d0f
+3A3B3F */
 #header {
     background: #3A3B3F url(../themes/assets/images/bg/stripes.png) repeat left top;
     margin: 0;
@@ -549,6 +551,14 @@ a.contact:hover {
 .title-2 {
     font-weight: 400;
     min-height: 80px;
+}
+
+.catalog-ami {
+    height: 700px;
+}
+
+#fsw-watermark {
+    display: none !important;
 }
 
 @media (max-width: 300px) {

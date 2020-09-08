@@ -67,3 +67,5 @@ menu3.addEventListener('click', function (e) {
         menu3.classList.contains('active') == true ? menu3.classList.remove('active') : menu3.classList.add('active');
     }
 });
+
+frames['catalog-ami'];
