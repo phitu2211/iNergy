@@ -1,556 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="shortcut icon"
+			href="../../themes/assets/favicon.ico"
+			type="image/vnd.microsoft.icon"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
+		<link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/site.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="../../themes/assets/favicon.ico" type="image/vnd.microsoft.icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
-    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../css/site.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	<body>
+		<div class="container">
+			<header id="header">
+				<div class="container-fluid d-sm-none">
+					<div class="row">
+						<div class="col-5 d-flex align-items-center">
+							<a class="navbar-brand" href="../../index.html">
+								<img src="../../themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+							</a>
+						</div>
+						<div class="col-7">
+							<div class="d-flex flex-column px-2 py-1 justify-content-start">
+								<div id="language">
+									<span>VI</span>
+									<span>EN</span>
+								</div>
+								<div id="phone-number" style="font-size: 12px; text-align: right">
+									<span style="font-size: 12px">Tel</span>
+									+34 902 070 903
+								</div>
+								<div id="first-contact">
+									<a class="contact1" href="../../contact.html" title="Contact with Smarkia">
+										Liên Hệ
+									</a>
+								</div>
+							</div>
+						</div>
 
-</head>
+						<div id="div-menu" style="width: 100%">
+							<div class="d-flex justify-content-around" style="color: #fff" id="nav">
+								<div id="menu-2">
+									<span>GIỚI THIỆU</span>
+								</div>
+								<div id="menu-3">
+									<span>SẢN PHẨM</span>
+								</div>
+								<div id="menu-2">
+									<a href="../../partners.html">ĐỐI TÁC</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub-menu" id="sub-menu-2">
+						<div class="d-flex" style="padding: 16px 0px">
+							<a href="../../amitech.html" class="sub-menu-item">AMITECH</a>
+							<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+						</div>
+					</div>
+					<div class="sub-menu-1" id="sub-menu-3">
+						<div class="d-flex" style="padding: 16px 0px">
+							<a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+							<a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none d-sm-block">
+					<div class="d-flex justify-content-between">
+						<a class="navbar-brand" href="../../index.html">
+							<img
+								src="../../themes/assets/logo.png"
+								class="img-fluid"
+								id="logo"
+								class="d-inline-block align-top"
+								alt="Home"
+							/>
+						</a>
+						<div class="d-flex flex-column justify-content-center">
+							<div id="language">
+								<span>VI</span>
+								<span>EN</span>
+							</div>
+							<div id="phone-number">
+								<span>Tel</span>
+								+34 902 070 903
+							</div>
+						</div>
+					</div>
 
-<body>
-    <div class="container">
-        <header id="header">
-            <div class="container-fluid d-sm-none">
-                <div class="row">
-                    <div class="col-5 d-flex align-items-center">
-                        <a class="navbar-brand" href="../../index.html">
-                            <img src="../../themes/assets/logo.png" id="logo" style="height:60px;" alt="Home">
-                        </a>
-                    </div>
-                    <div class="col-7">
-                        <div class="d-flex flex-column px-2 py-1 justify-content-start">
-                            <div id="language">
-                                <span>VI</span>
-                                <span>EN</span>
-                            </div>
-                            <div id="phone-number" style="font-size: 12px; text-align:right">
-                                <span style="font-size: 12px;">Tel</span>
-                                +34 902 070 903
-                            </div>
-                            <div id="first-contact">
-                                <a class="contact1" href="../../contact.html" title="Contact with Smarkia">Liên Hệ</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="d-flex justify-content-between" id="div-menu">
+						<div class="d-flex justify-content-around" style="color: #fff" id="nav">
+							<div id="menu">
+								<span>GIỚI THIỆU</span>
+							</div>
+							<div id="menu-1">
+								<span>SẢN PHẨM</span>
+							</div>
+							<div id="menu">
+								<a href="../../partners.html">ĐỐI TÁC</a>
+							</div>
+						</div>
+						<div class="d-flex flex-column justify-content-start">
+							<div style="margin-right: 10px; margin-bottom: 10px">
+								<a class="contact1" href="../../contact.html" title="Contact with Smarkia">
+									Liên Hệ
+								</a>
+							</div>
+						</div>
+					</div>
 
-                    <div id="div-menu" style="width: 100%;">
-                        <div class="d-flex justify-content-around" style="color: #fff;" id="nav">
-                            <div id="menu-2">
-                                <span>GIỚI THIỆU</span>
-                            </div>
-                            <div id="menu-3">
-                                <span>SẢN PHẨM</span>
-                            </div>
-                            <div id="menu-2">
-                                <a href="../../partners.html">ĐỐI TÁC</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-menu" id="sub-menu-2">
-                    <div class="d-flex" style="padding: 16px 0px;">
-                        <a href="../../amitech.html" class="sub-menu-item">AMITECH</a>
-                        <a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-                    </div>
-                </div>
-                <div class="sub-menu-1" id="sub-menu-3">
-                    <div class="d-flex" style="padding: 16px 0px;">
-                        <a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-                        <a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-none d-sm-block">
-                <div class="d-flex justify-content-between">
-                    <a class="navbar-brand" href="../../index.html">
-                        <img src="../../themes/assets/logo.png" class="img-fluid" id="logo"
-                            class="d-inline-block align-top" alt="Home">
-                    </a>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div id="language">
-                            <span>VI</span>
-                            <span>EN</span>
-                        </div>
-                        <div id="phone-number">
-                            <span>Tel</span>
-                            +34 902 070 903
-                        </div>
-                    </div>
-                </div>
+					<div class="sub-menu" id="sub-menu">
+						<div class="d-flex" style="padding: 16px 25px">
+							<a href="../../amitech.html" class="sub-menu-item">AMITECH</a>
+							<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+						</div>
+					</div>
+					<div class="sub-menu-1" id="sub-menu-1">
+						<div class="d-flex" style="padding: 16px 25px">
+							<a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+							<a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+						</div>
+					</div>
+				</div>
+			</header>
 
-                <div class="d-flex justify-content-between" id="div-menu">
-                    <div class="d-flex justify-content-around" style="color: #fff;" id="nav">
-                        <div id="menu">
-                            <span>GIỚI THIỆU</span>
-                        </div>
-                        <div id="menu-1">
-                            <span>SẢN PHẨM</span>
-                        </div>
-                        <div id="menu">
-                            <a href="../../partners.html">ĐỐI TÁC</a>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-start">
-                        <div style="margin-right: 10px; margin-bottom: 10px;">
-                            <a class="contact1" href="../../contact.html" title="Contact with Smarkia">Liên Hệ</a>
-                        </div>
-                    </div>
-                </div>
+			<main role="main" id="page">
+				<div class="px-5 pb-5">
+					<div class="row" id="content">
+						<div><a href="benefits.html">Lợi ích</a></div>
+						<div><a href="who-is-it-for.html">Phù hợp với?</a></div>
+						<div><a href="functions.html" class="content-active">Chức năng</a></div>
+						<div><a href="information-request.html">Thêm thông tin</a></div>
+					</div>
+					<h2 class="font-weight-normal pb-3">Giám sát năng lượng</h2>
+					<div class="div-function">
+						<div class="row">
+							<h4 class="text-justify">Khả năng tích hợp và làm việc đa nền tảng</h4>
+							<p class="text-justify py-3">
+								iNergy Monitor có khả năng kết nối tới nhiều hệ thống thiết bị, đồng hồ điện tử của
+								các hãng khác nhau. Người dùng có thể giám sát, phân tích qua Internet hoặc mạng nội
+								bộ công ty. Không cần công cụ, phần mềm bổ xung nào phải cài đặt thêm trên thiết bị
+								người dùng (điện thoại, máy tính, laptop, máy tính bảng,..) đều có thể dễ dàng truy
+								cập và giám sát thời gian thực.
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="row">
+							<div class="col-md-6 d-flex align-items-center justify-content-center">
+								<img
+									src="../../themes/assets/images/service/monitor/funcionalidades01Monitor.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-6">
+								<h4 class="text-justify">Đa giao thức</h4>
+								<p class="text-justify py-1" style="font-size: 13px">
+									Chọn loại thiết bị đo lường, cảm biến bạn muốn đọc. iNergy lấy các thông số cần đo
+									về điện, khí, nước, nhiệt, nhiệt độ và mức sản xuất thông qua: Các giao thức tiêu
+									chuẩn như IEC-870, DLMS, MODBUS, M-Bus, PRIME, MQTT, TCP/IP, bao gồm các giao thức
+									độc quyền như ION của Schneider. Tích hợp với các công cụ SCADA hoặc BMS thông qua
+									các tiêu chuẩn như BACnet hoặc OPC.
+								</p>
+								<h4 class="text-justify">Đa sản nền tảng</h4>
+								<p class="text-justify py-1" style="font-size: 13px">
+									iNergy có khả năng kết nối với đồng hồ của các nhà sản xuất khác nhau như
+									Schneider Electric, Siemens, Landis + Gyr, ZIV, Kromschroeder, Circutor ..., để
+									giám sát năng lượng.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Hiển thị trực quan, đảm bảo độ tin cậy dữ liệu.</h3>
+						<p>
+							iNergy Monitor cho phép hiển thị và so sánh dữ liệu tiêu thụ năng lượng một cách trực
+							quan, các biến và chỉ số và thông tin được lấy tự động, đảm bảo độ tin cậy dữ liệu.
+						</p>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/monitor/img02.jfif"
+								alt=""
+								class="img-fluid"
+							/>
+							<img
+								src="../../themes/assets/images/bg/list-inner.png"
+								alt=""
+								class="img-fluid"
+								style="margin-top: -5%"
+							/>
+						</div>
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 class="text-justify">Các cảnh báo thể cấu hình</h3>
+								<p class="text-justify py-3">
+									iNergy Monitor cho phép thiết lập các ngưỡng cảnh báo và mối quan hệ giữa năng
+									lượng và các biến ảnh hưởng đến tiêu thụ năng lượng.
+								</p>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades06.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/monitor/funcionalidades05Monitor.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-6 d-flex flex-column justify-content-end">
+								<h3 class="text-justify">Tính toán cơ bản</h3>
+								<p class="text-justify py-3">
+									iNergy Monitor cho phép tự động hóa tính toán cơ bản bằng cách sử dụng các biến
+									ảnh hưởng đến việc sử dụng và / hoặc tiêu thụ để dự đoán mức tiêu thụ trong tương
+									lai và tính toán mức tiết kiệm năng lượng, cho phép cải thiện ngân sách năng lượng
+									và biết chi tiết lý do của bất kỳ sự chênh lệch nào.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Phân loại quản lý cảnh báo</h3>
+						<p>
+							iNergy Monitor cho phép xác định các loại cảnh báo khác nhau, có thể được gán dễ dàng
+							cho các thành viên khác nhau để thực hiện các cảnh báo chính xác đến người cần được
+							cảnh báo.
+						</p>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/monitor/funcionalidades06Monitor.jpg"
+								alt=""
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-6 d-flex flex-column justify-content-end">
+								<h3 class="text-justify">Tạo báo cáo</h3>
+								<p class="text-justify py-3">
+									iNergy Monitor cung cấp một hệ thống linh hoạt để tạo báo cáo đơn giản, phân tích
+									hiệu quả sử dụng năng lượng, có thể lập kế hoạch tạo và gửi báo cáo tự động. Ngoài
+									ra, nó cho phép tích hợp với các báo cáo khách hàng hiện có (ở định dạng Excel)
+								</p>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades12.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Tối ưu hoá vận hành</h3>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/50001/funcionalidades13-1.jpg"
+								alt=""
+								class="img-fluid"
+							/>
+							<img
+								src="../../themes/assets/images/bg/list-inner.png"
+								style="margin-top: -5%"
+								alt=""
+								class="img-fluid"
+							/>
+						</div>
+						<div class="row pb-3">
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<h3 class="text-justify" style="color: #96b536">Tối ưu chỉ số vận hành</h3>
+								<p class="text-justify py-3">
+									iNergy giúp bạn phân tích, tính toán chỉ số vận hành như chỉ số cài đặt áp suất,
+									nhiệt độ,.. để tạo ra năng lượng tiết kiệm nhất mà vẫn đảm bảo chất lượng cho sản
+									xuất.
+								</p>
+							</div>
+							<div class="col-md-6 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades06.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="row py-3">
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<h3 class="text-justify" style="color: #96b536">Tối ưu sử dụng năng lượng</h3>
+								<p class="text-justify py-3">
+									Với Khả năng mô phỏng và so sánh các kịch bản tiêu thụ năng lượng khác nhau để tối
+									ưu hoá chi phí sử dụng năng lượng. Người dùng có thể mô phỏng các tình huống tiêu
+									thụ khác nhau (tỷ lệ sử dụng các khung giờ cao điểm, thấp điểm, bình thường) để
+									tính toán tối ưu sử dụng năng lượng.
+								</p>
+							</div>
+							<div class="col-md-6 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/imgoptimpotencia.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+						<h3 class="text-justify" style="color: #96b536">Tối ưu chi phí năng lượng</h3>
+						<div class="d-md-none d-lg-block">
+							<div class="row">
+								<div class="col-md-5 d-flex flex-column">
+									<div class="text-justify py-3">
+										<p>
+											iNergy cung cấp các công cụ, báo cáo tiêu thụ năng lượng giúp các nhà quản lý
+											phân tích nguyên nhân và giải pháp khắc phục nhằm tránh các tổn thất trong
+											tương lai tối ưu hoá chi phí năng lượng.
+										</p>
+									</div>
+									<div class="text-justify py-3 d-flex align-items-center flex-grow-1">
+										<p class="font-italic p-3 mb-0 p-special">
+											Bao gồm việc tạo hóa đơn với giá mua điện được thiết lập Giúp so sánh với các
+											hoá đơn điện lực
+										</p>
+									</div>
+									<div class="text-justify py-3 d-flex align-items-end flex-grow-1">
+										<p class="font-italic p-3 mb-0 p-special">
+											iNergy cũng phân tích dữ liệu quá khứ và thông báo cho bạn về bất kỳ thay đổi
+											hoặc chênh lệch nào được tạo ra trong việc tiêu thụ . Với thông tin này, bạn
+											có thể phát hiện phân tích vấn đề và đưa ra biện pháp khắc phục phòng ngừa
+										</p>
+									</div>
+								</div>
+								<div class="col-md-7 text-center">
+									<img
+										src="../../themes/assets/images/service/50001/imgprefactura.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-block d-lg-none">
+							<div class="d-flex flex-column">
+								<div class="text-justify py-3">
+									<p>
+										Possibility of generating your own billing on the 1st day of each month being
+										able to predict and quote with that issued by the marketer considering all the
+										parameters that affect it.
+									</p>
+								</div>
+								<div class="text-justify py-3 d-flex align-items-center flex-grow-1">
+									<p class="font-italic p-3 mb-0 p-special">
+										Includes generation of bills with the
+										<span class="font-weight-bold">market rate per hour indexed</span>
+										from the updated prices published by the
+										<span class="font-weight-bold">OMIE</span>
+										.
+									</p>
+								</div>
+								<div class="text-justify py-3 d-flex align-items-end flex-grow-1">
+									<p class="font-italic p-3 mb-0 p-special">
+										The Smarkia smart billing also analyzes its data and
+										<span class="font-weight-bold">
+											informs you of any changes or disparities produced in its consumption
+										</span>
+										. With this information, you can detect any problem immediately and correct it.
+									</p>
+								</div>
+							</div>
+							<div class="text-center">
+								<img
+									src="../../themes/assets/images/service/50001/imgprefactura.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="text-center mt-5">
+						<a href="information-request.html">
+							<button id="request-btn" class="btn btn-lg">Yêu cầu dùng thử</button>
+						</a>
+					</div>
+				</div>
+			</main>
 
-                <div class="sub-menu" id="sub-menu">
-                    <div class="d-flex" style="padding: 16px 25px;">
-                        <a href="../../amitech.html" class="sub-menu-item">AMITECH</a>
-                        <a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-                    </div>
-                </div>
-                <div class="sub-menu-1" id="sub-menu-1">
-                    <div class="d-flex" style="padding: 16px 25px;">
-                        <a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-                        <a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+			<footer id="footer" class="pt-2">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-toyota.jpg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-inergy.jpg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-evn.png"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-thankhoangsan.png"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-diana.svg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-md-none" id="main-footer">
+					<div
+						style="display: flex; flex-direction: column; font-size: 12px; justify-content: center"
+					>
+						<div style="text-align: center">
+							<img
+								alt="enisa"
+								src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
+								style="width: 130px; height: 40px"
+							/>
+						</div>
+						<div style="text-align: center; color: #fff">
+							<span>
+								Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội
+							</span>
+						</div>
+					</div>
 
-        <main role="main" id="page">
-            <div class="px-5 pb-5">
-                <div class="row" id="content">
-                    <div><a href="benefits.html">Lợi ích</a></div>
-                    <div><a href="who-is-it-for.html">Phù hợp với?</a></div>
-                    <div><a href="functions.html" class="content-active">Chức năng</a></div>
-                    <div><a href="information-request.html">Thêm thông tin</a></div>
-                </div>
-                <h2 class="font-weight-normal pb-3">
-                    Monitoring energy
-                </h2>
-                <div class="div-function">
-                    <div class="row">
-                        <h4 class="text-justify">
-                            Integration of remote metering
-                        </h4>
-                        <p class="text-justify py-3">
-                            Smarkia Monitor identify and individually monitor energy installations; they connect through
-                            Internet directly to the energy meters to analyze all the consumption data (electric, water,
-                            gas, gasoline, etc.). No additional tools are required to have access to the consumption and
-                            variables that affect the organization, since Smarkia Monitor allows connecting to the
-                            meters of different manufacturers.
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div class="row">
-                        <div class="col-md-6 d-flex align-items-center justify-content-center">
-                            <img src="../../themes/assets/images/service/monitor/funcionalidades01Monitor.jpg"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="text-justify">
-                                Multiprotocol
-                            </h4>
-                            <p class="text-justify py-1" style="font-size: 13px;">
-                                Choose what type of measurement equipment you want to read, either consumption or
-                                variable energy. Obtain measurements of electricity, gas, water, heat, temperature, and
-                                production level through: Standard protocols such as IEC-870, DLMS, MODBUS, M-Bus,
-                                PRIME. Proprietary protocols such as ION of Schneider. Integration with SCADA or BMS
-                                tools through standards such as BACnet or OPC.
-                            </p>
-                            <h4 class="text-justify">
-                                Multimanufacturer
-                            </h4>
-                            <p class="text-justify py-1" style="font-size: 13px;">
-                                Smarkia has maximum flexibility to connect to the meters of different manufacturers such
-                                as Schneider Electric, Siemens, Landis+Gyr, ZIV, Kromschroeder, Circutor..., for
-                                monitoring energy. SMARKIA does not impose restrictions or require the installation of
-                                additional infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Visualization and Exportation of data.</h3>
-                    <p>
-                        Smarkia Monitor allows displaying and graphically comparing energy consumption data, variables
-                        and indicators and personalized exportation of information.
-                    </p>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/monitor/img02.jfif" alt="" class="img-fluid">
-                        <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid"
-                            style="margin-top: -5%;">
-                    </div>
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="text-justify">
-                                Configurable Indicators
-                            </h3>
-                            <p class="text-justify py-3">
-                                These allow automatically establishing a relationship between energy and the variables
-                                that influence consumption.
-                            </p>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades06.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/monitor/funcionalidades05Monitor.jpg"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6 d-flex flex-column justify-content-end">
-                            <h3 class="text-justify">
-                                Baseline Calculation
-                            </h3>
-                            <p class="text-justify py-3">
-                                Smarkia allows automating the baseline calculation using variables that affect use
-                                and/or consumption to predict future consumption and calculate energy savings, allowing
-                                improving the energy budget and knowing in detail the reason for any disparities.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Management of configurable alerts</h3>
-                    <p>
-                        Smarkia Monitor allows defining different type of alerts that may be assigned easily to other
-                        members of the organization or collaborators.
-                    </p>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/monitor/funcionalidades06Monitor.jpg" alt=""
-                            class="img-fluid">
-                    </div>
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-end">
-                            <h3 class="text-justify">
-                                Generation of reports
-                            </h3>
-                            <p class="text-justify py-3">
-                                Smarkia Monitor has a flexible system for simple creation of reports that provide a
-                                valuable consumption analysis, being able to plan its generation and sending. In
-                                addition, it allows simply integrating the existing client reports (in Excel format)
-                                with the platform.
-                            </p>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades12.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/monitor/funcionalidades03Monitor.jpg"
-                                class="img-fluid" alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6">
-                            <h3 class="text-justify">
-                                Management of documents
-                            </h3>
-                            <p class="text-justify py-3">
-                                Archiving documents (bills, external reports, etc.) in different formats with advanced
-                                search by files or contents.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Smarkia smart billing</h3>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/50001/funcionalidades13-1.jpg" alt=""
-                            class="img-fluid">
-                        <img src="../../themes/assets/images/bg/list-inner.png" style="margin-top: -5%;" alt=""
-                            class="img-fluid">
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 class="text-justify" style="color: #96B536;">
-                                Rate optimizer
-                            </h3>
-                            <p class="text-justify py-3">
-                                Possibility of simulating and compare energy bills with different powers and rates (3
-                                periods, 6 periods). You may also simulate different consumption scenarios to calculate
-                                its optimal rate.
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades06.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="row py-3">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 class="text-justify" style="color: #96B536;">
-                                Optimization of power
-                            </h3>
-                            <p class="text-justify py-3">
-                                With this functionality you may calculate the most advantageous power to contract
-                                according to its real consumption. Obtain important savings most simply.
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="../../themes/assets/images/service/50001/imgoptimpotencia.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                    <h3 class="text-justify" style="color: #96B536;">
-                        Electric pre-billing
-                    </h3>
-                    <div class="d-md-none d-lg-block">
-                        <div class="row">
-                            <div class="col-md-5 d-flex flex-column">
-                                <div class="text-justify py-3">
-                                    <p>
-                                        Possibility of generating your own billing on the 1st day of each month being
-                                        able
-                                        to predict and quote with that issued by the marketer considering all the
-                                        parameters
-                                        that affect it.
-                                    </p>
-                                </div>
-                                <div class="text-justify py-3 d-flex align-items-center flex-grow-1">
-                                    <p class="font-italic p-3 mb-0 p-special">
-                                        Includes generation of bills with the <span class="font-weight-bold">market rate
-                                            per
-                                            hour indexed</span> from
-                                        the updated prices published by the <span class="font-weight-bold">OMIE</span>.
-                                    </p>
-                                </div>
-                                <div class="text-justify py-3 d-flex align-items-end flex-grow-1">
-                                    <p class="font-italic p-3 mb-0 p-special">
-                                        The Smarkia smart billing also analyzes its data and <span
-                                            class="font-weight-bold">informs you of any
-                                            changes or disparities produced in its consumption</span>. With this
-                                        information, you can detect any problem immediately and correct it.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-7 text-center">
-                                <img src="../../themes/assets/images/service/50001/imgprefactura.jpg" class="img-fluid"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-md-block d-lg-none">
-                        <div class="d-flex flex-column">
-                            <div class="text-justify py-3">
-                                <p>
-                                    Possibility of generating your own billing on the 1st day of each month being
-                                    able
-                                    to predict and quote with that issued by the marketer considering all the
-                                    parameters
-                                    that affect it.
-                                </p>
-                            </div>
-                            <div class="text-justify py-3 d-flex align-items-center flex-grow-1">
-                                <p class="font-italic p-3 mb-0 p-special">
-                                    Includes generation of bills with the <span class="font-weight-bold">market rate
-                                        per
-                                        hour indexed</span> from
-                                    the updated prices published by the <span class="font-weight-bold">OMIE</span>.
-                                </p>
-                            </div>
-                            <div class="text-justify py-3 d-flex align-items-end flex-grow-1">
-                                <p class="font-italic p-3 mb-0 p-special">
-                                    The Smarkia smart billing also analyzes its data and <span
-                                        class="font-weight-bold">informs you of any
-                                        changes or disparities produced in its consumption</span>. With this
-                                    information, you can detect any problem immediately and correct it.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <img src="../../themes/assets/images/service/50001/imgprefactura.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="text-center mt-5">
-                    <a href="information-request.html">
-                        <button id="request-btn" class="btn btn-lg">Yêu cầu dùng thử
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </main>
+					<div class="d-flex flex-column justify-content-center">
+						<div class="social-content" style="margin-top: 10px">
+							<div>
+								<a
+									class="twitter"
+									href="https://twitter.com"
+									target="_blank"
+									title="twitter Smarkia"
+								>
+									&nbsp;
+								</a>
+							</div>
+							<div>
+								<a
+									class="linkedin"
+									href="http://www.linkedin.com"
+									target="_blank"
+									title="linkedin Smarkia"
+								>
+									&nbsp;
+								</a>
+							</div>
+							<div class="ml-2">
+								<a class="contact" href="../../contact.html" title="Contact with Smarkia">
+									Liên Hệ
+								</a>
+							</div>
+						</div>
+						<div id="copyright" class="mt-3 text-center">
+							© Copyright 2020 Amitech. All rights reserved.
+						</div>
+						<div class="row p-3 text-center">
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Legal Notice</a>
+							</div>
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Privacy Policy</a>
+							</div>
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Cookie Policy</a>
+							</div>
+							<div class="col-3">
+								<a href="#" style="color: #fff">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none d-md-block" id="main-footer">
+					<div class="d-flex justify-content-between p-2" id="footer-top">
+						<div style="display: flex; font-size: 12px">
+							<div style="display: flex; flex-direction: column; justify-content: center">
+								<img
+									alt="enisa"
+									src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
+									style="width: 130px; height: 40px"
+								/>
+							</div>
+							<div style="width: 100px; margin-left: 10px; text-align: justify; color: #fff">
+								<span>
+									Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội
+								</span>
+							</div>
+						</div>
+						<div class="d-flex flex-column justify-content-center">
+							<div class="social-content">
+								<div>
+									<a
+										class="twitter"
+										href="https://twitter.com"
+										target="_blank"
+										title="twitter Smarkia"
+									>
+										&nbsp;
+									</a>
+								</div>
+								<div>
+									<a
+										class="linkedin"
+										href="http://www.linkedin.com"
+										target="_blank"
+										title="linkedin Smarkia"
+									>
+										&nbsp;
+									</a>
+								</div>
+								<div class="ml-2">
+									<a class="contact" href="../../contact.html" title="Contact with Smarkia">
+										Liên Hệ
+									</a>
+								</div>
+							</div>
+							<div id="copyright" class="mt-3">© Copyright 2020 Amitech. All rights reserved.</div>
+							<div id="footer-menu" class="mt-2 text-right">
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Legal Notice</a>
+								</div>
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Privacy Policy</a>
+								</div>
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Cookie Policy</a>
+								</div>
+								<div class="pl-2">
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row p-3">
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-vets.png"
+								alt=""
+								class="px-2"
+								style="background-color: blueviolet"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-bocongthuong.png"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-bank.jfif"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-epu.jfif"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-        <footer id="footer" class="pt-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-toyota.jpg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-inergy.jpg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-evn.png" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-thankhoangsan.png"
-                            alt="Alternate Text" style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-diana.svg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-md-none" id="main-footer">
-                <div style="display: flex; flex-direction: column; font-size: 12px; justify-content: center;">
-                    <div style="text-align:center;">
-                        <img alt="enisa" src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-                            style="width: 130px; height: 40px;">
-                    </div>
-                    <div style="text-align: center; color:#fff;">
-                        <span>Tầng 4, Tòa nhà Sông Đà 9, Số 2
-                            Nguyễn Hoàng, Mỹ Đình,
-                            Nam Từ Liêm, Hà Nội</span>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="social-content" style="margin-top: 10px;">
-                        <div>
-                            <a class="twitter" href="https://twitter.com" target="_blank"
-                                title="twitter Smarkia">&nbsp;</a>
-                        </div>
-                        <div>
-                            <a class="linkedin" href="http://www.linkedin.com" target="_blank"
-                                title="linkedin Smarkia">&nbsp;</a>
-                        </div>
-                        <div class="ml-2">
-                            <a class="contact" href="../../contact.html" title="Contact with Smarkia">Liên Hệ</a>
-                        </div>
-                    </div>
-                    <div id="copyright" class="mt-3 text-center">
-                        © Copyright 2020 Amitech. All rights reserved.
-                    </div>
-                    <div class="row p-3 text-center">
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Legal Notice</a>
-                        </div>
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Privacy Policy</a>
-                        </div>
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Cookie Policy</a>
-                        </div>
-                        <div class="col-3">
-                            <a href="#" style="color: #fff;">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-none d-md-block" id="main-footer">
-                <div class="d-flex justify-content-between p-2" id="footer-top">
-                    <div style="display: flex; font-size: 12px;">
-                        <div style="display: flex; flex-direction: column; justify-content: center;">
-                            <img alt="enisa" src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-                                style="width: 130px; height: 40px;">
-                        </div>
-                        <div style="width: 100px; margin-left:10px;
-                        text-align: justify; color:#fff;">
-                            <span>Tầng 4, Tòa nhà Sông Đà 9, Số 2
-                                Nguyễn Hoàng, Mỹ Đình,
-                                Nam Từ Liêm, Hà Nội</span>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="social-content">
-                            <div>
-                                <a class="twitter" href="https://twitter.com" target="_blank"
-                                    title="twitter Smarkia">&nbsp;</a>
-                            </div>
-                            <div>
-                                <a class="linkedin" href="http://www.linkedin.com" target="_blank"
-                                    title="linkedin Smarkia">&nbsp;</a>
-                            </div>
-                            <div class="ml-2">
-                                <a class="contact" href="../../contact.html" title="Contact with Smarkia">Liên Hệ</a>
-                            </div>
-                        </div>
-                        <div id="copyright" class="mt-3">
-                            © Copyright 2020 Amitech. All rights reserved.
-                        </div>
-                        <div id="footer-menu" class="mt-2 text-right">
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Legal Notice</a>
-                            </div>
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Privacy Policy</a>
-                            </div>
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Cookie Policy</a>
-                            </div>
-                            <div class="pl-2">
-                                <a href="#">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row p-3">
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-vets.png" alt="" class="px-2"
-                            style="background-color: blueviolet;" />
-                    </div>
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-bocongthuong.png" alt=""
-                            style="height: 80px;" />
-                    </div>
-                    <div class=" col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-bank.jfif" alt="" style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-epu.jfif" alt="" style="height: 80px;" />
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <script src="../../lib/jquery/dist/jquery.min.js"></script>
-    <script src="../../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/site.js" asp-append-version="true"></script>
-</body>
-
+		<script src="../../lib/jquery/dist/jquery.min.js"></script>
+		<script src="../../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../../js/site.js" asp-append-version="true"></script>
+	</body>
 </html>

@@ -452,7 +452,7 @@ a.contact:hover {
     color: #322f2f;
     font-size: 22px;
     min-height: 95px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #intro h2 a {
@@ -555,10 +555,6 @@ a.contact:hover {
 
 .catalog-ami {
     height: 700px;
-}
-
-#fsw-watermark {
-    display: none !important;
 }
 
 @media (max-width: 300px) {
