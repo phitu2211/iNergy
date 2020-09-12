@@ -636,6 +636,11 @@ a.contact:hover {
     border-radius: 1px;
 }
 
+.btn-submit:hover {
+    background-color: #85A719 !important;
+    color: #fff;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -674,4 +679,54 @@ a.contact:hover {
     .div-function {
         padding: 3px !important;
     }
+}
+
+.question {
+    background: url(../themes/assets/images/ico/flechaplegado.png) no-repeat left 17px;
+    cursor: pointer;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.question:hover {
+    background: url(../themes/assets/images/ico/flechadesplegado.png) no-repeat left 17px;
+}
+
+.question.active {
+    background: url(../themes/assets/images/ico/flechadesplegado.png) no-repeat left 17px;
+}
+
+.question span {
+    margin: 0;
+    padding: 10px 0 10px 30px;
+    display: block;
+    font-size: 1.15em;
+    font-weight: normal;
+    color: #92C018;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.answer {
+    background-color: #F3F3F3;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.2s ease-out;
+}
+
+.answer p {
+    margin: 0;
+}
+
+.answer p a {
+    color: #92C018;
+}
+
+.show-answer {
+    border-bottom: 1px solid #E9E9E9;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: auto;
 }
