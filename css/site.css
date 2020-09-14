@@ -68,7 +68,7 @@ a {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
 	color: #fff;
 	background-color: #1b6ec2;
 	border-color: #1861ac;
@@ -497,7 +497,7 @@ a.contact:hover {
 	background-image: url(../themes/assets/images/ico/slide-arrow-left.png);
 }
 
-#list-manager > li::before {
+#list-manager>li::before {
 	content: "• ";
 	color: #85a719;
 }
@@ -736,4 +736,25 @@ a.contact:hover {
 	padding: 20px;
 	height: auto;
 	transition: all 0.2s ease-out;
+}
+
+#toTop {
+	position: fixed;
+	bottom: 50%;
+	display: none;
+	right: 20px;
+}
+
+#toTop span {
+	width: 39px;
+	height: 54px;
+	position: relative;
+	display: block;
+	background: url(../themes/assets/images/ico/scrollfx.png) no-repeat scroll left top transparent;
+	filter: inherit;
+}
+
+#toTop span:hover {
+	background-position: left -54px;
+	cursor: pointer;
 }
