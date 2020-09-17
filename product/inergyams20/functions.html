@@ -1,626 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="shortcut icon"
+			href="../../themes/assets/favicon.ico"
+			type="image/vnd.microsoft.icon"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
+		<link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/site.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="../../themes/assets/favicon.ico" type="image/vnd.microsoft.icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
-    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../css/site.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	<body>
+		<div class="container">
+			<header id="header">
+				<div class="container-fluid d-sm-none">
+					<div class="row">
+						<div class="col-5 d-flex align-items-center">
+							<a class="navbar-brand" href="../../index.html">
+								<img src="../../themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+							</a>
+						</div>
+						<div class="col-7">
+							<div class="d-flex flex-column px-2 py-1 justify-content-start">
+								<div id="language">
+									<span>VI</span>
+									<span>EN</span>
+								</div>
+								<div id="phone-number" style="font-size: 12px; text-align: right">
+									<span style="font-size: 12px">Tel</span>
+									+84 986 893 233
+								</div>
+								<div id="first-contact">
+									<a
+										class="contact1"
+										href="https://amitech.vn/lien-he/"
+										title="Contact with Smarkia"
+										>Liên Hệ</a
+									>
+								</div>
+							</div>
+						</div>
 
-</head>
+						<div id="div-menu" style="width: 100%">
+							<div class="d-flex justify-content-around" style="color: #fff" id="nav">
+								<div id="menu-2">
+									<span>GIỚI THIỆU</span>
+								</div>
+								<div id="menu-3">
+									<span>SẢN PHẨM</span>
+								</div>
+								<div id="menu-2">
+									<a href="../../partners.html">ĐỐI TÁC</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub-menu" id="sub-menu-2">
+						<div class="d-flex" style="padding: 16px 0px">
+							<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+							<a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
+							<a href="../../news.html" class="sub-menu-item">Tin tức</a>
+						</div>
+					</div>
+					<div class="sub-menu-1" id="sub-menu-3">
+						<div class="d-flex" style="padding: 16px 0px">
+							<a href="../inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+							<a href="benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none d-sm-block">
+					<div class="d-flex justify-content-between">
+						<a class="navbar-brand" href="../../index.html">
+							<img
+								src="../../themes/assets/logo.png"
+								class="img-fluid"
+								id="logo"
+								class="d-inline-block align-top"
+								alt="Home"
+							/>
+						</a>
+						<div class="d-flex flex-column justify-content-center">
+							<div id="language">
+								<span>VI</span>
+								<span>EN</span>
+							</div>
+							<div id="phone-number">
+								<span>Tel</span>
+								+84 986 893 233
+							</div>
+						</div>
+					</div>
 
-<body>
-    <div class="container">
-        <header id="header">
-            <div class="container-fluid d-sm-none">
-                <div class="row">
-                    <div class="col-5 d-flex align-items-center">
-                        <a class="navbar-brand" href="../../index.html">
-                            <img src="../../themes/assets/logo.png" id="logo" style="height:60px;" alt="Home">
-                        </a>
-                    </div>
-                    <div class="col-7">
-                        <div class="d-flex flex-column px-2 py-1 justify-content-start">
-                            <div id="language">
-                                <span>VI</span>
-                                <span>EN</span>
-                            </div>
-                            <div id="phone-number" style="font-size: 12px; text-align:right">
-                                <span style="font-size: 12px;">Tel</span>
-                                +34 902 070 903
-                            </div>
-                            <div id="first-contact">
-                                <a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                    Hệ</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="d-flex justify-content-between" id="div-menu">
+						<div class="d-flex justify-content-around" style="color: #fff" id="nav">
+							<div id="menu">
+								<span>GIỚI THIỆU</span>
+							</div>
+							<div id="menu-1">
+								<span>SẢN PHẨM</span>
+							</div>
+							<div id="menu">
+								<a href="../../partners.html">ĐỐI TÁC</a>
+							</div>
+						</div>
+						<div class="d-flex flex-column justify-content-start">
+							<div style="margin-right: 10px; margin-bottom: 10px">
+								<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
+									>Liên Hệ</a
+								>
+							</div>
+						</div>
+					</div>
 
-                    <div id="div-menu" style="width: 100%;">
-                        <div class="d-flex justify-content-around" style="color: #fff;" id="nav">
-                            <div id="menu-2">
-                                <span>GIỚI THIỆU</span>
-                            </div>
-                            <div id="menu-3">
-                                <span>SẢN PHẨM</span>
-                            </div>
-                            <div id="menu-2">
-                                <a href="../../partners.html">ĐỐI TÁC</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-menu" id="sub-menu-2">
-                    <div class="d-flex" style="padding: 16px 0px;">
-                        <a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-                        <a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-                        <a href="../../news.html" class="sub-menu-item">Tin tức</a>
-                    </div>
-                </div>
-                <div class="sub-menu-1" id="sub-menu-3">
-                    <div class="d-flex" style="padding: 16px 0px;">
-                        <a href="../inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-                        <a href="benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-none d-sm-block">
-                <div class="d-flex justify-content-between">
-                    <a class="navbar-brand" href="../../index.html">
-                        <img src="../../themes/assets/logo.png" class="img-fluid" id="logo"
-                            class="d-inline-block align-top" alt="Home">
-                    </a>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div id="language">
-                            <span>VI</span>
-                            <span>EN</span>
-                        </div>
-                        <div id="phone-number">
-                            <span>Tel</span>
-                            +34 902 070 903
-                        </div>
-                    </div>
-                </div>
+					<div class="sub-menu" id="sub-menu">
+						<div class="d-flex" style="padding: 16px 25px">
+							<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+							<a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
+							<a href="../../news.html" class="sub-menu-item">Tin tức</a>
+						</div>
+					</div>
+					<div class="sub-menu-1" id="sub-menu-1">
+						<div class="d-flex" style="padding: 16px 25px">
+							<a href="../inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+							<a href="benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+						</div>
+					</div>
+				</div>
+			</header>
 
-                <div class="d-flex justify-content-between" id="div-menu">
-                    <div class="d-flex justify-content-around" style="color: #fff;" id="nav">
-                        <div id="menu">
-                            <span>GIỚI THIỆU</span>
-                        </div>
-                        <div id="menu-1">
-                            <span>SẢN PHẨM</span>
-                        </div>
-                        <div id="menu">
-                            <a href="../../partners.html">ĐỐI TÁC</a>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-start">
-                        <div style="margin-right: 10px; margin-bottom: 10px;">
-                            <a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                Hệ</a>
-                        </div>
-                    </div>
-                </div>
+			<main role="main" id="page">
+				<div class="px-5 pb-5">
+					<div class="row" id="content">
+						<div><a href="benefits.html">Lợi ích</a></div>
+						<div><a href="who-is-it-for.html">Phù hợp với?</a></div>
+						<div><a href="functions.html" class="content-active">Chức năng</a></div>
+						<div><a href="information-request.html">Thêm thông tin</a></div>
+					</div>
+					<h3 class="font-weight-normal pb-3"> Quản lý năng lượng hiệu quả với iNERGY AMS20 </h3>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades01.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-6">
+								<h3 class="text-justify"> Khả năng tích hợp và làm việc đa nền tảng </h3>
+								<p class="text-justify py-3">
+									iNergy AMS20 có khả năng kết nối tới nhiều nền tảng dữ liệu khác nhau bao gồm
+									iNERGY Monitor, các hệ SCADA, BMS hay các Cơ sở dữ liệu khác nhau có trong tổ
+									chức. Ngoài ra người dùng có thể nhập dữ liệu về năng lượng bằng tay hoặc nhập
+									file excel. Không cần thêm công cụ, phần mềm bổ xung nào phải cài đặt thêm trên
+									thiết bị người dùng (điện thoại, máy tính, laptop, máy tính bảng,..) đều có thể dễ
+									dàng truy cập và giám sát mọi lúc mọi nơi
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Trực quan hoá với dòng chảy năng lượng</h3>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/50001/image2.png"
+								alt=""
+								class="img-fluid"
+							/>
+						</div>
+						<p>
+							iNERGY AMS20 tự động phân tích cân bằng năng lượng, thể hiện dòng chảy sử dụng năng
+							lượng một cách trực quan và tường minh. Người dùng có thể biết được một quá trình hay
+							hệ thống thiết bị sử dụng những loại năng lượng nào với khối lượng bao nhiêu
+						</p>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades04.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-6">
+								<h3 class="text-justify"> Xem xét năng lượng </h3>
+								<p class="text-justify py-3">
+									Từ những dữ liệu được thu thập, iNERGY AMS20 tự động thực hiện các phân tích xem
+									xét năng lượng theo tiêu chuẩn ISO 50001 bao gồm: - Phân tích năng lượng tiêu thụ
+									trọng điểm - Phân tích khu vực sử dụng năng lượng trọng điểm - Tính toán tiềm
+									năng, giải pháp tiết kiệm năng lượng - Lập kế hoạch thực hiện giải pháp tiết kiệm
+									năng lượng - v.v..
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-6 d-flex flex-column justify-content-end">
+								<h3 class="text-justify"> Thiết lập mục tiêu, chỉ tiêu và kế hoạch hành động </h3>
+								<p class="text-justify py-3">
+									iNERGY AMS20 tự động tính toán tiềm năng tiết kiệm năng lượng, từ đó thiết lập
+									được mục tiêu, chỉ tiêu. Tự động tìm kiếm các biện pháp tiết kiệm năng lượng và cơ
+									hội cải tiến phù hợp nhất với tổ chức, từ các đề xuất trong quá trình xem xét năng
+									lượng, do đó tạo thành các mục tiêu cải tiến.
+								</p>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades05.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades06.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-6">
+								<h3 class="text-justify"> Phân tích chỉ số hiệu quả sử dụng năng lượng. </h3>
+								<p class="text-justify py-3">
+									Thiết lập và tự động hóa việc giám sát các chỉ số hiệu quả sử dụng năng lượng. Tự
+									động cảnh báo về bất kỳ sai lệch hoặc không phù hợp nào giúp đơn vị đưa ra các
+									hành động khắc phục và phòng ngừa.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-6 d-flex flex-column justify-content-end">
+								<h3 class="text-justify"> Tính toán đường cơ sở năng lượng. </h3>
+								<p class="text-justify py-3">
+									Dựa trên dữ liệu năng lượng và các biến tác động iNERGY AMS20 tự động phân tích
+									tính toán đường cơ sở năng lượng một cách chính xác: - Thuật toán hồi quy đa biến
+									tới 10 biến tác động - Đưa ra xu hướng sử dụng năng lượng - Dự báo năng lượng tiêu
+									thụ trong tương lai - Giúp nhà quản lý đưa ra mục tiêu tiết kiệm năng lượng trong
+									giai đoạn tiếp theo
+								</p>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades07.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<div class="row">
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades08.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-6">
+								<h3 class="text-justify"> Phân loại quản lý cảnh báo </h3>
+								<p class="text-justify py-3">
+									iNergy AMS20 cho phép xác định phân loại các loại cảnh báo khác nhau, có thể được
+									gán dễ dàng cho các thành viên khác nhau để thực hiện các cảnh báo chính xác đến
+									người cần được cảnh báo.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Xem lại việc quản lý.</h3>
+						<p>
+							Tất cả về tình trạng sử dụng năng lượng của tổ chức hay từng khu vực được báo cáo chỉ
+							bằng một cú nhấp chuột. Truy vấn và trích xuất báo cáo mọi lúc, mọi nơi và dự báo năng
+							lượng tiêu thụ trong tương lại với iNERGY AMS20.
+						</p>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/50001/funcionalidades09.jpg"
+								alt=""
+								class="img-fluid"
+							/>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades10.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<h3 class="text-justify"> Kiểm toán năng lượng. </h3>
+								<p class="text-justify py-3">
+									iNERGY cung cấp dữ liệu và các báo cáo về tiêu thụ năng lượng , là công cụ hiệu
+									quả và cần thiết cho quá trình kiểm toán năng lượng tại doanh nghiệp
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Tính toán giải pháp tiết kiệm năng lượng</h3>
+						<p>
+							iNERGY tự động tìm kiếm, đề xuất các giải pháp tiết kiệm năng lượng dựa trên hồ sơ
+							thiết bị và vận hành của tổ chức. Cung cấp các công cụ tính toán phân tích hiệu quả
+							đầu tư giải pháp tiết kiệm năng lượng, giúp đơn vị quản lý tạo lập hồ sơ thực hiện các
+							giải pháp kỹ thuật tiết kiệm năng lượng.
+						</p>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/50001/funcionalidades11.jpg"
+								alt=""
+								class="img-fluid"
+							/>
+						</div>
+						<div class="row">
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<h3 class="text-justify"> Tạo báo cáo </h3>
+								<p class="text-justify py-3">
+									iNergy AMS20 cung cấp một hệ thống linh hoạt để tạo báo cáo đơn giản, phân tích
+									hiệu quả sử dụng năng lượng, có thể lập kế hoạch tạo và gửi báo cáo tự động. Ngoài
+									ra, nó cho phép tích hợp với các báo cáo khách hàng hiện có (ở định dạng Excel)
+								</p>
+							</div>
+							<div class="col-md-1"></div>
+							<div class="col-md-5">
+								<img
+									src="../../themes/assets/images/service/50001/funcionalidades12.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="div-function">
+						<h3>Báo cáo năng lượng </h3>
+						<div class="text-center pt-5 pb-4">
+							<img
+								src="../../themes/assets/images/service/50001/funcionalidades13-1.jpg"
+								alt=""
+								class="img-fluid"
+							/>
+							<img
+								src="../../themes/assets/images/bg/list-inner.png"
+								style="margin-top: -5%"
+								alt=""
+								class="img-fluid"
+							/>
+						</div>
+						<div class="row pb-3">
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<h3 class="text-justify" style="color: #96b536"> Báo cáo xem xét năng lượng </h3>
+								<p class="text-justify py-3">
+									iNergy giúp bạn tổng hợp việc tiêu thụ năng lượng trong quá khứ, từ đấy giúp đơn
+									vị có cái nhìn tổng thể đưa ra định hướng hay chú trọng quản lý các yếu tố nào.
+								</p>
+							</div>
+							<div class="col-md-6 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/imgoptimtarifa.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="row py-3">
+							<div class="col-md-6 d-flex flex-column justify-content-center">
+								<h3 class="text-justify" style="color: #96b536">
+									Báo cáo chỉ số hiệu quả năng lượng
+								</h3>
+								<p class="text-justify py-3">
+									iNergy giúp bạn phân tích, tính toán chỉ số hiệu quả năng lượng hiện tại, so sánh
+									các chỉ số với chỉ tiêu, cùng kỳ năm ngoái để đưa ra cảnh báo cần thiết
+								</p>
+							</div>
+							<div class="col-md-6 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/imgoptimpotencia.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+						<h3 class="text-justify" style="color: #96b536">
+							Báo cáo tình trạng quản lý năng lượng
+						</h3>
+						<div class="d-md-none d-lg-block">
+							<div class="row">
+								<div class="col-md-5 d-flex flex-column">
+									<div class="text-justify py-3">
+										<p>
+											iNergy cung cấp các công cụ, báo cáo tiêu thụ năng lượng giúp các nhà quản lý
+											phân tích nguyên nhân và giải pháp khắc phục nhằm tránh các tổn thất trong
+											tương lai tối ưu hoá chi phí năng lượng.
+										</p>
+									</div>
+									<div class="text-justify py-3 d-flex align-items-center flex-grow-1">
+										<p class="font-italic p-3 mb-0 p-special">
+											Bao gồm việc tạo hóa đơn với giá mua điện được thiết lập
+											<br />
+											Giúp so sánh với các hoá đơn điện lực
+										</p>
+									</div>
+									<div class="text-justify py-3 d-flex align-items-end flex-grow-1">
+										<p class="font-italic p-3 mb-0 p-special">
+											iNergy cũng phân tích dữ liệu quá khứ và thông báo cho bạn về bất kỳ thay đổi
+											hoặc chênh lệch nào được tạo ra trong việc tiêu thụ . Với thông tin này, bạn
+											có thể phát hiện phân tích vấn đề và đưa ra biện pháp khắc phục phòng ngừa
+										</p>
+									</div>
+								</div>
+								<div class="col-md-7 text-center">
+									<img
+										src="../../themes/assets/images/service/50001/imgprefactura.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-block d-lg-none">
+							<div class="d-flex flex-column">
+								<div class="text-justify py-3">
+									<p>
+										Possibility of generating your own billing on the 1st day of each month being
+										able to predict and quote with that issued by the marketer considering all the
+										parameters that affect it.
+									</p>
+								</div>
+								<div class="text-justify py-3 d-flex align-items-center flex-grow-1">
+									<p class="font-italic p-3 mb-0 p-special">
+										Includes generation of bills with the
+										<span class="font-weight-bold">market rate per hour indexed</span> from the
+										updated prices published by the <span class="font-weight-bold">OMIE</span>.
+									</p>
+								</div>
+								<div class="text-justify py-3 d-flex align-items-end flex-grow-1">
+									<p class="font-italic p-3 mb-0 p-special">
+										The Smarkia smart billing also analyzes its data and
+										<span class="font-weight-bold"
+											>informs you of any changes or disparities produced in its consumption</span
+										>. With this information, you can detect any problem immediately and correct it.
+									</p>
+								</div>
+							</div>
+							<div class="text-center">
+								<img
+									src="../../themes/assets/images/service/50001/imgprefactura.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid" />
+					</div>
+					<div class="text-center mt-5">
+						<a href="information-request.html">
+							<button id="request-btn" class="btn btn-lg">Yêu cầu dùng thử </button>
+						</a>
+					</div>
+				</div>
+			</main>
 
-                <div class="sub-menu" id="sub-menu">
-                    <div class="d-flex" style="padding: 16px 25px;">
-                        <a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-                        <a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-                        <a href="../../news.html" class="sub-menu-item">Tin tức</a>
-                    </div>
-                </div>
-                <div class="sub-menu-1" id="sub-menu-1">
-                    <div class="d-flex" style="padding: 16px 25px;">
-                        <a href="../inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-                        <a href="benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+			<footer id="footer" class="pt-2">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-toyota.jpg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-inergy.jpg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-evn.png"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-thankhoangsan.png"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-diana.svg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-md-none" id="main-footer">
+					<div
+						style="display: flex; flex-direction: column; font-size: 12px; justify-content: center"
+					>
+						<div style="text-align: center">
+							<img
+								alt="enisa"
+								src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
+								style="width: 130px; height: 40px"
+							/>
+						</div>
+						<div style="text-align: center; color: #fff">
+							<span
+								>Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội</span
+							>
+						</div>
+					</div>
 
-        <main role="main" id="page">
-            <div class="px-5 pb-5">
-                <div class="row" id="content">
-                    <div><a href="benefits.html">Lợi ích</a></div>
-                    <div><a href="who-is-it-for.html">Phù hợp với?</a></div>
-                    <div><a href="functions.html" class="content-active">Chức năng</a></div>
-                    <div><a href="information-request.html">Thêm thông tin</a></div>
-                </div>
-                <h3 class="font-weight-normal pb-3">
-                    Quản lý năng lượng hiệu quả với iNERGY AMS20
-                </h3>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades01.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6">
-                            <h3 class="text-justify">
-                                Khả năng tích hợp và làm việc đa nền tảng
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNergy AMS20 có khả năng kết nối tới nhiều nền tảng dữ liệu khác nhau bao gồm iNERGY
-                                Monitor, các hệ SCADA, BMS hay các Cơ sở dữ liệu khác nhau có trong tổ chức. Ngoài ra
-                                người dùng có thể nhập dữ liệu về năng lượng bằng tay hoặc nhập file excel. Không cần
-                                thêm công cụ, phần mềm bổ xung nào phải cài đặt thêm trên thiết bị người dùng (điện
-                                thoại, máy tính, laptop, máy tính bảng,..) đều có thể dễ dàng truy cập và giám sát mọi
-                                lúc mọi nơi
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Trực quan hoá với dòng chảy năng lượng</h3>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/50001/image2.png" alt="" class="img-fluid">
-                    </div>
-                    <p>
-                        iNERGY AMS20 tự động phân tích cân bằng năng lượng, thể hiện dòng chảy sử dụng năng lượng một
-                        cách trực quan và tường minh. Người dùng có thể biết được một quá trình hay hệ thống thiết bị sử
-                        dụng những loại năng lượng nào với khối lượng bao nhiêu
-                    </p>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades04.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6">
-                            <h3 class="text-justify">
-                                Xem xét năng lượng
-                            </h3>
-                            <p class="text-justify py-3">
-                                Từ những dữ liệu được thu thập, iNERGY AMS20 tự động thực hiện các phân tích xem xét
-                                năng lượng theo tiêu chuẩn ISO 50001 bao gồm:
-                                - Phân tích năng lượng tiêu thụ trọng điểm
-                                - Phân tích khu vực sử dụng năng lượng trọng điểm
-                                - Tính toán tiềm năng, giải pháp tiết kiệm năng lượng
-                                - Lập kế hoạch thực hiện giải pháp tiết kiệm năng lượng
-                                - v.v..
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-end">
-                            <h3 class="text-justify">
-                                Thiết lập mục tiêu, chỉ tiêu và kế hoạch hành động
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNERGY AMS20 tự động tính toán tiềm năng tiết kiệm năng lượng, từ đó thiết lập được mục
-                                tiêu, chỉ tiêu. Tự động tìm kiếm các biện pháp tiết kiệm năng lượng và cơ hội cải tiến
-                                phù hợp nhất với tổ chức, từ các đề xuất trong quá trình xem xét năng lượng, do đó tạo
-                                thành các mục tiêu cải tiến.
-                            </p>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades05.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades06.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6">
-                            <h3 class="text-justify">
-                                Phân tích chỉ số hiệu quả sử dụng năng lượng.
-                            </h3>
-                            <p class="text-justify py-3">
-                                Thiết lập và tự động hóa việc giám sát các chỉ số hiệu quả sử dụng năng lượng. Tự động
-                                cảnh báo về bất kỳ sai lệch hoặc không phù hợp nào giúp đơn vị đưa ra các hành động khắc
-                                phục và phòng ngừa.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-end">
-                            <h3 class="text-justify">
-                                Tính toán đường cơ sở năng lượng.
-                            </h3>
-                            <p class="text-justify py-3">
-                                Dựa trên dữ liệu năng lượng và các biến tác động iNERGY AMS20 tự động phân tích tính
-                                toán đường cơ sở năng lượng một cách chính xác:
-                                - Thuật toán hồi quy đa biến tới 10 biến tác động
-                                - Đưa ra xu hướng sử dụng năng lượng
-                                - Dự báo năng lượng tiêu thụ trong tương lai
-                                - Giúp nhà quản lý đưa ra mục tiêu tiết kiệm năng lượng trong giai đoạn tiếp theo
-                            </p>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades07.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades08.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6">
-                            <h3 class="text-justify">
-                                Phân loại quản lý cảnh báo
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNergy AMS20 cho phép xác định phân loại các loại cảnh báo khác nhau, có thể được gán dễ
-                                dàng cho các thành viên khác nhau để thực hiện các cảnh báo chính xác đến người cần được
-                                cảnh báo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Xem lại việc quản lý.</h3>
-                    <p>
-                        Tất cả về tình trạng sử dụng năng lượng của tổ chức hay từng khu vực được báo cáo chỉ bằng một
-                        cú
-                        nhấp chuột. Truy vấn và trích xuất báo cáo mọi lúc, mọi nơi và dự báo năng lượng tiêu thụ trong
-                        tương lại với iNERGY AMS20.
-                    </p>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/50001/funcionalidades09.jpg" alt=""
-                            class="img-fluid">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades10.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 class="text-justify">
-                                Kiểm toán năng lượng.
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNERGY cung cấp dữ liệu và các báo cáo về tiêu thụ năng lượng , là công cụ hiệu quả và
-                                cần thiết cho quá trình kiểm toán năng lượng tại doanh nghiệp
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Tính toán giải pháp tiết kiệm năng lượng</h3>
-                    <p>
-                        iNERGY tự động tìm kiếm, đề xuất các giải pháp tiết kiệm năng lượng dựa trên hồ sơ thiết bị và
-                        vận hành của tổ chức. Cung cấp các công cụ tính toán phân tích hiệu quả đầu tư giải pháp tiết
-                        kiệm năng lượng, giúp đơn vị quản lý tạo lập hồ sơ thực hiện các giải pháp kỹ thuật tiết kiệm
-                        năng lượng.
-                    </p>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/50001/funcionalidades11.jpg" alt=""
-                            class="img-fluid">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 class="text-justify">
-                                Tạo báo cáo
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNergy AMS20 cung cấp một hệ thống linh hoạt để tạo báo cáo đơn giản, phân tích hiệu quả
-                                sử dụng năng lượng, có thể lập kế hoạch tạo và gửi báo cáo tự động. Ngoài ra, nó cho
-                                phép tích hợp với các báo cáo khách hàng hiện có (ở định dạng Excel)
-                            </p>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                            <img src="../../themes/assets/images/service/50001/funcionalidades12.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="div-function">
-                    <h3>Báo cáo năng lượng
-                    </h3>
-                    <div class="text-center pt-5 pb-4">
-                        <img src="../../themes/assets/images/service/50001/funcionalidades13-1.jpg" alt=""
-                            class="img-fluid">
-                        <img src="../../themes/assets/images/bg/list-inner.png" style="margin-top: -5%;" alt=""
-                            class="img-fluid">
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 class="text-justify" style="color: #96B536;">
-                                Báo cáo xem xét năng lượng
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNergy giúp bạn tổng hợp việc tiêu thụ năng lượng trong quá khứ, từ đấy giúp đơn vị có
-                                cái nhìn tổng thể đưa ra định hướng hay chú trọng quản lý các yếu tố nào.
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="../../themes/assets/images/service/50001/imgoptimtarifa.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="row py-3">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h3 class="text-justify" style="color: #96B536;">
-                                Báo cáo chỉ số hiệu quả năng lượng
-                            </h3>
-                            <p class="text-justify py-3">
-                                iNergy giúp bạn phân tích, tính toán chỉ số hiệu quả năng lượng hiện tại, so sánh các
-                                chỉ số với chỉ tiêu, cùng kỳ năm ngoái để đưa ra cảnh báo cần thiết
-                            </p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="../../themes/assets/images/service/50001/imgoptimpotencia.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                    <h3 class="text-justify" style="color: #96B536;">
-                        Báo cáo tình trạng quản lý năng lượng
-                    </h3>
-                    <div class="d-md-none d-lg-block">
-                        <div class="row">
-                            <div class="col-md-5 d-flex flex-column">
-                                <div class="text-justify py-3">
-                                    <p>
-                                        iNergy cung cấp các công cụ, báo cáo tiêu thụ năng lượng giúp các nhà quản lý
-                                        phân tích nguyên nhân và giải pháp khắc phục nhằm tránh các tổn thất trong tương
-                                        lai tối ưu hoá chi phí năng lượng.
-                                    </p>
-                                </div>
-                                <div class="text-justify py-3 d-flex align-items-center flex-grow-1">
-                                    <p class="font-italic p-3 mb-0 p-special">
-                                        Bao gồm việc tạo hóa đơn với giá mua điện được thiết lập
-                                        <br>
-                                        Giúp so sánh với các hoá đơn điện lực
-                                    </p>
-                                </div>
-                                <div class="text-justify py-3 d-flex align-items-end flex-grow-1">
-                                    <p class="font-italic p-3 mb-0 p-special">
-                                        iNergy cũng phân tích dữ liệu quá khứ và thông báo cho bạn về bất kỳ thay đổi
-                                        hoặc chênh lệch nào được tạo ra trong việc tiêu thụ . Với thông tin này, bạn có
-                                        thể phát hiện phân tích vấn đề và đưa ra biện pháp khắc phục phòng ngừa
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-7 text-center">
-                                <img src="../../themes/assets/images/service/50001/imgprefactura.jpg" class="img-fluid"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-md-block d-lg-none">
-                        <div class="d-flex flex-column">
-                            <div class="text-justify py-3">
-                                <p>
-                                    Possibility of generating your own billing on the 1st day of each month being
-                                    able
-                                    to predict and quote with that issued by the marketer considering all the
-                                    parameters
-                                    that affect it.
-                                </p>
-                            </div>
-                            <div class="text-justify py-3 d-flex align-items-center flex-grow-1">
-                                <p class="font-italic p-3 mb-0 p-special">
-                                    Includes generation of bills with the <span class="font-weight-bold">market rate
-                                        per
-                                        hour indexed</span> from
-                                    the updated prices published by the <span class="font-weight-bold">OMIE</span>.
-                                </p>
-                            </div>
-                            <div class="text-justify py-3 d-flex align-items-end flex-grow-1">
-                                <p class="font-italic p-3 mb-0 p-special">
-                                    The Smarkia smart billing also analyzes its data and <span
-                                        class="font-weight-bold">informs you of any
-                                        changes or disparities produced in its consumption</span>. With this
-                                    information, you can detect any problem immediately and correct it.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <img src="../../themes/assets/images/service/50001/imgprefactura.jpg" class="img-fluid"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <img src="../../themes/assets/images/bg/list-inner.png" alt="" class="img-fluid">
-                </div>
-                <div class="text-center mt-5">
-                    <a href="information-request.html">
-                        <button id="request-btn" class="btn btn-lg">Yêu cầu dùng thử
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </main>
-
-        <footer id="footer" class="pt-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-toyota.jpg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-inergy.jpg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-evn.png" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-thankhoangsan.png"
-                            alt="Alternate Text" style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-diana.svg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-md-none" id="main-footer">
-                <div style="display: flex; flex-direction: column; font-size: 12px; justify-content: center;">
-                    <div style="text-align:center;">
-                        <img alt="enisa" src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-                            style="width: 130px; height: 40px;">
-                    </div>
-                    <div style="text-align: center; color:#fff;">
-                        <span>Tầng 4, Tòa nhà Sông Đà 9, Số 2
-                            Nguyễn Hoàng, Mỹ Đình,
-                            Nam Từ Liêm, Hà Nội</span>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="social-content" style="margin-top: 10px;">
-                        <div>
-                            <a class="twitter" href="https://twitter.com" target="_blank"
-                                title="twitter Smarkia">&nbsp;</a>
-                        </div>
-                        <div>
-                            <a class="linkedin" href="http://www.linkedin.com" target="_blank"
-                                title="linkedin Smarkia">&nbsp;</a>
-                        </div>
-                        <div class="ml-2">
-                            <a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                Hệ</a>
-                        </div>
-                    </div>
-                    <div id="copyright" class="mt-3 text-center">
-                        © Copyright 2020 Amitech. All rights reserved.
-                    </div>
-                    <div class="row p-3 text-center">
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Legal Notice</a>
-                        </div>
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Privacy Policy</a>
-                        </div>
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Cookie Policy</a>
-                        </div>
-                        <div class="col-3">
-                            <a href="#" style="color: #fff;">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-none d-md-block" id="main-footer">
-                <div class="d-flex justify-content-between p-2" id="footer-top">
-                    <div style="display: flex; font-size: 12px;">
-                        <div style="display: flex; flex-direction: column; justify-content: center;">
-                            <img alt="enisa" src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-                                style="width: 130px; height: 40px; margin: 0 auto;">
-                            <div style="width: 200px;
-                                text-align: justify; color:#fff;">
-                                <span>Tầng 4, Tòa nhà Sông Đà 9, Số 2
-                                    Nguyễn Hoàng, Mỹ Đình,
-                                    Nam Từ Liêm, Hà Nội</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="social-content">
-                            <div>
-                                <a class="twitter" href="https://twitter.com" target="_blank"
-                                    title="twitter Smarkia">&nbsp;</a>
-                            </div>
-                            <div>
-                                <a class="linkedin" href="http://www.linkedin.com" target="_blank"
-                                    title="linkedin Smarkia">&nbsp;</a>
-                            </div>
-                            <div class="ml-2">
-                                <a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                    Hệ</a>
-                            </div>
-                        </div>
-                        <div id="copyright" class="mt-3">
-                            © Copyright 2020 Amitech. All rights reserved.
-                        </div>
-                        <div id="footer-menu" class="mt-2 text-right">
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Legal Notice</a>
-                            </div>
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Privacy Policy</a>
-                            </div>
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Cookie Policy</a>
-                            </div>
-                            <div class="pl-2">
-                                <a href="#">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row p-3">
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-vets.png" alt="" class="px-2"
-                            style="background-color: blueviolet;" />
-                    </div>
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-bocongthuong.png" alt=""
-                            style="height: 80px;" />
-                    </div>
-                    <div class=" col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-bank.jfif" alt="" style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-epu.jfif" alt="" style="height: 80px;" />
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <div onclick="scrollTopAnimated()" id="toTop">
-        <span></span>
-    </div>
-    <script src="../../lib/jquery/dist/jquery.min.js"></script>
-    <script src="../../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/site.js" asp-append-version="true"></script>
-</body>
-
+					<div class="d-flex flex-column justify-content-center">
+						<div class="social-content" style="margin-top: 10px">
+							<div>
+								<a
+									class="twitter"
+									href="https://twitter.com"
+									target="_blank"
+									title="twitter Smarkia"
+									>&nbsp;</a
+								>
+							</div>
+							<div>
+								<a
+									class="linkedin"
+									href="http://www.linkedin.com"
+									target="_blank"
+									title="linkedin Smarkia"
+									>&nbsp;</a
+								>
+							</div>
+							<div class="ml-2">
+								<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
+									>Liên Hệ</a
+								>
+							</div>
+						</div>
+						<div id="copyright" class="mt-3 text-center">
+							© Copyright 2020 Amitech. All rights reserved.
+						</div>
+						<div class="row p-3 text-center">
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Legal Notice</a>
+							</div>
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Privacy Policy</a>
+							</div>
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Cookie Policy</a>
+							</div>
+							<div class="col-3">
+								<a href="#" style="color: #fff">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none d-md-block" id="main-footer">
+					<div class="d-flex justify-content-between p-2" id="footer-top">
+						<div style="display: flex; font-size: 12px">
+							<div style="display: flex; flex-direction: column; justify-content: center">
+								<img
+									alt="enisa"
+									src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
+									style="width: 130px; height: 40px; margin: 0 auto"
+								/>
+								<div style="width: 200px; text-align: justify; color: #fff">
+									<span
+										>Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà
+										Nội</span
+									>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex flex-column justify-content-center">
+							<div class="social-content">
+								<div>
+									<a
+										class="twitter"
+										href="https://twitter.com"
+										target="_blank"
+										title="twitter Smarkia"
+										>&nbsp;</a
+									>
+								</div>
+								<div>
+									<a
+										class="linkedin"
+										href="http://www.linkedin.com"
+										target="_blank"
+										title="linkedin Smarkia"
+										>&nbsp;</a
+									>
+								</div>
+								<div class="ml-2">
+									<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
+										>Liên Hệ</a
+									>
+								</div>
+							</div>
+							<div id="copyright" class="mt-3">
+								© Copyright 2020 Amitech. All rights reserved.
+							</div>
+							<div id="footer-menu" class="mt-2 text-right">
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Legal Notice</a>
+								</div>
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Privacy Policy</a>
+								</div>
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Cookie Policy</a>
+								</div>
+								<div class="pl-2">
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row p-3">
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-vets.png"
+								alt=""
+								class="px-2"
+								style="background-color: blueviolet"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-bocongthuong.png"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-bank.jfif"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-epu.jfif"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div onclick="scrollTopAnimated()" id="toTop">
+			<span></span>
+		</div>
+		<script src="../../lib/jquery/dist/jquery.min.js"></script>
+		<script src="../../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../../js/site.js" asp-append-version="true"></script>
+	</body>
 </html>

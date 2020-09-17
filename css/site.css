@@ -650,6 +650,12 @@ a.contact:hover {
 	}
 }
 
+@media(min-width: 1200px) {
+	.iframe-video iframe {
+		padding: 0 200px;
+	}
+}
+
 @media (max-width: 768px) {
 	#content {
 		display: flex;

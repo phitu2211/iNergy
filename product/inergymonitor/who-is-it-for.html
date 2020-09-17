@@ -1,363 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="shortcut icon"
+			href="../../themes/assets/favicon.ico"
+			type="image/vnd.microsoft.icon"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
+		<link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/site.css" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="../../themes/assets/favicon.ico" type="image/vnd.microsoft.icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
-    <link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../css/site.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	<body>
+		<div class="container">
+			<header id="header">
+				<div class="container-fluid d-sm-none">
+					<div class="row">
+						<div class="col-5 d-flex align-items-center">
+							<a class="navbar-brand" href="../../index.html">
+								<img src="../../themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+							</a>
+						</div>
+						<div class="col-7">
+							<div class="d-flex flex-column px-2 py-1 justify-content-start">
+								<div id="language">
+									<span>VI</span>
+									<span>EN</span>
+								</div>
+								<div id="phone-number" style="font-size: 12px; text-align: right">
+									<span style="font-size: 12px">Tel</span>
+									+84 986 893 233
+								</div>
+								<div id="first-contact">
+									<a
+										class="contact1"
+										href="https://amitech.vn/lien-he/"
+										title="Contact with Smarkia"
+										>Liên Hệ</a
+									>
+								</div>
+							</div>
+						</div>
 
-</head>
+						<div id="div-menu" style="width: 100%">
+							<div class="d-flex justify-content-around" style="color: #fff" id="nav">
+								<div id="menu-2">
+									<span>GIỚI THIỆU</span>
+								</div>
+								<div id="menu-3">
+									<span>SẢN PHẨM</span>
+								</div>
+								<div id="menu-2">
+									<a href="../../partners.html">ĐỐI TÁC</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub-menu" id="sub-menu-2">
+						<div class="d-flex" style="padding: 16px 0px">
+							<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+							<a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
+							<a href="../../news.html" class="sub-menu-item">Tin tức</a>
+						</div>
+					</div>
+					<div class="sub-menu-1" id="sub-menu-3">
+						<div class="d-flex" style="padding: 16px 0px">
+							<a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+							<a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none d-sm-block">
+					<div class="d-flex justify-content-between">
+						<a class="navbar-brand" href="../../index.html">
+							<img
+								src="../../themes/assets/logo.png"
+								class="img-fluid"
+								id="logo"
+								class="d-inline-block align-top"
+								alt="Home"
+							/>
+						</a>
+						<div class="d-flex flex-column justify-content-center">
+							<div id="language">
+								<span>VI</span>
+								<span>EN</span>
+							</div>
+							<div id="phone-number">
+								<span>Tel</span>
+								+84 986 893 233
+							</div>
+						</div>
+					</div>
 
-<body>
-    <div class="container">
-        <header id="header">
-            <div class="container-fluid d-sm-none">
-                <div class="row">
-                    <div class="col-5 d-flex align-items-center">
-                        <a class="navbar-brand" href="../../index.html">
-                            <img src="../../themes/assets/logo.png" id="logo" style="height:60px;" alt="Home">
-                        </a>
-                    </div>
-                    <div class="col-7">
-                        <div class="d-flex flex-column px-2 py-1 justify-content-start">
-                            <div id="language">
-                                <span>VI</span>
-                                <span>EN</span>
-                            </div>
-                            <div id="phone-number" style="font-size: 12px; text-align:right">
-                                <span style="font-size: 12px;">Tel</span>
-                                +34 902 070 903
-                            </div>
-                            <div id="first-contact">
-                                <a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                    Hệ</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="d-flex justify-content-between" id="div-menu">
+						<div class="d-flex justify-content-around" style="color: #fff" id="nav">
+							<div id="menu">
+								<span>GIỚI THIỆU</span>
+							</div>
+							<div id="menu-1">
+								<span>SẢN PHẨM</span>
+							</div>
+							<div id="menu">
+								<a href="../../partners.html">ĐỐI TÁC</a>
+							</div>
+						</div>
+						<div class="d-flex flex-column justify-content-start">
+							<div style="margin-right: 10px; margin-bottom: 10px">
+								<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
+									>Liên Hệ</a
+								>
+							</div>
+						</div>
+					</div>
 
-                    <div id="div-menu" style="width: 100%;">
-                        <div class="d-flex justify-content-around" style="color: #fff;" id="nav">
-                            <div id="menu-2">
-                                <span>GIỚI THIỆU</span>
-                            </div>
-                            <div id="menu-3">
-                                <span>SẢN PHẨM</span>
-                            </div>
-                            <div id="menu-2">
-                                <a href="../../partners.html">ĐỐI TÁC</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-menu" id="sub-menu-2">
-                    <div class="d-flex" style="padding: 16px 0px;">
-                        <a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-                        <a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-                        <a href="../../news.html" class="sub-menu-item">Tin tức</a>
-                    </div>
-                </div>
-                <div class="sub-menu-1" id="sub-menu-3">
-                    <div class="d-flex" style="padding: 16px 0px;">
-                        <a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-                        <a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-none d-sm-block">
-                <div class="d-flex justify-content-between">
-                    <a class="navbar-brand" href="../../index.html">
-                        <img src="../../themes/assets/logo.png" class="img-fluid" id="logo"
-                            class="d-inline-block align-top" alt="Home">
-                    </a>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div id="language">
-                            <span>VI</span>
-                            <span>EN</span>
-                        </div>
-                        <div id="phone-number">
-                            <span>Tel</span>
-                            +34 902 070 903
-                        </div>
-                    </div>
-                </div>
+					<div class="sub-menu" id="sub-menu">
+						<div class="d-flex" style="padding: 16px 25px">
+							<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+							<a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
+							<a href="../../news.html" class="sub-menu-item">Tin tức</a>
+						</div>
+					</div>
+					<div class="sub-menu-1" id="sub-menu-1">
+						<div class="d-flex" style="padding: 16px 25px">
+							<a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+							<a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+						</div>
+					</div>
+				</div>
+			</header>
 
-                <div class="d-flex justify-content-between" id="div-menu">
-                    <div class="d-flex justify-content-around" style="color: #fff;" id="nav">
-                        <div id="menu">
-                            <span>GIỚI THIỆU</span>
-                        </div>
-                        <div id="menu-1">
-                            <span>SẢN PHẨM</span>
-                        </div>
-                        <div id="menu">
-                            <a href="../../partners.html">ĐỐI TÁC</a>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-start">
-                        <div style="margin-right: 10px; margin-bottom: 10px;">
-                            <a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                Hệ</a>
-                        </div>
-                    </div>
-                </div>
+			<main role="main" id="page">
+				<div class="px-5 pb-5">
+					<div class="row" id="content">
+						<div><a href="benefits.html">Lợi ích</a></div>
+						<div><a href="who-is-it-for.html" class="content-active">Phù hợp với?</a></div>
+						<div><a href="functions.html">Chức năng</a></div>
+						<div><a href="information-request.html">Thêm thông tin</a></div>
+					</div>
+					<div class="p-3">
+						<div class="row py-3">
+							<div class="col-md-3 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/icon-industria02.png"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-9">
+								<h3 class="font-weight-normal"> Ngành công nghiệp </h3>
+								<p class="text-justify">
+									Năng lượng là rất quan trọng trong bất kỳ loại hình Công nghiệp nào (Điện tử, dệt
+									may, Hóa dầu, Thép, Sản xuất xi măng, Ô tô, v.v.). iNergy cung cấp hiển thị dữ
+									liệu thời gian thực chi tiết về mức tiêu thụ, chỉ số hiệu quả năng lượng của các
+									quy trình, hệ thống thiết bị hoặc các khu vực khác nhau để cải thiện chi phí sản
+									xuất nhờ việc giám sát, phân tích.
+								</p>
+							</div>
+						</div>
+						<div class="row py-3">
+							<div class="col-md-3 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/icon-terciario02.png"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-9">
+								<h3 class="font-weight-normal"> Toà nhà, trung tâm thương mại </h3>
+								<p class="text-justify">
+									Trong lĩnh vực Toà nhà chung cư, Trung tâm mua sắm, Văn phòng, Ngân hàng, Cơ quan
+									hành chính công, Khách sạn, Giao thông vận tải, v.v., phần lớn mức tiêu thụ năng
+									lượng là do con người sử dụng. iNergy đơn giản hóa việc quản lý năng lượng giúp
+									tính toán chính xác, thiết lập định mức tiêu thụ năng lượng, so sánh các chỉ số
+									nội bộ hoặc với các toà nhà, trung tâm khác trong cùng lĩnh vực.
+								</p>
+							</div>
+						</div>
+						<div class="row py-3">
+							<div class="col-md-3 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/icon-mineria.png"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-9">
+								<h3 class="font-weight-normal"> Khai thác mỏ </h3>
+								<p class="text-justify">
+									Trong khai thác mỏ, chi phí năng lượng thường có tác động rất lớn đến chi phí sản
+									xuất, do đó việc giám sát quản lý năng lượng là rất quan trọng. iNergy được thiết
+									kế để giúp tiết kiệm năng lượng trong các công ty khai thác mỏ, giảm chi phí sản
+									xuất, giảm tác động môi trường.
+								</p>
+							</div>
+						</div>
+						<div class="row py-3">
+							<div class="col-md-3 text-center">
+								<img
+									src="../../themes/assets/images/service/50001/icon-smartcity02.png"
+									class="img-fluid"
+									alt=""
+								/>
+							</div>
+							<div class="col-md-9">
+								<h3 class="font-weight-normal"> Thành phố thông minh </h3>
+								<p class="text-justify">
+									Trong các thành phố thông minh, để có thể giám sát điều khiển thông minh điều quan
+									trọng là việc thu thập dữ liệu từ các cảm biến bao gồm dữ liệu về tiêu thụ năng
+									lượng. iNergy có khả năng thu thập, kiểm soát, giám sát, lưu trữ và có thể quản lý
+									khối lượng lớn dữ liệu nhằm mục đích phân tích tính toán và điều hành thành phố
+									thông minh.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="text-center mt-5">
+						<a href="information-request.html">
+							<button id="request-btn" class="btn btn-lg">Yêu cầu dùng thử </button>
+						</a>
+					</div>
+				</div>
+			</main>
 
-                <div class="sub-menu" id="sub-menu">
-                    <div class="d-flex" style="padding: 16px 25px;">
-                        <a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-                        <a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-                        <a href="../../news.html" class="sub-menu-item">Tin tức</a>
-                    </div>
-                </div>
-                <div class="sub-menu-1" id="sub-menu-1">
-                    <div class="d-flex" style="padding: 16px 25px;">
-                        <a href="benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-                        <a href="../inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+			<footer id="footer" class="pt-2">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-toyota.jpg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-inergy.jpg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-evn.png"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-2 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-thankhoangsan.png"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 text-center p-2">
+							<img
+								class="img-fluid"
+								src="../../themes/assets/images/logo-diana.svg"
+								alt="Alternate Text"
+								style="height: 80px"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-md-none" id="main-footer">
+					<div
+						style="display: flex; flex-direction: column; font-size: 12px; justify-content: center"
+					>
+						<div style="text-align: center">
+							<img
+								alt="enisa"
+								src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
+								style="width: 130px; height: 40px"
+							/>
+						</div>
+						<div style="text-align: center; color: #fff">
+							<span
+								>Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội</span
+							>
+						</div>
+					</div>
 
-        <main role="main" id="page">
-            <div class="px-5 pb-5">
-                <div class="row" id="content">
-                    <div><a href="benefits.html">Lợi ích</a></div>
-                    <div><a href="who-is-it-for.html" class="content-active">Phù hợp với?</a></div>
-                    <div><a href="functions.html">Chức năng</a></div>
-                    <div><a href="information-request.html">Thêm thông tin</a></div>
-                </div>
-                <div class="p-3">
-                    <div class="row py-3">
-                        <div class="col-md-3 text-center">
-                            <img src="../../themes/assets/images/service/50001/icon-industria02.png" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-9">
-                            <h3 class="font-weight-normal">
-                                Ngành công nghiệp
-                            </h3>
-                            <p class="text-justify">
-                                Năng lượng là rất quan trọng trong bất kỳ loại hình Công nghiệp nào (Điện tử, dệt may,
-                                Hóa dầu, Thép, Sản xuất xi măng, Ô tô, v.v.). iNergy cung cấp hiển thị dữ liệu thời gian
-                                thực chi tiết về mức tiêu thụ, chỉ số hiệu quả năng lượng của các quy trình, hệ thống
-                                thiết bị hoặc các khu vực khác nhau để cải thiện chi phí sản xuất nhờ việc giám sát,
-                                phân tích.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row py-3">
-                        <div class="col-md-3 text-center">
-                            <img src="../../themes/assets/images/service/50001/icon-terciario02.png" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-9">
-                            <h3 class="font-weight-normal">
-                                Toà nhà, trung tâm thương mại
-                            </h3>
-                            <p class="text-justify">
-                                Trong lĩnh vực Toà nhà chung cư, Trung tâm mua sắm, Văn phòng, Ngân hàng, Cơ quan hành
-                                chính công, Khách sạn, Giao thông vận tải, v.v., phần lớn mức tiêu thụ năng lượng là do
-                                con người sử dụng. iNergy đơn giản hóa việc quản lý năng lượng giúp tính toán chính xác,
-                                thiết lập định mức tiêu thụ năng lượng, so sánh các chỉ số nội bộ hoặc với các toà nhà,
-                                trung tâm khác trong cùng lĩnh vực.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row py-3">
-                        <div class="col-md-3 text-center">
-                            <img src="../../themes/assets/images/service/50001/icon-mineria.png" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-9">
-                            <h3 class="font-weight-normal">
-                                Khai thác mỏ
-                            </h3>
-                            <p class="text-justify">
-                                Trong khai thác mỏ, chi phí năng lượng thường có tác động rất lớn đến chi phí sản xuất,
-                                do đó việc giám sát quản lý năng lượng là rất quan trọng. iNergy được thiết kế để giúp
-                                tiết kiệm năng lượng trong các công ty khai thác mỏ, giảm chi phí sản xuất, giảm tác
-                                động môi trường.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row py-3">
-                        <div class="col-md-3 text-center">
-                            <img src="../../themes/assets/images/service/50001/icon-smartcity02.png" class="img-fluid"
-                                alt="">
-                        </div>
-                        <div class="col-md-9">
-                            <h3 class="font-weight-normal">
-                                Thành phố thông minh
-                            </h3>
-                            <p class="text-justify">
-                                Trong các thành phố thông minh, để có thể giám sát điều khiển thông minh điều quan trọng
-                                là việc thu thập dữ liệu từ các cảm biến bao gồm dữ liệu về tiêu thụ năng lượng. iNergy
-                                có khả năng thu thập, kiểm soát, giám sát, lưu trữ và có thể quản lý khối lượng lớn dữ
-                                liệu nhằm mục đích phân tích tính toán và điều hành thành phố thông minh.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <a href="information-request.html">
-                        <button id="request-btn" class="btn btn-lg">Yêu cầu dùng thử
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </main>
+					<div class="d-flex flex-column justify-content-center">
+						<div class="social-content" style="margin-top: 10px">
+							<div>
+								<a
+									class="twitter"
+									href="https://twitter.com"
+									target="_blank"
+									title="twitter Smarkia"
+									>&nbsp;</a
+								>
+							</div>
+							<div>
+								<a
+									class="linkedin"
+									href="http://www.linkedin.com"
+									target="_blank"
+									title="linkedin Smarkia"
+									>&nbsp;</a
+								>
+							</div>
+							<div class="ml-2">
+								<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
+									>Liên Hệ</a
+								>
+							</div>
+						</div>
+						<div id="copyright" class="mt-3 text-center">
+							© Copyright 2020 Amitech. All rights reserved.
+						</div>
+						<div class="row p-3 text-center">
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Legal Notice</a>
+							</div>
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Privacy Policy</a>
+							</div>
+							<div class="col-3" style="border-right: 1px solid #fff">
+								<a href="#" style="color: #fff">Cookie Policy</a>
+							</div>
+							<div class="col-3">
+								<a href="#" style="color: #fff">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid d-none d-md-block" id="main-footer">
+					<div class="d-flex justify-content-between p-2" id="footer-top">
+						<div style="display: flex; font-size: 12px">
+							<div style="display: flex; flex-direction: column; justify-content: center">
+								<img
+									alt="enisa"
+									src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
+									style="width: 130px; height: 40px; margin: 0 auto"
+								/>
+								<div style="width: 200px; text-align: justify; color: #fff">
+									<span
+										>Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà
+										Nội</span
+									>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex flex-column justify-content-center">
+							<div class="social-content">
+								<div>
+									<a
+										class="twitter"
+										href="https://twitter.com"
+										target="_blank"
+										title="twitter Smarkia"
+										>&nbsp;</a
+									>
+								</div>
+								<div>
+									<a
+										class="linkedin"
+										href="http://www.linkedin.com"
+										target="_blank"
+										title="linkedin Smarkia"
+										>&nbsp;</a
+									>
+								</div>
+								<div class="ml-2">
+									<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
+										>Liên Hệ</a
+									>
+								</div>
+							</div>
+							<div id="copyright" class="mt-3">
+								© Copyright 2020 Amitech. All rights reserved.
+							</div>
+							<div id="footer-menu" class="mt-2 text-right">
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Legal Notice</a>
+								</div>
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Privacy Policy</a>
+								</div>
+								<div class="px-2" style="border-right: 1px solid #fff">
+									<a href="#">Cookie Policy</a>
+								</div>
+								<div class="pl-2">
+									<a href="#">Contact</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row p-3">
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-vets.png"
+								alt=""
+								class="px-2"
+								style="background-color: blueviolet"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-bocongthuong.png"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-bank.jfif"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
+							<img
+								src="../../themes/assets/images/footer/logo-epu.jfif"
+								alt=""
+								style="height: 80px"
+							/>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-        <footer id="footer" class="pt-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-toyota.jpg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-inergy.jpg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-evn.png" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                    <div class="col-md-2 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-thankhoangsan.png"
-                            alt="Alternate Text" style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 text-center p-2">
-                        <img class="img-fluid" src="../../themes/assets/images/logo-diana.svg" alt="Alternate Text"
-                            style="height: 80px;" />
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-md-none" id="main-footer">
-                <div style="display: flex; flex-direction: column; font-size: 12px; justify-content: center;">
-                    <div style="text-align:center;">
-                        <img alt="enisa" src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-                            style="width: 130px; height: 40px;">
-                    </div>
-                    <div style="text-align: center; color:#fff;">
-                        <span>Tầng 4, Tòa nhà Sông Đà 9, Số 2
-                            Nguyễn Hoàng, Mỹ Đình,
-                            Nam Từ Liêm, Hà Nội</span>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="social-content" style="margin-top: 10px;">
-                        <div>
-                            <a class="twitter" href="https://twitter.com" target="_blank"
-                                title="twitter Smarkia">&nbsp;</a>
-                        </div>
-                        <div>
-                            <a class="linkedin" href="http://www.linkedin.com" target="_blank"
-                                title="linkedin Smarkia">&nbsp;</a>
-                        </div>
-                        <div class="ml-2">
-                            <a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                Hệ</a>
-                        </div>
-                    </div>
-                    <div id="copyright" class="mt-3 text-center">
-                        © Copyright 2020 Amitech. All rights reserved.
-                    </div>
-                    <div class="row p-3 text-center">
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Legal Notice</a>
-                        </div>
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Privacy Policy</a>
-                        </div>
-                        <div class="col-3" style="border-right: 1px solid #fff;">
-                            <a href="#" style="color: #fff;">Cookie Policy</a>
-                        </div>
-                        <div class="col-3">
-                            <a href="#" style="color: #fff;">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid d-none d-md-block" id="main-footer">
-                <div class="d-flex justify-content-between p-2" id="footer-top">
-                    <div style="display: flex; font-size: 12px;">
-                        <div style="display: flex; flex-direction: column; justify-content: center;">
-                            <img alt="enisa" src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-                                style="width: 130px; height: 40px; margin: 0 auto;">
-                            <div style="width: 200px;
-                                text-align: justify; color:#fff;">
-                                <span>Tầng 4, Tòa nhà Sông Đà 9, Số 2
-                                    Nguyễn Hoàng, Mỹ Đình,
-                                    Nam Từ Liêm, Hà Nội</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="social-content">
-                            <div>
-                                <a class="twitter" href="https://twitter.com" target="_blank"
-                                    title="twitter Smarkia">&nbsp;</a>
-                            </div>
-                            <div>
-                                <a class="linkedin" href="http://www.linkedin.com" target="_blank"
-                                    title="linkedin Smarkia">&nbsp;</a>
-                            </div>
-                            <div class="ml-2">
-                                <a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">Liên
-                                    Hệ</a>
-                            </div>
-                        </div>
-                        <div id="copyright" class="mt-3">
-                            © Copyright 2020 Amitech. All rights reserved.
-                        </div>
-                        <div id="footer-menu" class="mt-2 text-right">
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Legal Notice</a>
-                            </div>
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Privacy Policy</a>
-                            </div>
-                            <div class="px-2" style="border-right: 1px solid #fff;">
-                                <a href="#">Cookie Policy</a>
-                            </div>
-                            <div class="pl-2">
-                                <a href="#">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row p-3">
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-vets.png" alt="" class="px-2"
-                            style="background-color: blueviolet;" />
-                    </div>
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-bocongthuong.png" alt=""
-                            style="height: 80px;" />
-                    </div>
-                    <div class=" col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-bank.jfif" alt="" style="height: 80px;" />
-                    </div>
-                    <div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-                        <img src="../../themes/assets/images/footer/logo-epu.jfif" alt="" style="height: 80px;" />
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <div onclick="scrollTopAnimated()" id="toTop">
-        <span></span>
-    </div>
-    <script src="../../lib/jquery/dist/jquery.min.js"></script>
-    <script src="../../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../js/site.js" asp-append-version="true"></script>
-</body>
-
+		<script src="../../lib/jquery/dist/jquery.min.js"></script>
+		<script src="../../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="../../js/site.js" asp-append-version="true"></script>
+	</body>
 </html>
