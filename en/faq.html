@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="../themes/assets/favicon.ico" type="image/vnd.microsoft.icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
+	<link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../css/site.css" />
+</head>
+
+<body>
+	<div class="container">
+		<header id="header">
+			<!-- MOBILE -->
+			<div class="container-fluid d-md-none header">
+				<div class="row">
+					<div class="col-7 d-flex align-items-center">
+						<a href="index.html">
+							<img src="../themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+						</a>
+					</div>
+					<div class="col-5">
+						<label for="showNav" class="nav-toggle-label"><span></span></label>
+					</div>
+				</div>
+			</div>
+
+			<input type="checkbox" id="showNav" class="d-none show-nav nav-toggle" />
+			<div class="menu-mobile">
+				<div class="p-3">
+					<div class="icon-close">
+						<label for="showNav" class="nav-toggle-label-close"><span></span></label>
+					</div>
+					<nav class="mobile-nav">
+						<ul class="list-menu">
+							<li class="item-menu">
+								<a style="color: #fff" class="menu-inner">ABOUT US</a><span class="icon-right"></span>
+								<ul class="sub-menu-mobile">
+									<li class="item-sub-menu"><a href="inergy.html">iNERGY</a></li>
+									<li class="item-sub-menu"><a href="faq.html">FAQ</a></li>
+								</ul>
+							</li>
+							<li class="item-menu">
+								<a style="color: #fff" class="menu-inner">PRODUCT</a><span class="icon-right"></span>
+								<ul class="sub-menu-mobile">
+									<li class="item-sub-menu"><a href="product/inergymonitor/benefits.html">iNERGY Monitor</a></li>
+									<li class="item-sub-menu"><a href="product/inergyams20/benefits.html">iNERGY AMS20</a></li>
+								</ul>
+							</li>
+							<li class="item-menu">
+								<a href="partners.html" class="menu-inner">PARTNERS</a>
+							</li>
+						</ul>
+					</nav>
+					<hr color="#fff" />
+					<div id="language" class="text-left">
+						<a href="../index.html"><span style="border-left: none; color: #fff; padding-left: 0">VI</span></a>
+						<a href="index.html"><span style="color: #a8ca24; border-left: 1px solid #fff" class="en">EN</span></a>
+					</div>
+					<div id="phone-number" style="color: #fff; padding: 15px 0">
+						<span>Tel</span>
+						+84 986 893 233
+					</div>
+					<div>
+						<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+							Contact
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid d-none d-md-block header">
+				<div class="d-flex justify-content-between header-content">
+					<a href="index.html">
+						<img src="../themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top"
+							alt="Home" />
+					</a>
+					<div class="d-flex flex-column justify-content-center">
+						<div id="language"><a href="../index.html"><span style="border-left: none;">VI</span></a>
+							<a href="index.html"><span style="color: #a8ca24;" class="en">EN</span></a>
+						</div>
+						<div id="phone-number">
+							<span>Tel</span>
+							+84 986 893 233
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between" id="div-menu">
+					<div class="d-flex justify-content-around" id="nav">
+						<div id="menu">
+							<span>ABOUT US</span>
+						</div>
+						<div id="menu-1">
+							<span>PRODUCT</span>
+						</div>
+						<div id="menu">
+							<a href="partners.html">PARTNERS</a>
+						</div>
+					</div>
+					<div class="d-flex flex-column justify-content-start">
+						<div>
+							<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+								Contact
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="sub-menu" id="sub-menu">
+					<div class="d-flex">
+						<a href="inergy.html" class="sub-menu-item">iNERGY</a>
+						<a href="faq.html" class="sub-menu-item">FAQ</a>
+					</div>
+				</div>
+				<div class="sub-menu-1" id="sub-menu-1">
+					<div class="d-flex">
+						<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+						<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main role="main" id="page">
+			<div class="py-md-2 pl-md-4 p-2 url">
+				Home > About Us >
+				<span class="font-weight-bold">Frequently Asked Questions</span>
+			</div>
+			<div class="container" style="padding: 20px">
+				<h2>Frequently Asked Questions</h2>
+				<div class="faq">
+					<div class="question" data-for="answer1" onclick="showAnswer(this)">
+						<span>Can I install iNERGY on my computer or on one of my servers?</span>
+					</div>
+					<div class="answer" id="answer1">
+						<p>
+							iNERGY is a software platform, so you can install it on your own computers or on your servers. However, we
+							recommend using iNERGY's synchronous server for the most efficient and stable operation.
+						</p>
+					</div>
+					<div class="question" data-for="answer2" onclick="showAnswer(this)">
+						<span>
+							Do I need to purchase a license for each computer where I want to use iNERGY?</span>
+					</div>
+					<div class="answer" id="answer2">
+						<p>iNERGY does not operate under the licensing system. You can use iNERGY from any device with an intranet
+							in your unit or the internet.</p>
+					</div>
+					<div class="question" data-for="answer3" onclick="showAnswer(this)">
+						<span>Can i use iNERGY on my Tablet or mobile phone?</span>
+					</div>
+					<div class="answer" id="answer3">
+						<p>Yes. iNERGY is ready to be used on any device, it can be your desktop or laptop, on your Tablet or
+							Smartphone.
+						</p>
+					</div>
+					<div class="question" data-for="answer4" onclick="showAnswer(this)">
+						<span>Do I have to pay for iNERGY version updates?</span>
+					</div>
+					<div class="answer" id="answer4">
+						<p>No. You don’t have to pay any additional cost for iNERGY version updates.
+						</p>
+					</div>
+					<div class="question" data-for="answer5" onclick="showAnswer(this)">
+						<span>What is iNERGY for?</span>
+					</div>
+					<div class="answer" id="answer5">
+						<p>iNERGY helps you monitor and automatically calculate analytics from your metering devices or from
+							collected energy data. iNERGY offers you a set of functions so that you can easily set up your
+							organization's Energy Management System.
+						</p>
+					</div>
+					<div class="question" data-for="answer6" onclick="showAnswer(this)">
+						<span>How can iNERGY connect and read data stored on my measuring equipment?
+						</span>
+					</div>
+					<div class="answer" id="answer6">
+						<p>iNERGY sets up the connections standardly to your electronic devices via the necessary physical adapters.
+						</p>
+					</div>
+					<div class="question" data-for="answer7" onclick="showAnswer(this)">
+						<span>Is the process of reading the data by iNERGY automatic or do I have to execute it?</span>
+					</div>
+					<div class="answer" id="answer7">
+						<p>It is completely automatic. You will not have to do anything to get all energy data from the metering
+							device. You can check or review the data history stored.
+						</p>
+					</div>
+					<div class="question" data-for="answer8" onclick="showAnswer(this)">
+						<span>Can iNERGY connect directly to my measuring equipment without installing any additional
+							hardware?</span>
+					</div>
+					<div class="answer" id="answer8">
+						<p>Yes, as long as your device is ready to be connected according to a compatible standard communication
+							protocol and store the data you need to monitor.
+						</p>
+					</div>
+					<div class="question" data-for="answer9" onclick="showAnswer(this)">
+						<span>What is needed for a device to be ready to be integrated into iNERGY?</span>
+					</div>
+					<div class="answer" id="answer9">
+						<p>Basically, as long as your measuring device has a standard communication port (RS485, rs232, Lan, ..)</p>
+					</div>
+					<div class="question" data-for="answer10" onclick="showAnswer(this)">
+						<span>I have a mechanical meter that cannot be fared, is there any method to transfer this data into iNERGY
+							so that it monitors it?</span>
+					</div>
+					<div class="answer" id="answer10">
+						<p>Yes. In these cases, iNERGY allows you to receive data manually, you can also import the data you want to
+							track in the Excel template. You can import this template with a simple click.</p>
+					</div>
+					<div class="question" data-for="answer11" onclick="showAnswer(this)">
+						<span>
+							Can I use iNERGY to track a pulse counter, transient value probe or any other meter that does not store
+							timed recorded measurements?
+						</span>
+					</div>
+					<div class="answer" id="answer11">
+						<p>Yes, as long as you use an intermediate converter that iNERGY can connect to. It will store the values
+							you want to monitor.</p>
+					</div>
+					<div class="question" data-for="answer12" onclick="showAnswer(this)">
+						<span>Can iNERGY extract the information I want to track from my SCADA, BMS or something similar?</span>
+					</div>
+					<div class="answer" id="answer12">
+						<p>Yes, as long as you use a compatible database and grant us access to it, either directly or using an API
+							service. Besides, you have to note us the information in a plain FTP format that we can access to.
+						</p>
+					</div>
+					<div class="question" data-for="answer13" onclick="showAnswer(this)">
+						<span>Is iNERGY ready to monitor any kind of energy?</span>
+					</div>
+					<div class="answer" id="answer13">
+						<p>Yes. iNERGY is a multi-protocol platform whereby you can control your electricity, oil, gas, water, ...
+							or any other energy source you use.</p>
+					</div>
+					<div class="question" data-for="answer14" onclick="showAnswer(this)">
+						<span>Does iNERGY only monitor energy?</span>
+					</div>
+					<div class="answer" id="answer14">
+						<p>
+							With iNERGY, you can keep track on any kind of measurable data: temperature, humidity, production level,
+							etc... This will allow you to generate the KPI you need (kwh / output, kwh / m3,…).
+						</p>
+					</div>
+					<div class="question" data-for="answer15" onclick="showAnswer(this)">
+						<span>Is iNERGY a single product or is it multiple?</span>
+					</div>
+					<div class="answer" id="answer15">
+						<p>iNERGY is a software system that provides various products related to energy monitoring and management.
+							Currently iNERGY MONITOR and iNERGY AMS20 are available. In addition, we also provide advanced services
+							according to customer requirements.
+						</p>
+					</div>
+					<div class="question" data-for="answer16" onclick="showAnswer(this)">
+						<span>What is the difference between iNERGY MONITOR and iNERGY AMS20?</span>
+					</div>
+					<div class="answer" id="answer16">
+						<p>
+							iNERGY MONITOR is a monitoring product that allows viewing and extracting the values recorded by your
+							watch, then it can manage the alerts and periodic reports. iNERGY AMS20 will allow you to take the leap
+							from monitoring to ISO 50001 process energy management, as it provides you with tools for in-depth
+							analysis like baselines. energy, energy efficiency index, energy saving calculation. It is consulted on
+							design and construction by leading energy experts.
+						</p>
+					</div>
+					<div class="question" data-for="answer17" onclick="showAnswer(this)">
+						<span>Is iNERGY AMS only for companies looking to implement or certify systems based on ISO 50001?</span>
+					</div>
+					<div class="answer" id="answer17">
+						<p>The iNERGY 50001 is designed for any organization that wants to create a digital energy management system
+							simly and efficiently. Therefore, its use is not limited to whether the organization who wants to be
+							certified. Organizations that have been and want to achieve ISO 50001 certification will be able to easily
+							use them, as iNERGY meets all of their requirements.</p>
+					</div>
+					<div class="question" data-for="answer18" onclick="showAnswer(this)">
+						<span>How does iNERGY comply with the law "Using energy economically and efficiently"?</span>
+					</div>
+					<div class="answer" id="answer18">
+						<p>iNERGY is designed to provide tools to meet legal requirements on "Using energy efficiently and
+							efficiently" including:
+						</p>
+						<ul class="mb-0">
+							<li>Meet requirements for building and applying an energy management model</li>
+							<li>Annual plan reporting tool according to Circular 09 BCT</li>
+							<li>5-year use plan tool according to Circular 09 BCT</li>
+						</ul>
+					</div>
+					<div class="question" data-for="answer19" onclick="showAnswer(this)">
+						<span>Do I have to pay annual usage fee for iNERGY?</span>
+					</div>
+					<div class="answer" id="answer19">
+						<p>No. iNERGY is sold to customers as a permanent package, customers can use it permanently without any
+							additional maintenance costs.</p>
+					</div>
+					<div class="question" data-for="answer20" onclick="showAnswer(this)">
+						<span>How many measuring devices can iNERGY connect to?</span>
+					</div>
+					<div class="answer" id="answer20">
+						<p>Basically iNERGY has the ability to connect to an unlimited number of measuring equipment. However, for
+							each specific requirement, we will have the configuration to meet your needs.</p>
+					</div>
+					<div class="question" data-for="answer21" onclick="showAnswer(this)">
+						<span>At present, I want to track 50 metrics, but next year I will have to expand my tracking further. Will
+							I expand my device?</span>
+					</div>
+					<div class="answer" id="answer21">
+						<p>Yes. At any time, you can extend your score. Depending on the number of measurement points you need to
+							expand, do you need to invest more costs or not?
+						</p>
+					</div>
+					<div class="question" data-for="answer22" onclick="showAnswer(this)">
+						<span>What should I do if I want to buy iNERGY?</span>
+					</div>
+					<div class="answer" id="answer22">
+						<p>You can contact us via our
+							<a href="https://amitech.vn/lien-he/">official page.</a>You also can contact to one of our partners. We
+							will be happy to assist you and advise you the best partner for your needs.</p>
+					</div>
+					<div class="question" data-for="answer23" onclick="showAnswer(this)">
+						<span>Does iNERGY sell measuring hardware or equipment?</span>
+					</div>
+					<div class="answer" id="answer23">
+						<p>We only do provide the software. However, we can help you contact to one of our partners who can advise
+							you and give you what you need.</p>
+					</div>
+					<div class="question" data-for="answer24" onclick="showAnswer(this)">
+						<span>Does iNERGY sell energy consulting services?</span>
+					</div>
+					<div class="answer" id="answer24">
+						<p>Yes. iNERGY offers energy consulting services including Energy Audit and energy management model building
+							according to ISO 50001. In addition, we can help you contact one of our providing partners providing you
+							the services you need.</p>
+					</div>
+					<div class="question last" data-for="answer25" onclick="showAnswer(this)">
+						<span>Will I receive customer service after sales?</span>
+					</div>
+					<div class="answer last" id="answer25">
+						<p>
+							Of course. When you have signed with iNERGY, you will receive personalized training to familiarize
+							yourself with the platform. After that, iNERGY support team will resolve all issues and issues that may
+							arise regarding to iNERGY MONITOR or iNERGY50001.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 text-center py-md-5">
+						<img src="../themes/assets/images/logo-toyota.jpg" alt="Alternate Text" />
+					</div>
+					<div class="col-md-3 text-center py-md-5">
+						<img src="../themes/assets/images/logo-evn.png" alt="Alternate Text" />
+					</div>
+					<div class="col-md-3 text-center py-md-5">
+						<img src="../themes/assets/images/logo-thankhoangsan.png" alt="Alternate Text" />
+					</div>
+					<div class="col-md-3 text-center py-md-5">
+						<img src="../themes/assets/images/unicharm.jpg" alt="Alternate Text" />
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid d-md-none" id="main-footer">
+				<div style="display: flex; flex-direction: column; font-size: 16px; justify-content: center">
+					<div style="text-align: center">
+						<img alt="Amitech" src="../themes/assets/images/logo-amitech.png" />
+					</div>
+					<div style="text-align: center; color: #fff">
+						<span> Hotline: 024 22 33 44 55 </span>
+					</div>
+					<div style="text-align: left; color: #fff">
+						<span>
+							Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội
+						</span>
+					</div>
+				</div>
+
+				<div class="d-flex flex-column justify-content-center">
+					<div class="social-content" style="margin-top: 10px">
+						<div>
+							<a class="twitter" href="https://twitter.com" target="_blank" title="twitter Smarkia">
+								&nbsp;
+							</a>
+						</div>
+						<div>
+							<a class="linkedin" href="http://www.linkedin.com" target="_blank" title="linkedin Smarkia">
+								&nbsp;
+							</a>
+						</div>
+						<div class="ml-2">
+							<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+								Contact
+							</a>
+						</div>
+					</div>
+					<div id="copyright" class="mt-3 text-center">
+						© Copyright 2020 Amitech. All rights reserved.
+					</div>
+					<div class="row p-3 d-flex justify-content-center">
+						<ul class="footer-menu">
+							<li><a href="#"> Home</a></li>
+							<li><a href="#"> <span></span> Product</a></li>
+							<li><a href="#"> <span></span> Terms of use</a></li>
+							<li><a href="#"> <span></span> Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid d-none d-md-block" id="main-footer">
+				<div class="row footer-top">
+					<div class="col-md-7">
+						<div>
+							<img alt="amitech" src="../themes/assets/images/logo-amitech.png" style="width: 210px" />
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="social-content">
+							<div>
+								<a class="twitter" href="https://twitter.com" target="_blank" title="twitter Smarkia">
+									&nbsp;
+								</a>
+							</div>
+							<div>
+								<a class="linkedin" href="http://www.linkedin.com" target="_blank" title="linkedin Smarkia">
+									&nbsp;
+								</a>
+							</div>
+							<div class="ml-2">
+								<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+									Contact
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-md-7">
+						<div class="py-md-4"> Hotline: 024 22 33 44 55 </div>
+					</div>
+					<div class="col-md-5">
+						<div id="copyright" class="py-md-4">© Copyright 2020 Amitech. All rights reserved.</div>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-md-7">
+						<div>
+							Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình,Toa Nam Từ Liêm, Hà Nội
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div id="footer-menu">
+							<ul class="footer-menu">
+								<li><a href="#"> Home</a></li>
+								<li><a href="#"> <span></span> Product</a></li>
+								<li><a href="#"> <span></span> Terms of use</a></li>
+								<li><a href="#"> <span></span> Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div onclick="scrollTopAnimated()" id="toTop">
+		<span></span>
+	</div>
+	<script src="../lib/jquery/dist/jquery.min.js"></script>
+	<script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../js/site.js"></script>
+</body>
+
+</html>

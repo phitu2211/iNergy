@@ -1,646 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="shortcut icon" href="themes/assets/favicon.ico" type="image/vnd.microsoft.icon" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-		/>
-		<title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
-		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/site.css" />
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
-			rel="stylesheet"
-		/>
-	</head>
 
-	<body>
-		<div class="container">
-			<header id="header">
-				<div class="container-fluid d-sm-none">
-					<div class="row">
-						<div class="col-5 d-flex align-items-center">
-							<a class="navbar-brand" href="index.html">
-								<img
-									src="themes/assets/logo.png"
-									id="logo"
-									class="d-inline-block align-top"
-									style="height: 60px"
-									alt="Home"
-								/>
+<head>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="themes/assets/favicon.ico" type="image/vnd.microsoft.icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>Energy Management System (EMS) | SMARKIA | ISO 50001 Software</title>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+	<div class="container">
+		<header id="header">
+			<!-- MOBILE -->
+			<div class="container-fluid d-md-none header">
+				<div class="row">
+					<div class="col-7 d-flex align-items-center">
+						<a href="index.html">
+							<img src="themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+						</a>
+					</div>
+					<div class="col-5">
+						<label for="showNav" class="nav-toggle-label"><span></span></label>
+					</div>
+				</div>
+			</div>
+
+			<input type="checkbox" id="showNav" class="d-none show-nav nav-toggle">
+			<div class="menu-mobile">
+				<div class="p-3">
+					<div class="icon-close">
+						<label for="showNav" class="nav-toggle-label-close"><span></span></label>
+					</div>
+					<nav class="mobile-nav">
+						<ul class="list-menu">
+							<li class="item-menu">
+								<a style="color: #fff;" class="menu-inner">Giới thiệu</a><span class="icon-right"></span>
+								<ul class="sub-menu-mobile"><li class="item-sub-menu"><a href="inergy.html">iNERGY</a></li>
+									<li class="item-sub-menu"><a href="faq.html">Câu hỏi thường gặp</a></li>
+								</ul>
+							</li>
+							<li class="item-menu">
+								<a style="color: #fff;" class="menu-inner">Sản phẩm</a><span class="icon-right"></span>
+								<ul class="sub-menu-mobile">
+									<li class="item-sub-menu"><a href="product/inergymonitor/benefits.html">iNERGY Monitor</a></li>
+									<li class="item-sub-menu"><a href="product/inergyams20/benefits.html">iNERGY AMS20</a></li>
+								</ul>
+							</li>
+							<li class="item-menu">
+								<a href="partners.html" class="menu-inner">Đối tác</a>
+							</li>
+						</ul>
+					</nav>
+					<hr color="#fff">
+					<div id="language" class="text-left">
+						<a href="index.html"><span style="border-left: none; color: #a8ca24; padding-left: 0;">VI</span></a>
+						<a href="en/index.html"><span style="color: #fff; border-left: 1px solid #fff;" class="en">EN</span></a>
+					</div>
+					<div id="phone-number" style="color: #fff; padding: 15px 0">
+						<span>Tel</span>
+						+84 986 893 233
+					</div>
+					<div>
+						<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+							Liên Hệ
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid d-none d-md-block header">
+				<div class="d-flex justify-content-between header-content">
+					<a href="index.html">
+						<img src="themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top" alt="Home" />
+					</a>
+					<div class="d-flex flex-column justify-content-center">
+						<div id="language">
+							<a href="index.html"><span style="border-left: none; color: #a8ca24;">VI</span></a>
+							<a href="en/index.html"><span class="en">EN</span></a>
+						</div>
+						<div id="phone-number">
+							<span>Tel</span>
+							+84 986 893 233
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between" id="div-menu">
+					<div class="d-flex justify-content-around" id="nav">
+						<div id="menu">
+							<span>GIỚI THIỆU</span>
+						</div>
+						<div id="menu-1">
+							<span>SẢN PHẨM</span>
+						</div>
+						<div id="menu">
+							<a href="partners.html">ĐỐI TÁC</a>
+						</div>
+					</div>
+					<div class="d-flex flex-column justify-content-start">
+						<div>
+							<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+								Liên Hệ
 							</a>
 						</div>
-						<div class="col-7">
-							<div class="d-flex flex-column px-2 py-1 justify-content-start">
-								<div id="language">
-									<span>VI</span>
-									<span>EN</span>
-								</div>
-								<div id="phone-number" style="font-size: 12px; text-align: right">
-									<span style="font-size: 12px">Tel</span>
-									+84 986 893 233
-								</div>
-								<div id="first-contact">
-									<a
-										class="contact1"
-										href="https://amitech.vn/lien-he/"
-										title="Contact with Smarkia"
-										>Liên Hệ</a
-									>
-								</div>
-							</div>
-						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="sub-menu" id="sub-menu">
+					<div class="d-flex">
+						<a href="inergy.html" class="sub-menu-item">iNERGY</a>
+						<a href="faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
+					</div>
+				</div>
+				<div class="sub-menu-1" id="sub-menu-1">
+					<div class="d-flex">
+						<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+						<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
+					</div>
+				</div>
+			</div>
+		</header>
 
-						<div id="div-menu" style="width: 100%">
-							<div class="d-flex justify-content-around" style="color: #fff" id="nav">
-								<div id="menu-2">
-									<span>GIỚI THIỆU</span>
-								</div>
-								<div id="menu-3">
-									<span>SẢN PHẨM</span>
-								</div>
-								<div id="menu-2">
-									<a href="partners.html">ĐỐI TÁC</a>
-								</div>
-							</div>
-						</div>
+		<main role="main" id="page">
+			<div class="py-md-2 pl-md-4 p-2 url">
+				Trang chủ > Giới thiệu >
+				<span class="font-weight-bold">Câu hỏi thường gặp</span>
+			</div>
+			<div class="container" style="padding: 20px">
+				<h2>Các câu hỏi thường gặp</h2>
+				<div class="faq">
+					<div class="question" data-for="answer1" onclick="showAnswer(this)">
+						<span>Tôi có thể cài đặt iNERGY trên máy tính hoặc trên một trong các máy chủ của mình
+							không?</span>
 					</div>
-					<div class="sub-menu" id="sub-menu-2">
-						<div class="d-flex" style="padding: 16px 0px">
-							<a href="inergy.html" class="sub-menu-item">iNERGY</a>
-							<a href="faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-							<a href="news.html" class="sub-menu-item">Tin tức</a>
-						</div>
+					<div class="answer" id="answer1">
+						<p>
+							iNERGY là một nền tảng phần mềm, vì vậy bạn có thể cài đặt trên máy tính hoặc trên
+							các máy chủ của bạn. Tuy nhiên chúng tôi khuyến cáo nên sử dụng máy chủ đồng bộ của
+							iNERGY để vận hành hiệu quả và ổn định nhất.
+						</p>
 					</div>
-					<div class="sub-menu-1" id="sub-menu-3">
-						<div class="d-flex" style="padding: 16px 0px">
-							<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-							<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-						</div>
+					<div class="question" data-for="answer2" onclick="showAnswer(this)">
+						<span>
+							Tôi có cần mua giấy phép cho từng máy tính mà tôi muốn sử dụng iNERGY không?</span>
+					</div>
+					<div class="answer" id="answer2">
+						<p>iNERGY không hoạt động theo hệ thống cấp phép. Bạn có thể sử dụng iNERGY từ bất kỳ
+							thiết bị nào có mạng nội bộ trong đơn vị hoặc internet.</p>
+					</div>
+					<div class="question" data-for="answer3" onclick="showAnswer(this)">
+						<span>Tôi có thể sử dụng iNERGY từ Máy tính bảng hoặc điện thoại di động của mình
+							không?</span>
+					</div>
+					<div class="answer" id="answer3">
+						<p>Có. iNERGY đã sẵn sàng để sử dụng từ mọi thiết bị, có thể là máy tính để bàn hoặc
+							máy tính xách tay của bạn, từ Máy tính bảng hoặc Điện thoại thông minh của bạn.
+						</p>
+					</div>
+					<div class="question" data-for="answer4" onclick="showAnswer(this)">
+						<span>Tôi có phải trả tiền cho các bản cập nhật phiên bản iNERGY không?</span>
+					</div>
+					<div class="answer" id="answer4">
+						<p>Không. Các bản cải tiến được iNERGY thực hiện cập nhật bạn không cần phải trả thêm
+							bất kỳ chi phí nào.
+						</p>
+					</div>
+					<div class="question" data-for="answer5" onclick="showAnswer(this)">
+						<span>iNERGY để làm gì?</span>
+					</div>
+					<div class="answer" id="answer5">
+						<p>iNERGY giúp bạn Giám sát, tự động tính toán phân tích cho bạn thông tin từ các
+							thiết bị đo lường của bạn hoặc từ dữ liệu năng lượng được thu thập. iNERGY cung cấp
+							cho bạn một tập hợp các chức năng để bạn có thể dễ dàng xây dựng Hệ thống quản lý
+							năng lượng của tổ chức mình.
+						</p>
+					</div>
+					<div class="question" data-for="answer6" onclick="showAnswer(this)">
+						<span>Làm cách nào để iNERGY có thể kết nối và đọc được dữ liệu các thiết bị đo của tôi?
+						</span>
+					</div>
+					<div class="answer" id="answer6">
+						<p>iNERGY thiết lập các luồng kết nối theo tiêu chuẩn đến các thiết bị điện tử của bạn
+							qua các bộ chuyển đổi vật lý cần thiết.
+						</p>
+					</div>
+					<div class="question" data-for="answer7" onclick="showAnswer(this)">
+						<span>Quá trình đọc dữ liệu của iNERGY là tự động hay tôi phải thực thi nó?</span>
+					</div>
+					<div class="answer" id="answer7">
+						<p>Nó hoàn toàn tự động. Bạn sẽ không phải làm bất cứ điều gì để lấy dữ liệu năng
+							lượng từ thiết bị đo. Bạn có thể kiểm tra hoặc xem lại lịch sử dữ liệu đã được lưu
+							trữ.
+						</p>
+					</div>
+					<div class="question" data-for="answer8" onclick="showAnswer(this)">
+						<span>iNERGY có thể kết nối trực tiếp với thiết bị đo lường của tôi mà không cần lắp đặt
+							thêm bất kỳ phần cứng nào không?</span>
+					</div>
+					<div class="answer" id="answer8">
+						<p>Có, miễn là thiết bị của bạn đã sẵn sàng để kết nối theo tiêu chuẩn giao thức
+							truyền thông tương thích và lưu trữ dữ liệu bạn cần theo dõi.</p>
+					</div>
+					<div class="question" data-for="answer9" onclick="showAnswer(this)">
+						<span>Điều gì là cần thiết để một thiết bị sẵn sàng tích hợp vào iNERGY?</span>
+					</div>
+					<div class="answer" id="answer9">
+						<p>Về cơ bản, chỉ cần thiết bị đo điện tử của bạn có cổng truyền thông theo tiêu chuẩn
+							(RS485, rs232, Lan,..)</p>
+					</div>
+					<div class="question" data-for="answer10" onclick="showAnswer(this)">
+						<span>Về cơ bản, chỉ cần thiết bị đo điện tử của bạn có cổng truyền thông theo tiêu chuẩn
+							(RS485, rs232, Lan,..)</span>
+					</div>
+					<div class="answer" id="answer10">
+						<p>
+							Có. Trong những trường hợp này, iNERGY cho phép bạn nhận dữ liệu bằng tay,bạn cũng
+							có thể nhập bằng mẫu Excel các dữ liệu muốn theo dõi. Bạn có thể nhập mẫu này bằng
+							một cú nhấp chuột đơn giản.</p>
+					</div>
+					<div class="question" data-for="answer11" onclick="showAnswer(this)">
+						<span>
+							Tôi có thể sử dụng iNERGY để theo dõi máy đếm xung, đầu dò đo giá trị tức thời hoặc
+							bất kỳ máy đo nào khác không lưu các phép đo được ghi lại theo thời gian không?
+						</span>
+					</div>
+					<div class="answer" id="answer11">
+						<p>Có, miễn là bạn sử dụng thiết bị chuyển đổi trung gian mà iNERGY có thể kết nối,
+							thiết bị này sẽ lưu trữ các giá trị mà bạn muốn giám sát.</p>
+					</div>
+					<div class="question" data-for="answer12" onclick="showAnswer(this)">
+						<span>iNERGY có thể trích xuất thông tin tôi muốn theo dõi từ SCADA, BMS hoặc tương tự
+							của tôi không?</span>
+					</div>
+					<div class="answer" id="answer12">
+						<p>Có, miễn là bạn sử dụng cơ sở dữ liệu tương thích và cấp cho chúng tôi quyền truy
+							cập vào nó, trực tiếp hoặc thông qua dịch vụ API. Hoặc, để lại cho chúng tôi thông
+							tin ở định dạng thuần túy trên FTP mà chúng tôi có thể truy cập.
+						</p>
+					</div>
+					<div class="question" data-for="answer13" onclick="showAnswer(this)">
+						<span>iNERGY có sẵn sàng giám sát bất kỳ loại năng lượng nào không?</span>
+					</div>
+					<div class="answer" id="answer13">
+						<p>Có. iNERGY là một nền tảng đa giao thức, nhờ đó bạn có thể kiểm soát mức tiêu thụ
+							điện, dầu, khí đốt, nước, ... hoặc bất kỳ nguồn năng lượng nào khác mà bạn sử
+							dụng.</p>
+					</div>
+					<div class="question" data-for="answer14" onclick="showAnswer(this)">
+						<span>iNERGY chỉ giám sát năng lượng?</span>
+					</div>
+					<div class="answer" id="answer14">
+						<p>
+							Với iNERGY, bạn có thể theo dõi bất kỳ loại dữ liệu nào có thể đo được: nhiệt độ, độ
+							ẩm, mức sản xuất, v.v. điều này sẽ cho phép bạn tạo KPI mà bạn cần (kwh / sản lượng,
+							kwh / m3,…).
+						</p>
+					</div>
+					<div class="question" data-for="answer15" onclick="showAnswer(this)">
+						<span>iNERGY là một sản phẩm duy nhất hay là nhiều sản phẩm?</span>
+					</div>
+					<div class="answer" id="answer15">
+						<p>iNERGY là một hệ thống phần mềm cung cấp các sản phẩm khác nhau liên quan đến giám
+							sát và quản lý năng lượng. Hiện tại có iNERGY MONITOR và iNERGY AMS20. Ngoài ra
+							chúng tôi còn cung cấp các dịch vụ nâng cao theo yêu cầu khách hàng.
+						</p>
+					</div>
+					<div class="question" data-for="answer16" onclick="showAnswer(this)">
+						<span>Sự khác biệt giữa iNERGY MONITOR và iNERGY AMS20 là gì?</span>
+					</div>
+					<div class="answer" id="answer16">
+						<p>
+							iNERGY MONITOR là một sản phẩm giám sát cho phép xem và trích xuất các giá trị được
+							ghi lại bởi đồng hồ của bạn, để quản lý các cảnh báo, báo cáo định kỳ. iNERGY AMS20
+							sẽ cho phép bạn thực hiện bước nhảy vọt từ việc giám sát sang quản lý năng lượng
+							theo quy trình ISO 50001, vì ngoài những điều trên, nó còn cung cấp cho bạn các công
+							cụ để phân tích chuyên sâu như đường cơ sở năng lượng, chỉ số hiệu quả năng lượng,
+							tính toán tiết kiệm năng lượng. Nó được tư vấn thiết kế và xây dựng bởi các chuyên
+							gia hàng đầu về năng lượng.
+						</p>
+					</div>
+					<div class="question" data-for="answer17" onclick="showAnswer(this)">
+						<span>iNERGY AMS có chỉ dành cho các công ty muốn triển khai hoặc chứng nhận hệ thống dựa
+							trên ISO 50001?</span>
+					</div>
+					<div class="answer" id="answer17">
+						<p>iNERGY 50001 được thiết kế cho bất kỳ tổ chức nào muốn tạo hệ thống quản lý năng
+							lượng số theo cách đơn giản và hiệu quả. Do đó, việc sử dụng nó không bị hạn là tổ
+							chức muốn được chứng nhận hay không. Những tổ chức đã đang và muốn đạt được chứng
+							nhận theo ISO 50001 sẽ có thể dễ dàng sử dụng, vì iNERGY đáp ứng tất cả các yêu cầu
+							của họ.</p>
+					</div>
+					<div class="question" data-for="answer18" onclick="showAnswer(this)">
+						<span>iNERGY tuân thủ luật “Sử dụng năng lượng tiết kiệm và hiệu quả” như thế nào?</span>
+					</div>
+					<div class="answer" id="answer18">
+						<p>iNERGY được thiết kế cung cấp các công cụ đáp ứng các yêu cầu pháp luật về “Sử dụng
+							năng lượng tiết kiệm hiệu quả” bao gồm:
+						</p>
+						<ul class="mb-0">
+							<li>Đáp ứng yêu cầu về xây dựng và áp dụng mô hình quản lý năng lượng</li>
+							<li>Công cụ báo cáo kế hoạch sử dụng hàng năm theo thông tư 09 BCT</li>
+							<li>Công cụ báo cáo kế hoạch sử dụng 5 năm theo thông tư 09 BCT</li>
+						</ul>
+					</div>
+					<div class="question" data-for="answer19" onclick="showAnswer(this)">
+						<span>Tôi có thể sử dụng iNERGY có mất chi phí sử dụng hàng năm không?</span>
+					</div>
+					<div class="answer" id="answer19">
+						<p>Không. iNERGY được bán cho khách hàng dưới dạng trọn gói vĩnh viễn, khách hàng có
+							thể sử dụng vĩnh viễn mà không mất thêm chi phí duy trì nào.</p>
+					</div>
+					<div class="question" data-for="answer20" onclick="showAnswer(this)">
+						<span>iNERGY có thể kết nối được bao nhiêu thiết bị đo?</span>
+					</div>
+					<div class="answer" id="answer20">
+						<p>Về cơ bản iNERGY có khả năng kết nối không giới hạn số lượng thiết bị đo. Tuy nhiên
+							với mỗi nhu cầu cụ thể chúng tôi sẽ có những cấu hình phù hợp với nhu cầu của
+							bạn.</p>
+					</div>
+					<div class="question" data-for="answer21" onclick="showAnswer(this)">
+						<span>Hiện tại tôi muốn theo dõi 50 điểm đo, nhưng năm sau nữa tôi sẽ cần mở rộng theo
+							dõi thêm. Tôi có mở rộng thêm thiết bị không?</span>
+					</div>
+					<div class="answer" id="answer21">
+						<p>Có. Bất cứ lúc nào bạn cũng có thể mở rộng thêm điểm do của mình. Tuỳ thuộc số
+							lượng điểm đo cần mở rộng mà bạn cần đầu tư thêm chi phí hay không?
+						</p>
+					</div>
+					<div class="question" data-for="answer22" onclick="showAnswer(this)">
+						<span>Tôi phải làm gì nếu muốn mua iNERGY?</span>
+					</div>
+					<div class="answer" id="answer22">
+						<p>Bạn có thể liên hệ với chúng tôi qua
+							<a href="https://amitech.vn/lien-he/">trang liên hệ của chúng tôi</a>. Hoặc bạn có
+							thể liên hệ một trong những đối tác của chúng tôi. Chúng tôi sẽ sẵn lòng hỗ trợ bạn
+							và tư vấn cho bạn đối tác phù hợp nhất với nhu cầu của bạn.</p>
+					</div>
+					<div class="question" data-for="answer23" onclick="showAnswer(this)">
+						<span>iNERGY có bán phần cứng hoặc thiết bị đo lường không?</span>
+					</div>
+					<div class="answer" id="answer23">
+						<p>Chúng tôi chỉ làm phần mềm. Tuy nhiên, chúng tôi có thể giúp bạn liên hệ với một
+							trong những đối tác của chúng tôi, người có thể tư vấn cho bạn và cung cấp cho bạn
+							những gì bạn cần.</p>
+					</div>
+					<div class="question" data-for="answer24" onclick="showAnswer(this)">
+						<span>iNERGY có bán dịch vụ tư vấn năng lượng không?</span>
+					</div>
+					<div class="answer" id="answer24">
+						<p>Có. iNERGY cung cấp các dịch vụ tư vấn năng lượng bao gồm Kiểm toán năng lượng và
+							xây dựng mô hình quản lý năng lượng theo ISO 50001. Ngoài ra chúng tôi có thể giúp
+							bạn liên hệ với một trong những đối tác của chúng tôi cung cấp cho bạn những dịch vụ
+							bạn cần.</p>
+					</div>
+					<div class="question last" data-for="answer25" onclick="showAnswer(this)">
+						<span>Tôi có nhận được hỗ trợ sau khi mua nền tảng không?</span>
+					</div>
+					<div class="answer last" id="answer25">
+						<p>
+							Tất nhiên. Khi bạn đã ký hợp đồng với iNERGY, bạn sẽ được đào tạo cá nhân hóa để làm
+							quen với nền tảng này. Sau đó, nhóm hỗ trợ iNERGY sẽ giải quyết tất cả các vấn đề và
+							sự cố có thể phát sinh về iNERGY MONITOR hoặc iNERGY50001.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 text-center py-md-5">
+						<img src="themes/assets/images/logo-toyota.jpg" alt="Alternate Text" />
+					</div>
+					<div class="col-md-3 text-center py-md-5">
+						<img src="themes/assets/images/logo-evn.png" alt="Alternate Text" />
+					</div>
+					<div class="col-md-3 text-center py-md-5">
+						<img src="themes/assets/images/logo-thankhoangsan.png" alt="Alternate Text" />
+					</div>
+					<div class="col-md-3 text-center py-md-5">
+						<img src="themes/assets/images/unicharm.jpg" alt="Alternate Text" />
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid d-md-none" id="main-footer">
+				<div style="display: flex; flex-direction: column; font-size: 16px; justify-content: center">
+					<div style="text-align: center">
+						<img alt="Amitech" src="themes/assets/images/logo-amitech.png" />
+					</div>
+					<div style="text-align: center; color: #fff">
+						<span>
+							Hotline: 024 22 33 44 55
+						</span>
+					</div>
+					<div style="text-align: left; color: #fff">
+						<span>
+							Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội
+						</span>
 					</div>
 				</div>
 
-				<div class="container-fluid d-none d-sm-block">
-					<div class="d-flex justify-content-between">
-						<a class="navbar-brand" href="index.html">
-							<img
-								src="themes/assets/logo.png"
-								class="img-fluid"
-								id="logo"
-								class="d-inline-block align-top"
-								alt="Home"
-							/>
-						</a>
-						<div class="d-flex flex-column justify-content-center">
-							<div id="language">
-								<span>VI</span>
-								<span>EN</span>
-							</div>
-							<div id="phone-number">
-								<span>Tel</span>
-								+84 986 893 233
-							</div>
+				<div class="d-flex flex-column justify-content-center">
+					<div class="social-content" style="margin-top: 10px">
+						<div>
+							<a class="twitter" href="https://twitter.com" target="_blank" title="twitter Smarkia">
+								&nbsp;
+							</a>
+						</div>
+						<div>
+							<a class="linkedin" href="http://www.linkedin.com" target="_blank" title="linkedin Smarkia">
+								&nbsp;
+							</a>
+						</div>
+						<div class="ml-2">
+							<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+								Liên Hệ
+							</a>
 						</div>
 					</div>
-
-					<div class="d-flex justify-content-between" id="div-menu">
-						<div class="d-flex justify-content-around" style="color: #fff" id="nav">
-							<div id="menu">
-								<span>GIỚI THIỆU</span>
-							</div>
-							<div id="menu-1">
-								<span>SẢN PHẨM</span>
-							</div>
-							<div id="menu">
-								<a href="partners.html">ĐỐI TÁC</a>
-							</div>
-						</div>
-						<div class="d-flex flex-column justify-content-start">
-							<div style="margin-right: 10px; margin-bottom: 10px">
-								<a class="contact1" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
-									>Liên Hệ</a
-								>
-							</div>
-						</div>
+					<div id="copyright" class="mt-3 text-center">
+						© Copyright 2020 Amitech. All rights reserved.
 					</div>
-
-					<div class="sub-menu" id="sub-menu">
-						<div class="d-flex" style="padding: 16px 25px">
-							<a href="inergy.html" class="sub-menu-item">iNERGY</a>
-							<a href="faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-							<a href="news.html" class="sub-menu-item">Tin tức</a>
-						</div>
-					</div>
-					<div class="sub-menu-1" id="sub-menu-1">
-						<div class="d-flex" style="padding: 16px 25px">
-							<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-							<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-						</div>
+					<div class="row p-3 d-flex justify-content-center">
+						<ul class="footer-menu">
+							<li><a href="#"> Trang chủ</a></li>
+							<li><a href="#"> <span></span> Sản phẩm</a></li>
+							<li><a href="#"> <span></span> Điều khoản sử dụng</a></li>
+							<li><a href="#"> <span></span> Liên hệ</a></li>
+						</ul>
 					</div>
 				</div>
-			</header>
-
-			<main role="main" id="page">
-				<div class="container" style="padding: 20px">
-					<h2>Các câu hỏi thường gặp</h2>
-					<div class="faq">
-						<div class="question" data-for="answer1" onclick="showAnswer(this)">
-							<span
-								>Tôi có thể cài đặt iNERGY trên máy tính hoặc trên một trong các máy chủ của mình
-								không?</span
-							>
-						</div>
-						<div class="answer" id="answer1">
-							<p>
-								iNERGY là một nền tảng phần mềm, vì vậy bạn có thể cài đặt trên máy tính hoặc trên
-								các máy chủ của bạn. Tuy nhiên chúng tôi khuyến cáo nên sử dụng máy chủ đồng bộ của
-								iNERGY để vận hành hiệu quả và ổn định nhất.
-							</p>
-						</div>
-						<div class="question" data-for="answer2" onclick="showAnswer(this)">
-							<span>
-								Tôi có cần mua giấy phép cho từng máy tính mà tôi muốn sử dụng iNERGY không?</span
-							>
-						</div>
-						<div class="answer" id="answer2">
-							<p
-								>iNERGY không hoạt động theo hệ thống cấp phép. Bạn có thể sử dụng iNERGY từ bất kỳ
-								thiết bị nào có mạng nội bộ trong đơn vị hoặc internet.</p
-							>
-						</div>
-						<div class="question" data-for="answer3" onclick="showAnswer(this)">
-							<span
-								>Tôi có thể sử dụng iNERGY từ Máy tính bảng hoặc điện thoại di động của mình
-								không?</span
-							>
-						</div>
-						<div class="answer" id="answer3">
-							<p
-								>Có. iNERGY đã sẵn sàng để sử dụng từ mọi thiết bị, có thể là máy tính để bàn hoặc
-								máy tính xách tay của bạn, từ Máy tính bảng hoặc Điện thoại thông minh của bạn.
-							</p>
-						</div>
-						<div class="question" data-for="answer4" onclick="showAnswer(this)">
-							<span>Tôi có phải trả tiền cho các bản cập nhật phiên bản iNERGY không?</span>
-						</div>
-						<div class="answer" id="answer4">
-							<p
-								>Không. Các bản cải tiến được iNERGY thực hiện cập nhật bạn không cần phải trả thêm
-								bất kỳ chi phí nào.
-							</p>
-						</div>
-						<div class="question" data-for="answer5" onclick="showAnswer(this)">
-							<span>iNERGY để làm gì?</span>
-						</div>
-						<div class="answer" id="answer5">
-							<p
-								>iNERGY giúp bạn Giám sát, tự động tính toán phân tích cho bạn thông tin từ các
-								thiết bị đo lường của bạn hoặc từ dữ liệu năng lượng được thu thập. iNERGY cung cấp
-								cho bạn một tập hợp các chức năng để bạn có thể dễ dàng xây dựng Hệ thống quản lý
-								năng lượng của tổ chức mình.
-							</p>
-						</div>
-						<div class="question" data-for="answer6" onclick="showAnswer(this)">
-							<span
-								>Làm cách nào để iNERGY có thể kết nối và đọc được dữ liệu các thiết bị đo của tôi?
-							</span>
-						</div>
-						<div class="answer" id="answer6">
-							<p
-								>iNERGY thiết lập các luồng kết nối theo tiêu chuẩn đến các thiết bị điện tử của bạn
-								qua các bộ chuyển đổi vật lý cần thiết.
-							</p>
-						</div>
-						<div class="question" data-for="answer7" onclick="showAnswer(this)">
-							<span>Quá trình đọc dữ liệu của iNERGY là tự động hay tôi phải thực thi nó?</span>
-						</div>
-						<div class="answer" id="answer7">
-							<p
-								>Nó hoàn toàn tự động. Bạn sẽ không phải làm bất cứ điều gì để lấy dữ liệu năng
-								lượng từ thiết bị đo. Bạn có thể kiểm tra hoặc xem lại lịch sử dữ liệu đã được lưu
-								trữ.
-							</p>
-						</div>
-						<div class="question" data-for="answer8" onclick="showAnswer(this)">
-							<span
-								>iNERGY có thể kết nối trực tiếp với thiết bị đo lường của tôi mà không cần lắp đặt
-								thêm bất kỳ phần cứng nào không?</span
-							>
-						</div>
-						<div class="answer" id="answer8">
-							<p
-								>Có, miễn là thiết bị của bạn đã sẵn sàng để kết nối theo tiêu chuẩn giao thức
-								truyền thông tương thích và lưu trữ dữ liệu bạn cần theo dõi.</p
-							>
-						</div>
-						<div class="question" data-for="answer9" onclick="showAnswer(this)">
-							<span>Điều gì là cần thiết để một thiết bị sẵn sàng tích hợp vào iNERGY?</span>
-						</div>
-						<div class="answer" id="answer9">
-							<p
-								>Về cơ bản, chỉ cần thiết bị đo điện tử của bạn có cổng truyền thông theo tiêu chuẩn
-								(RS485, rs232, Lan,..)</p
-							>
-						</div>
-						<div class="question" data-for="answer10" onclick="showAnswer(this)">
-							<span
-								>Về cơ bản, chỉ cần thiết bị đo điện tử của bạn có cổng truyền thông theo tiêu chuẩn
-								(RS485, rs232, Lan,..)</span
-							>
-						</div>
-						<div class="answer" id="answer10">
-							<p>
-								Có. Trong những trường hợp này, iNERGY cho phép bạn nhận dữ liệu bằng tay,bạn cũng
-								có thể nhập bằng mẫu Excel các dữ liệu muốn theo dõi. Bạn có thể nhập mẫu này bằng
-								một cú nhấp chuột đơn giản.</p
-							>
-						</div>
-						<div class="question" data-for="answer11" onclick="showAnswer(this)">
-							<span>
-								Tôi có thể sử dụng iNERGY để theo dõi máy đếm xung, đầu dò đo giá trị tức thời hoặc
-								bất kỳ máy đo nào khác không lưu các phép đo được ghi lại theo thời gian không?
-							</span>
-						</div>
-						<div class="answer" id="answer11">
-							<p
-								>Có, miễn là bạn sử dụng thiết bị chuyển đổi trung gian mà iNERGY có thể kết nối,
-								thiết bị này sẽ lưu trữ các giá trị mà bạn muốn giám sát.</p
-							>
-						</div>
-						<div class="question" data-for="answer12" onclick="showAnswer(this)">
-							<span
-								>iNERGY có thể trích xuất thông tin tôi muốn theo dõi từ SCADA, BMS hoặc tương tự
-								của tôi không?</span
-							>
-						</div>
-						<div class="answer" id="answer12">
-							<p
-								>Có, miễn là bạn sử dụng cơ sở dữ liệu tương thích và cấp cho chúng tôi quyền truy
-								cập vào nó, trực tiếp hoặc thông qua dịch vụ API. Hoặc, để lại cho chúng tôi thông
-								tin ở định dạng thuần túy trên FTP mà chúng tôi có thể truy cập.
-							</p>
-						</div>
-						<div class="question" data-for="answer13" onclick="showAnswer(this)">
-							<span>iNERGY có sẵn sàng giám sát bất kỳ loại năng lượng nào không?</span>
-						</div>
-						<div class="answer" id="answer13">
-							<p
-								>Có. iNERGY là một nền tảng đa giao thức, nhờ đó bạn có thể kiểm soát mức tiêu thụ
-								điện, dầu, khí đốt, nước, ... hoặc bất kỳ nguồn năng lượng nào khác mà bạn sử
-								dụng.</p
-							>
-						</div>
-						<div class="question" data-for="answer14" onclick="showAnswer(this)">
-							<span>iNERGY chỉ giám sát năng lượng?</span>
-						</div>
-						<div class="answer" id="answer14">
-							<p>
-								Với iNERGY, bạn có thể theo dõi bất kỳ loại dữ liệu nào có thể đo được: nhiệt độ, độ
-								ẩm, mức sản xuất, v.v. điều này sẽ cho phép bạn tạo KPI mà bạn cần (kwh / sản lượng,
-								kwh / m3,…).
-							</p>
-						</div>
-						<div class="question" data-for="answer15" onclick="showAnswer(this)">
-							<span>iNERGY là một sản phẩm duy nhất hay là nhiều sản phẩm?</span>
-						</div>
-						<div class="answer" id="answer15">
-							<p
-								>iNERGY là một hệ thống phần mềm cung cấp các sản phẩm khác nhau liên quan đến giám
-								sát và quản lý năng lượng. Hiện tại có iNERGY MONITOR và iNERGY AMS20. Ngoài ra
-								chúng tôi còn cung cấp các dịch vụ nâng cao theo yêu cầu khách hàng.
-							</p>
-						</div>
-						<div class="question" data-for="answer16" onclick="showAnswer(this)">
-							<span>Sự khác biệt giữa iNERGY MONITOR và iNERGY AMS20 là gì?</span>
-						</div>
-						<div class="answer" id="answer16">
-							<p>
-								iNERGY MONITOR là một sản phẩm giám sát cho phép xem và trích xuất các giá trị được
-								ghi lại bởi đồng hồ của bạn, để quản lý các cảnh báo, báo cáo định kỳ. iNERGY AMS20
-								sẽ cho phép bạn thực hiện bước nhảy vọt từ việc giám sát sang quản lý năng lượng
-								theo quy trình ISO 50001, vì ngoài những điều trên, nó còn cung cấp cho bạn các công
-								cụ để phân tích chuyên sâu như đường cơ sở năng lượng, chỉ số hiệu quả năng lượng,
-								tính toán tiết kiệm năng lượng. Nó được tư vấn thiết kế và xây dựng bởi các chuyên
-								gia hàng đầu về năng lượng.
-							</p>
-						</div>
-						<div class="question" data-for="answer17" onclick="showAnswer(this)">
-							<span
-								>iNERGY AMS có chỉ dành cho các công ty muốn triển khai hoặc chứng nhận hệ thống dựa
-								trên ISO 50001?</span
-							>
-						</div>
-						<div class="answer" id="answer17">
-							<p
-								>iNERGY 50001 được thiết kế cho bất kỳ tổ chức nào muốn tạo hệ thống quản lý năng
-								lượng số theo cách đơn giản và hiệu quả. Do đó, việc sử dụng nó không bị hạn là tổ
-								chức muốn được chứng nhận hay không. Những tổ chức đã đang và muốn đạt được chứng
-								nhận theo ISO 50001 sẽ có thể dễ dàng sử dụng, vì iNERGY đáp ứng tất cả các yêu cầu
-								của họ.</p
-							>
-						</div>
-						<div class="question" data-for="answer18" onclick="showAnswer(this)">
-							<span
-								>iNERGY tuân thủ luật “Sử dụng năng lượng tiết kiệm và hiệu quả” như thế nào?</span
-							>
-						</div>
-						<div class="answer" id="answer18">
-							<p
-								>iNERGY được thiết kế cung cấp các công cụ đáp ứng các yêu cầu pháp luật về “Sử dụng
-								năng lượng tiết kiệm hiệu quả” bao gồm:
-							</p>
-							<ul class="mb-0">
-								<li>Đáp ứng yêu cầu về xây dựng và áp dụng mô hình quản lý năng lượng</li>
-								<li>Công cụ báo cáo kế hoạch sử dụng hàng năm theo thông tư 09 BCT</li>
-								<li>Công cụ báo cáo kế hoạch sử dụng 5 năm theo thông tư 09 BCT</li>
-							</ul>
-						</div>
-						<div class="question" data-for="answer19" onclick="showAnswer(this)">
-							<span>Tôi có thể sử dụng iNERGY có mất chi phí sử dụng hàng năm không?</span>
-						</div>
-						<div class="answer" id="answer19">
-							<p
-								>Không. iNERGY được bán cho khách hàng dưới dạng trọn gói vĩnh viễn, khách hàng có
-								thể sử dụng vĩnh viễn mà không mất thêm chi phí duy trì nào.</p
-							>
-						</div>
-						<div class="question" data-for="answer20" onclick="showAnswer(this)">
-							<span>iNERGY có thể kết nối được bao nhiêu thiết bị đo?</span>
-						</div>
-						<div class="answer" id="answer20">
-							<p
-								>Về cơ bản iNERGY có khả năng kết nối không giới hạn số lượng thiết bị đo. Tuy nhiên
-								với mỗi nhu cầu cụ thể chúng tôi sẽ có những cấu hình phù hợp với nhu cầu của
-								bạn.</p
-							>
-						</div>
-						<div class="question" data-for="answer21" onclick="showAnswer(this)">
-							<span
-								>Hiện tại tôi muốn theo dõi 50 điểm đo, nhưng năm sau nữa tôi sẽ cần mở rộng theo
-								dõi thêm. Tôi có mở rộng thêm thiết bị không?</span
-							>
-						</div>
-						<div class="answer" id="answer21">
-							<p
-								>Có. Bất cứ lúc nào bạn cũng có thể mở rộng thêm điểm do của mình. Tuỳ thuộc số
-								lượng điểm đo cần mở rộng mà bạn cần đầu tư thêm chi phí hay không?
-							</p>
-						</div>
-						<div class="question" data-for="answer22" onclick="showAnswer(this)">
-							<span>Tôi phải làm gì nếu muốn mua iNERGY?</span>
-						</div>
-						<div class="answer" id="answer22">
-							<p
-								>Bạn có thể liên hệ với chúng tôi qua
-								<a href="https://amitech.vn/lien-he/">trang liên hệ của chúng tôi</a>. Hoặc bạn có
-								thể liên hệ một trong những đối tác của chúng tôi. Chúng tôi sẽ sẵn lòng hỗ trợ bạn
-								và tư vấn cho bạn đối tác phù hợp nhất với nhu cầu của bạn.</p
-							>
-						</div>
-						<div class="question" data-for="answer23" onclick="showAnswer(this)">
-							<span>iNERGY có bán phần cứng hoặc thiết bị đo lường không?</span>
-						</div>
-						<div class="answer" id="answer23">
-							<p
-								>Chúng tôi chỉ làm phần mềm. Tuy nhiên, chúng tôi có thể giúp bạn liên hệ với một
-								trong những đối tác của chúng tôi, người có thể tư vấn cho bạn và cung cấp cho bạn
-								những gì bạn cần.</p
-							>
-						</div>
-						<div class="question" data-for="answer24" onclick="showAnswer(this)">
-							<span>iNERGY có bán dịch vụ tư vấn năng lượng không?</span>
-						</div>
-						<div class="answer" id="answer24">
-							<p
-								>Có. iNERGY cung cấp các dịch vụ tư vấn năng lượng bao gồm Kiểm toán năng lượng và
-								xây dựng mô hình quản lý năng lượng theo ISO 50001. Ngoài ra chúng tôi có thể giúp
-								bạn liên hệ với một trong những đối tác của chúng tôi cung cấp cho bạn những dịch vụ
-								bạn cần.</p
-							>
-						</div>
-						<div class="question last" data-for="answer25" onclick="showAnswer(this)">
-							<span>Tôi có nhận được hỗ trợ sau khi mua nền tảng không?</span>
-						</div>
-						<div class="answer last" id="answer25">
-							<p>
-								Tất nhiên. Khi bạn đã ký hợp đồng với iNERGY, bạn sẽ được đào tạo cá nhân hóa để làm
-								quen với nền tảng này. Sau đó, nhóm hỗ trợ iNERGY sẽ giải quyết tất cả các vấn đề và
-								sự cố có thể phát sinh về iNERGY MONITOR hoặc iNERGY50001.</p
-							>
+			</div>
+			<div class="container-fluid d-none d-md-block" id="main-footer">
+				<div class="row footer-top">
+					<div class="col-md-7">
+						<div>
+							<img alt="amitech" src="themes/assets/images/logo-amitech.png" style="width: 210px;" />
 						</div>
 					</div>
-				</div>
-			</main>
-
-			<footer id="footer" class="pt-2">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-2 text-center p-2">
-							<img
-								class="img-fluid"
-								src="themes/assets/images/logo-toyota.jpg"
-								alt="Alternate Text"
-								style="height: 80px"
-							/>
-						</div>
-						<div class="col-md-3 text-center p-2">
-							<img
-								class="img-fluid"
-								src="themes/assets/images/logo-inergy.jpg"
-								alt="Alternate Text"
-								style="height: 80px"
-							/>
-						</div>
-						<div class="col-md-2 text-center p-2">
-							<img
-								class="img-fluid"
-								src="themes/assets/images/logo-evn.png"
-								alt="Alternate Text"
-								style="height: 80px"
-							/>
-						</div>
-						<div class="col-md-2 text-center p-2">
-							<img
-								class="img-fluid"
-								src="themes/assets/images/logo-thankhoangsan.png"
-								alt="Alternate Text"
-								style="height: 80px"
-							/>
-						</div>
-						<div class="col-md-3 text-center p-2">
-							<img
-								class="img-fluid"
-								src="themes/assets/images/logo-diana.svg"
-								alt="Alternate Text"
-								style="height: 80px"
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="container-fluid d-md-none" id="main-footer">
-					<div
-						style="display: flex; flex-direction: column; font-size: 12px; justify-content: center"
-					>
-						<div style="text-align: center">
-							<img
-								alt="enisa"
-								src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-								style="width: 130px; height: 40px"
-							/>
-						</div>
-						<div style="text-align: center; color: #fff">
-							<span
-								>Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà Nội</span
-							>
-						</div>
-					</div>
-
-					<div class="d-flex flex-column justify-content-center">
-						<div class="social-content" style="margin-top: 10px">
+					<div class="col-md-5">
+						<div class="social-content">
 							<div>
-								<a
-									class="twitter"
-									href="https://twitter.com"
-									target="_blank"
-									title="twitter Smarkia"
-									>&nbsp;</a
-								>
+								<a class="twitter" href="https://twitter.com" target="_blank" title="twitter Smarkia">
+									&nbsp;
+								</a>
 							</div>
 							<div>
-								<a
-									class="linkedin"
-									href="http://www.linkedin.com"
-									target="_blank"
-									title="linkedin Smarkia"
-									>&nbsp;</a
-								>
+								<a class="linkedin" href="http://www.linkedin.com" target="_blank" title="linkedin Smarkia">
+									&nbsp;
+								</a>
 							</div>
 							<div class="ml-2">
-								<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
-									>Liên Hệ</a
-								>
-							</div>
-						</div>
-						<div id="copyright" class="mt-3 text-center">
-							© Copyright 2020 Amitech. All rights reserved.
-						</div>
-						<div class="row p-3 text-center">
-							<div class="col-3" style="border-right: 1px solid #fff">
-								<a href="#" style="color: #fff">Legal Notice</a>
-							</div>
-							<div class="col-3" style="border-right: 1px solid #fff">
-								<a href="#" style="color: #fff">Privacy Policy</a>
-							</div>
-							<div class="col-3" style="border-right: 1px solid #fff">
-								<a href="#" style="color: #fff">Cookie Policy</a>
-							</div>
-							<div class="col-3">
-								<a href="#" style="color: #fff">Contact</a>
+								<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia">
+									Liên Hệ
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="container-fluid d-none d-md-block" id="main-footer">
-					<div class="d-flex justify-content-between p-2" id="footer-top">
-						<div style="display: flex; font-size: 12px">
-							<div style="display: flex; flex-direction: column; justify-content: center">
-								<img
-									alt="enisa"
-									src="https://amitech.vn/wp-content/themes/amitech/img/logo-amitech.png"
-									style="width: 130px; height: 40px; margin: 0 auto"
-								/>
-								<div style="width: 200px; text-align: justify; color: #fff">
-									<span
-										>Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình, Nam Từ Liêm, Hà
-										Nội</span
-									>
-								</div>
-							</div>
+					<div class="w-100"></div>
+					<div class="col-md-7">
+						<div class="py-md-4">
+							Hotline: 024 22 33 44 55
 						</div>
-						<div class="d-flex flex-column justify-content-center">
-							<div class="social-content">
-								<div>
-									<a
-										class="twitter"
-										href="https://twitter.com"
-										target="_blank"
-										title="twitter Smarkia"
-										>&nbsp;</a
-									>
-								</div>
-								<div>
-									<a
-										class="linkedin"
-										href="http://www.linkedin.com"
-										target="_blank"
-										title="linkedin Smarkia"
-										>&nbsp;</a
-									>
-								</div>
-								<div class="ml-2">
-									<a class="contact" href="https://amitech.vn/lien-he/" title="Contact with Smarkia"
-										>Liên Hệ</a
-									>
-								</div>
-							</div>
-							<div id="copyright" class="mt-3">
-								© Copyright 2020 Amitech. All rights reserved.
-							</div>
-							<div id="footer-menu" class="mt-2 text-right">
-								<div class="px-2" style="border-right: 1px solid #fff">
-									<a href="#">Legal Notice</a>
-								</div>
-								<div class="px-2" style="border-right: 1px solid #fff">
-									<a href="#">Privacy Policy</a>
-								</div>
-								<div class="px-2" style="border-right: 1px solid #fff">
-									<a href="#">Cookie Policy</a>
-								</div>
-								<div class="pl-2">
-									<a href="#">Contact</a>
-								</div>
-							</div>
+					</div>
+					<div class="col-md-5">
+						<div id="copyright" class="py-md-4">© Copyright 2020 Amitech. All rights reserved.</div>
+					</div>
+					<div class="w-100"></div>
+					<div class="col-md-7">
+						<div>
+							Tầng 4, Tòa nhà Sông Đà 9, Số 2 Nguyễn Hoàng, Mỹ Đình,Toa Nam Từ Liêm, Hà Nội
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div id="footer-menu">
+							<ul class="footer-menu">
+								<li><a href="#"> Trang chủ</a></li>
+								<li><a href="#"> <span></span> Sản phẩm</a></li>
+								<li><a href="#"> <span></span> Điều khoản sử dụng</a></li>
+								<li><a href="#"> <span></span> Liên hệ</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="container-fluid">
-					<div class="row p-3">
-						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-							<img
-								src="themes/assets/images/footer/logo-vets.png"
-								alt=""
-								class="px-2"
-								style="background-color: blueviolet"
-							/>
-						</div>
-						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-							<img
-								src="themes/assets/images/footer/logo-bocongthuong.png"
-								alt=""
-								style="height: 80px"
-							/>
-						</div>
-						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-							<img src="themes/assets/images/footer/logo-bank.jfif" alt="" style="height: 80px" />
-						</div>
-						<div class="col-md-3 d-inline-flex align-items-center justify-content-center p-3">
-							<img src="themes/assets/images/footer/logo-epu.jfif" alt="" style="height: 80px" />
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<div onclick="scrollTopAnimated()" id="toTop">
-			<span></span>
-		</div>
-		<script src="lib/jquery/dist/jquery.min.js"></script>
-		<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="js/site.js"></script>
-	</body>
+			</div>
+		</footer>
+	</div>
+	<div onclick="scrollTopAnimated()" id="toTop">
+		<span></span>
+	</div>
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/site.js"></script>
+</body>
+
 </html>
