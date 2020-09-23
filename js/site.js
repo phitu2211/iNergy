@@ -55,19 +55,6 @@
 		}
 	});
 
-	function showAnswer(question) {
-		question.classList.toggle("active");
-		var answerId = question.getAttribute("data-for");
-		var answer = document.getElementById(answerId);
-		answer.classList.toggle("show-answer");
-	}
-
-	function scrollTopAnimated() {
-		$("html, body").animate({
-			scrollTop: "0"
-		});
-	}
-
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > $(window).height() / 4) {
 			$('#toTop:hidden').fadeIn();
@@ -81,4 +68,18 @@
 		$(this).toggleClass('icon-down');
 	});
 
-})
+});
+
+
+function showAnswer(question) {
+	question.classList.toggle("active");
+	var answerId = question.getAttribute("data-for");
+	var answer = document.getElementById(answerId);
+	answer.classList.toggle("show-answer");
+}
+
+function scrollTopAnimated() {
+	$("html, body").animate({
+		scrollTop: "0"
+	});
+}
