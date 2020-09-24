@@ -73,7 +73,7 @@
 
 function showAnswer(question) {
 	question.classList.toggle("active");
-	var answerId = question.getAttribute("data-for");
+	var answerId = question.getAttribute("data-for");		
 	var answer = document.getElementById(answerId);
 	answer.classList.toggle("show-answer");
 }
