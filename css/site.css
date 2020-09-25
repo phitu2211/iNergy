@@ -432,7 +432,7 @@ a {
 
 .footer-top {
 	font-size: 14px;
-	padding: 40px 20px 32px 20px;
+	padding: 40px 20px 20px 20px;
 }
 
 #footer-image {
@@ -519,7 +519,7 @@ a.contact:hover {
 }
 
 #footer-menu a:hover {
-	color: #92c018;
+	color: #f47723;
 }
 
 .footer-menu {
@@ -626,7 +626,7 @@ a.contact:hover {
 
 #intro h2 a {
 	font-size: 24px;
-	color: #57b33e;
+	color: #f47723;
 }
 
 #intro h1 {
@@ -708,7 +708,7 @@ a.contact:hover {
 }
 
 #content div a:hover {
-	color: #92c018;
+	color: #f47723;
 }
 
 #content .active {
@@ -728,7 +728,7 @@ a.contact:hover {
 }
 
 #request-btn:hover {
-	background: #92c018 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
+	background: #f47723 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
 }
 
 .div-function {
@@ -750,7 +750,7 @@ a.contact:hover {
 
 .title-2 {
 	font-size: 24px;
-	color: #57b33e;
+	color: #f47723;
 	min-height: 70px;
 }
 
@@ -795,7 +795,7 @@ a.contact:hover {
 	display: block;
 	font-size: 1.15em;
 	font-weight: normal;
-	color: #92c018;
+	color: #f47723;
 	line-height: 1.5;
 	text-align: justify;
 }
@@ -820,7 +820,7 @@ a.contact:hover {
 }
 
 .answer p a {
-	color: #92c018;
+	color: #f47723;
 }
 
 .show-answer {
