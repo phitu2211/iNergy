@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	color: #111;
@@ -67,12 +67,12 @@ body {
 	width: 2em;
 	border-radius: 2px;
 	position: relative;
-	transition: all .5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-	content: '';
+	content: "";
 	position: absolute;
 }
 
@@ -83,7 +83,6 @@ body {
 .nav-toggle-label span::after {
 	top: 7px;
 }
-
 
 #nav {
 	margin-left: 15px;
@@ -98,7 +97,7 @@ body {
 
 #menu:hover,
 #menu-1:hover {
-	color: #F47723;
+	color: #f47723;
 	cursor: pointer;
 }
 
@@ -110,7 +109,7 @@ body {
 }
 
 #menu:last-child:hover a {
-	color: #F47723;
+	color: #f47723;
 }
 
 #menu-2 a {
@@ -121,7 +120,7 @@ body {
 }
 
 #menu-2:hover a {
-	color: #F47723;
+	color: #f47723;
 }
 
 .active {
@@ -149,7 +148,6 @@ body {
 	-o-transition: height 0.2s ease;
 	transition: height 0.2s ease;
 }
-
 
 .show-1 {
 	background-color: #555;
@@ -197,11 +195,11 @@ body {
 }
 
 #sub-menu-1 a:hover {
-	color: #F47723;
+	color: #f47723;
 }
 
 #sub-menu a:hover {
-	color: #F47723;
+	color: #f47723;
 }
 
 .sub-menu-item {
@@ -235,7 +233,7 @@ body {
 	margin: 20px 0;
 }
 
-.nav-toggle:checked~.menu-mobile {
+.nav-toggle:checked ~ .menu-mobile {
 	transform: translateX(0);
 }
 
@@ -258,7 +256,7 @@ body {
 
 .nav-toggle-label-close span::before,
 .nav-toggle-label-close span::after {
-	content: '';
+	content: "";
 	position: absolute;
 }
 
@@ -287,7 +285,7 @@ body {
 }
 
 .item-menu {
-	padding: 10px 0px
+	padding: 10px 0px;
 }
 
 .sub-menu-mobile li:first-child {
@@ -375,7 +373,6 @@ body {
 	color: #b2cb29;
 }
 
-
 #div-menu {
 	padding-top: 4px;
 }
@@ -391,7 +388,7 @@ a {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #1b6ec2;
 	border-color: #1861ac;
@@ -420,7 +417,7 @@ a {
 }
 
 #main-footer .back-to-top::before {
-	content: '';
+	content: "";
 	position: absolute;
 	padding: 12px;
 	background-color: #92c018;
@@ -434,6 +431,7 @@ a {
 }
 
 .footer-top {
+	font-size: 14px;
 	padding: 40px 20px 32px 20px;
 }
 
@@ -539,7 +537,7 @@ a.contact:hover {
 }
 
 .footer-menu li a span::before {
-	content: '';
+	content: "";
 	position: absolute;
 	width: 1px;
 	top: 0;
@@ -562,15 +560,14 @@ a.contact:hover {
 }
 
 .url {
-	border-bottom: 1px solid #C4C4C4;
+	border-bottom: 1px solid #c4c4c4;
 	font-size: 12px;
-	color: #5B5B5B;
+	color: #5b5b5b;
 }
 
 .url span {
 	color: #111;
 }
-
 
 /* ----------------------------- HOME PAGE ---------------------------- */
 #slider {
@@ -606,11 +603,11 @@ a.contact:hover {
 }
 
 .a-custom {
-	background: #F47723;
+	background: #f47723;
 	color: #fff;
 	font-size: 16px;
 	margin: 0 auto;
-	width: 160px;
+	width: 230px;
 	display: block;
 	text-transform: uppercase;
 	padding: 11px 30px;
@@ -629,7 +626,7 @@ a.contact:hover {
 
 #intro h2 a {
 	font-size: 24px;
-	color: #57B33E;
+	color: #57b33e;
 }
 
 #intro h1 {
@@ -665,7 +662,7 @@ a.contact:hover {
 	width: 25px;
 }
 
-#list-manager>li::before {
+#list-manager > li::before {
 	content: "• ";
 	color: #111;
 	font-size: 18px;
@@ -683,9 +680,8 @@ a.contact:hover {
 
 /* -------------------------- BENEFIT PAGE ------------------------------- */
 .desc-benefit h4 {
-	color: #F47723;
+	color: #f47723;
 }
-
 
 /* -------------------------------- WHO IS IT FOR PAGE ----------------------------------------- */
 #content div {
@@ -716,7 +712,7 @@ a.contact:hover {
 }
 
 #content .active {
-	background-color: #F47723;
+	background-color: #f47723;
 }
 
 #content .active a {
@@ -724,7 +720,7 @@ a.contact:hover {
 }
 
 #request-btn {
-	background: #F47723 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
+	background: #f47723 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
 	border-radius: 0;
 	color: #fff;
 	padding-right: 25px;
@@ -741,7 +737,7 @@ a.contact:hover {
 
 .div-function h3 {
 	font-size: 24px;
-	color: #F47723;
+	color: #f47723;
 	font-weight: normal;
 }
 
@@ -754,7 +750,7 @@ a.contact:hover {
 
 .title-2 {
 	font-size: 24px;
-	color: #57B33E;
+	color: #57b33e;
 	min-height: 70px;
 }
 
@@ -859,7 +855,6 @@ a.contact:hover {
 	cursor: pointer;
 }
 
-
 /* ------------------------------- RESPONSIVE ------------------------------- */
 
 @media (min-width: 1200px) {
@@ -957,7 +952,7 @@ a.contact:hover {
 	}
 }
 
-@media only screen and (min-width:576px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
 	.menu-mobile {
 		width: 70%;
 	}
