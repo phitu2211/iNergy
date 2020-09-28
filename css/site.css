@@ -560,9 +560,8 @@ a.contact:hover {
 }
 
 .url {
-	border-bottom: 1px solid #c4c4c4;
+	background: #f2f2f2;
 	font-size: 12px;
-	margin-left: 4px;
 	color: #5b5b5b;
 }
 
@@ -660,14 +659,9 @@ a.contact:hover {
 	padding-bottom: 10px;
 }
 
-.carousel-control-next-icon {
-	height: 40px;
-	width: 25px;
-}
-
-.carousel-control-prev-icon {
-	height: 40px;
-	width: 25px;
+.carousel-control-prev,
+.carousel-control-next {
+	opacity: 0;
 }
 
 #list-manager > li::before {
@@ -694,25 +688,17 @@ a.contact:hover {
 /* -------------------------------- WHO IS IT FOR PAGE ----------------------------------------- */
 #content div {
 	padding: 10px 0px;
-	margin: 10px 0px;
-	width: 200px;
+	margin: 10px 1px;
+	width: 180px;
 	text-align: center;
 	border: 1px solid#F47723;
-}
-
-#content div:nth-child(2) {
-	border-left: none;
-	border-right: none;
-}
-
-#content div:nth-child(3) {
-	border-right: none;
 }
 
 #content div a {
 	color: #000;
 	font-weight: bold;
 	text-decoration: none;
+	font-size: 14px;
 }
 
 #content div a:hover {
@@ -720,11 +706,11 @@ a.contact:hover {
 }
 
 #content .active {
-	background-color: #f47723;
+	background: none !important;
 }
 
 #content .active a {
-	color: #fff !important;
+	color: #f47723 !important;
 }
 
 #request-btn {
