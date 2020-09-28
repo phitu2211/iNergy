@@ -125,7 +125,7 @@ body {
 
 .active {
 	cursor: pointer;
-	background-color: #111;
+	background-color: #495057;
 }
 
 .active span {
@@ -138,7 +138,7 @@ body {
 
 #sub-menu,
 #sub-menu-1 {
-	background-color: #111;
+	background-color: #495057;
 	height: 0;
 	display: flex;
 	overflow: hidden;
@@ -233,7 +233,7 @@ body {
 	margin: 20px 0;
 }
 
-.nav-toggle:checked ~ .menu-mobile {
+.nav-toggle:checked~.menu-mobile {
 	transform: translateX(0);
 }
 
@@ -318,9 +318,9 @@ body {
 	position: absolute;
 	line-height: 20px;
 	color: #fff;
-	right: 1px;
-	top: -4px;
-	font-size: 19px;
+	right: -23px;
+	top: 2px;
+	font-size: 28px;
 	cursor: pointer;
 }
 
@@ -388,7 +388,7 @@ a {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
 	color: #fff;
 	background-color: #1b6ec2;
 	border-color: #1861ac;
@@ -409,21 +409,6 @@ a {
 	position: relative;
 }
 
-#main-footer .back-to-top {
-	position: absolute;
-	width: 20px;
-	right: 50px;
-	top: -10px;
-}
-
-#main-footer .back-to-top::before {
-	content: "";
-	position: absolute;
-	padding: 12px;
-	background-color: #f47723;
-	top: -4px;
-	transform: rotate(45deg);
-}
 
 #footer {
 	border: 1px solid #e1e1e1;
@@ -664,7 +649,7 @@ a.contact:hover {
 	opacity: 0;
 }
 
-#list-manager > li::before {
+#list-manager>li::before {
 	content: "• ";
 	color: #111;
 	font-size: 18px;
@@ -828,25 +813,19 @@ a.contact:hover {
 
 /* ------------------------------- BACK TO TOP ------------------------------------- */
 
-#toTop {
+
+.back-to-top {
 	position: fixed;
-	bottom: 50%;
+	bottom: 10%;
 	display: none;
-	right: 20px;
+	right: 50px;
 }
 
-#toTop span {
-	width: 39px;
-	height: 54px;
-	position: relative;
-	display: block;
-	background: url(../themes/assets/images/ico/scrollfx.png) no-repeat scroll left top transparent;
-	filter: inherit;
-}
-
-#toTop span:hover {
-	background-position: left -54px;
-	cursor: pointer;
+.back-to-top::before {
+	content: "";
+	position: absolute;
+	padding: 14px;
+	background-color: #f47723;
 }
 
 /* ------------------------------- RESPONSIVE ------------------------------- */
