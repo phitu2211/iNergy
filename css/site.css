@@ -11,6 +11,14 @@ body {
 	color: #111;
 }
 
+main img {
+	transition: all .3s ease;
+}
+
+main img:hover {
+	transform: scale(1.05);
+}
+
 /* ----------------------- END DEFALUT------------------------- */
 
 /* ---------------------------- PRELOAD --------------------------- */
@@ -710,7 +718,7 @@ a.contact:hover {
 }
 
 #request-btn:hover {
-	background: #f47723 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
+	background: #9bbb1e url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
 }
 
 .div-function {
@@ -748,7 +756,7 @@ a.contact:hover {
 }
 
 .btn-submit:hover {
-	background-color: #85a719 !important;
+	background-color: #9bbb1e !important;
 	color: #fff;
 }
 
