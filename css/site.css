@@ -370,7 +370,7 @@ body {
 }
 
 #phone-number span {
-	color: #b2cb29;
+	color: #f47723;
 }
 
 #div-menu {
@@ -409,7 +409,6 @@ a {
 	position: relative;
 }
 
-
 #footer {
 	border: 1px solid #e1e1e1;
 	border-bottom: none;
@@ -430,23 +429,29 @@ a {
 	justify-content: flex-end;
 }
 
-.social-content .linkedin {
-	background-image: url(../themes/assets/images/social/linkedinrrss.png);
+.social-content .linkedin,
+.social-content .twitter {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #3A3939;
+	border-radius: 50%;
+	transition: all .3s ease;
 }
 
-.social-content .twitter {
-	background-image: url(../themes/assets/images/social/twitterrrss.png);
+.social-content .linkedin:hover,
+.social-content .twitter:hover {
+	color: #f47723;
 }
 
 .social-content .contact {
-	background: #f79d0f;
+	background: #f47723;
 	width: 150px;
 	color: #fff;
 	font-size: 1em;
 	text-align: center;
 	padding: 8px 0;
 	font-weight: bolder;
-	text-transform: uppercase;
 }
 
 .contact1 {
@@ -457,7 +462,6 @@ a {
 	text-align: center;
 	padding: 8px 0;
 	font-weight: bolder;
-	text-transform: uppercase;
 	cursor: pointer;
 	display: inline-block;
 }
@@ -595,7 +599,6 @@ a.contact:hover {
 	margin: 0 auto;
 	width: 230px;
 	display: block;
-	text-transform: uppercase;
 	padding: 11px 30px;
 }
 
@@ -676,7 +679,7 @@ a.contact:hover {
 	margin: 10px 1px;
 	width: 180px;
 	text-align: center;
-	border: 1px solid#F47723;
+	border: 1px solid#C4C4C4;
 }
 
 #content div a {
@@ -738,7 +741,7 @@ a.contact:hover {
 }
 
 .btn-submit {
-	background-color: #92c018;
+	background-color: #f47723;
 	color: #fff;
 	font-weight: 500;
 	border-radius: 1px;
@@ -812,7 +815,6 @@ a.contact:hover {
 }
 
 /* ------------------------------- BACK TO TOP ------------------------------------- */
-
 
 .back-to-top {
 	position: fixed;
