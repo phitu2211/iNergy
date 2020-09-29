@@ -356,7 +356,7 @@ main img:hover {
 }
 
 #language span:hover {
-	color: #9bbb1e;
+	color: #f9b613;
 }
 
 #language span {
@@ -571,6 +571,10 @@ a.contact:hover {
 	border-bottom: 4px solid #f47723;
 }
 
+.carousel-inner img:hover {
+	transform: scale(1);
+}
+
 .carousel.carousel-fade .carousel-item {
 	display: block;
 	opacity: 0;
@@ -674,6 +678,7 @@ a.contact:hover {
 	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	color: #f47723;
 }
 
 /* -------------------------- BENEFIT PAGE ------------------------------- */
@@ -718,7 +723,7 @@ a.contact:hover {
 }
 
 #request-btn:hover {
-	background: #9bbb1e url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
+	background: #f9b613 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
 }
 
 .div-function {
@@ -829,6 +834,10 @@ a.contact:hover {
 	bottom: 10%;
 	display: none;
 	right: 50px;
+}
+
+.back-to-top:hover .icon-up:before {
+	color: #111;
 }
 
 .back-to-top::before {
