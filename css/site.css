@@ -53,6 +53,8 @@ main img:hover {
 
 .header {
 	background: url(../themes/assets/images/bg/bg-header.png);
+
+	/* background: #c9c8c8 url(/themes/assets/images/bg/stripes.png) repeat left top; */
 	background-size: cover;
 }
 
@@ -410,7 +412,7 @@ a {
 
 /* ----------------------- FOOTER ------------------------- */
 #main-footer {
-	background: #111;
+	background: #3A3B3F url(/themes/assets/images/bg/stripes.png) repeat left top;
 	margin: 0;
 	color: #fff;
 	border-top: 6px solid #f47723;
