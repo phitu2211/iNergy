@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/site.css" />
 </head>
 
@@ -19,13 +20,32 @@
 		</div>
 	</div>
 	<div class="container">
+
+		<div class="container-fluid d-none d-md-block header" style="background: none;">
+			<div class="d-flex justify-content-between header-content">
+				<a href="index.html">
+					<img src="../themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top"
+						alt="Home" />
+				</a>
+				<div class="d-flex flex-column justify-content-center">
+					<div id="language">
+						<a href="../index.html"><span style="border-left: none;">VI</span></a>
+						<a href="index.html"><span class="en" style="color: #f47723;">EN</span></a>
+					</div>
+					<div id="phone-number">
+						<span>Tel</span>
+						+84 986 893 233
+					</div>
+				</div>
+			</div>
+		</div>
 		<header id="header">
 			<!-- MOBILE -->
 			<div class="container-fluid d-md-none header">
 				<div class="row">
 					<div class="col-7 d-flex align-items-center">
 						<a href="index.html">
-							<img src="../themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+							<img src="../themes/assets/logo.png" id="logo" class="p-3 p-md-0" style="height: 60px" alt="Home" />
 						</a>
 					</div>
 					<div class="col-5">
@@ -34,7 +54,7 @@
 				</div>
 			</div>
 
-			<input type="checkbox" id="showNav" class="d-none show-nav nav-toggle" />
+			<input type="checkbox" id="showNav" class="d-none show-nav nav-toggle">
 			<div class="menu-mobile">
 				<div class="p-3">
 					<div class="icon-close">
@@ -43,14 +63,14 @@
 					<nav class="mobile-nav">
 						<ul class="list-menu">
 							<li class="item-menu">
-								<a style="color: #fff" class="menu-inner">ABOUT US</a><span class="icon-right"></span>
+								<a style="color: #fff;" class="menu-inner">ABOUT US</a><span class="icon-right"></span>
 								<ul class="sub-menu-mobile">
 									<li class="item-sub-menu"><a href="inergy.html">iNERGY</a></li>
 									<li class="item-sub-menu"><a href="faq.html">FAQ</a></li>
 								</ul>
 							</li>
 							<li class="item-menu">
-								<a style="color: #fff" class="menu-inner">PRODUCT</a><span class="icon-right"></span>
+								<a style="color: #fff;" class="menu-inner">PRODUCT</a><span class="icon-right"></span>
 								<ul class="sub-menu-mobile">
 									<li class="item-sub-menu"><a href="product/inergymonitor/benefits.html">iNERGY Monitor</a></li>
 									<li class="item-sub-menu"><a href="product/inergyams20/benefits.html">iNERGY AMS20</a></li>
@@ -61,10 +81,10 @@
 							</li>
 						</ul>
 					</nav>
-					<hr color="#fff" />
+					<hr color="#fff">
 					<div id="language" class="text-left">
-						<a href="../index.html"><span style="border-left: none; color: #fff; padding-left: 0">VI</span></a>
-						<a href="index.html"><span style="color: #f47723; border-left: 1px solid #fff" class="en">EN</span></a>
+						<a href="../index.html"><span style="border-left: none; color: #fff; padding-left: 0;">VI</span></a>
+						<a href="index.html"><span style="color: #f47723; border-left: 1px solid #fff;" class="en">EN</span></a>
 					</div>
 					<div id="phone-number" style="color: #fff; padding: 15px 0">
 						<span>Tel</span>
@@ -77,24 +97,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid d-none d-md-block header">
-				<div class="d-flex justify-content-between header-content">
-					<a href="index.html">
-						<img src="../themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top"
-							alt="Home" />
-					</a>
-					<div class="d-flex flex-column justify-content-center">
-						<div id="language"><a href="../index.html"><span style="border-left: none;">VI</span></a>
-							<a href="index.html"><span style="color: #f47723;" class="en">EN</span></a>
-						</div>
-						<div id="phone-number">
-							<span>Tel</span>
-							+84 986 893 233
-						</div>
-					</div>
-				</div>
 
-				<div class="d-flex justify-content-between" id="div-menu">
+			<div class="container-fluid d-none d-md-block header">
+
+				<div class="row justify-content-between" id="div-menu">
 					<div class="d-flex justify-content-around" id="nav">
 						<div id="menu">
 							<span>ABOUT US</span>
@@ -117,16 +123,12 @@
 			</div>
 			<div class="container-fluid">
 				<div class="sub-menu" id="sub-menu">
-					<div class="d-flex">
-						<a href="inergy.html" class="sub-menu-item">iNERGY</a>
-						<a href="faq.html" class="sub-menu-item">FAQ</a>
-					</div>
+					<a href="inergy.html" class="sub-menu-item">iNERGY</a>
+					<a href="faq.html" class="sub-menu-item">FAQ</a>
 				</div>
 				<div class="sub-menu-1" id="sub-menu-1">
-					<div class="d-flex">
-						<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-						<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-					</div>
+					<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+					<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
 				</div>
 			</div>
 		</header>

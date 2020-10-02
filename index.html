@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -20,13 +21,30 @@
 		</div>
 	</div>
 	<div class="container">
+		<div class="container-fluid d-none d-md-block header" style="background: none;">
+			<div class="d-flex justify-content-between header-content">
+				<a href="index.html">
+					<img src="themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top" alt="Home" />
+				</a>
+				<div class="d-flex flex-column justify-content-center">
+					<div id="language">
+						<a href="index.html"><span style="border-left: none; color: #f47723;">VI</span></a>
+						<a href="en/index.html"><span class="en">EN</span></a>
+					</div>
+					<div id="phone-number">
+						<span>Tel</span>
+						+84 986 893 233
+					</div>
+				</div>
+			</div>
+		</div>
 		<header id="header">
 			<!-- MOBILE -->
 			<div class="container-fluid d-md-none header">
 				<div class="row">
 					<div class="col-7 d-flex align-items-center">
 						<a href="index.html">
-							<img src="themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+							<img src="themes/assets/logo.png" id="logo" class="p-3 p-md-0" style="height: 60px" alt="Home" />
 						</a>
 					</div>
 					<div class="col-5">
@@ -78,24 +96,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid d-none d-md-block header">
-				<div class="d-flex justify-content-between header-content">
-					<a href="index.html">
-						<img src="themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top" alt="Home" />
-					</a>
-					<div class="d-flex flex-column justify-content-center">
-						<div id="language">
-							<a href="index.html"><span style="border-left: none; color: #f47723;">VI</span></a>
-							<a href="en/index.html"><span class="en">EN</span></a>
-						</div>
-						<div id="phone-number">
-							<span>Tel</span>
-							+84 986 893 233
-						</div>
-					</div>
-				</div>
 
-				<div class="d-flex justify-content-between" id="div-menu">
+			<div class="container-fluid d-none d-md-block header">
+
+				<div class="row justify-content-between" id="div-menu">
 					<div class="d-flex justify-content-around" id="nav">
 						<div id="menu">
 							<span>GIỚI THIỆU</span>
@@ -118,30 +122,39 @@
 			</div>
 			<div class="container-fluid">
 				<div class="sub-menu" id="sub-menu">
-					<div class="d-flex">
-						<a href="inergy.html" class="sub-menu-item">iNERGY</a>
-						<a href="faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-					</div>
+					<a href="inergy.html" class="sub-menu-item">iNERGY</a>
+					<a href="faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
 				</div>
 				<div class="sub-menu-1" id="sub-menu-1">
-					<div class="d-flex">
-						<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-						<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-					</div>
+					<a href="product/inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+					<a href="product/inergyams20/benefits.html" class="sub-menu-item">iNERGY AMS20</a>
 				</div>
 			</div>
 		</header>
 
 		<main role="main" id="page">
+
 			<div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
+						<div class="text-slider">
+							<p>Bạn không thể quản lý những gì</p>
+							<p>Bạn không đo lường được</p>
+						</div>
 						<img class="d-block w-100" src="themes/assets/images/slide/slide-1.jpg" alt="First slide" />
 					</div>
 					<div class="carousel-item">
+						<div class="text-slider">
+							<p>Quản lý</p>
+							<p>Năng lượng số Thông minh</p>
+						</div>
 						<img class="d-block w-100" src="themes/assets/images/slide/slide-2.jpg" alt="Second slide" />
 					</div>
 					<div class="carousel-item">
+						<div class="text-slider">
+							<p>Kết nối</p>
+							<p>Đa nền tảng - Đa thiết bị</p>
+						</div>
 						<img class="d-block w-100" src="themes/assets/images/slide/slide-3.jpg" alt="Third slide" />
 					</div>
 				</div>
@@ -156,11 +169,10 @@
 			</div>
 
 			<div id="intro" class="px-md-5 pt-md-5 pb-md-0 p-sm-4 pt-5">
-				<h1 class="title-intro mx-4 animate__animated animate__fadeInUp animate__slow ">
-					TỔNG THỂ <span class="text-lowercase">i</span>NERGY TRONG 3 PHÚT
+				<h1 class="title-intro" style="margin-top: 22px;">
+					TỔNG THỂ <span class="text-lowercase">i</span>NERGY
 				</h1>
-				<div
-					class="embed-responsive embed-responsive-4by3 iframe-video animate__animated animate__fadeInUp animate__slow">
+				<div class="embed-responsive embed-responsive-4by3 iframe-video">
 					<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" class="embed-responsive-item"
 						src="https://www.youtube.com/embed/RL062Pqt3Tw" webkitallowfullscreen=""></iframe>
 				</div>
@@ -196,78 +208,78 @@
 
 			<div id="benefits" class="p-3">
 				<h1 class="text-center">LỢI ÍCH CỦA iNERGY</h1>
-				<div class="row py-md-4">
+				<div class="row pb-md-3">
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/energy.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Giám sát đa năng lượng - đa nền tảng</div>
+						<div class="py-4 py-md-4 desc-benefit">Giám sát đa năng lượng - đa nền tảng</div>
 					</div>
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/setting.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Thực hiện và vận hành đơn giản</div>
+						<div class="py-4 py-md-4 desc-benefit">Thực hiện và vận hành đơn giản</div>
 					</div>
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/computer-1.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">
+						<div class="py-4 py-md-4 desc-benefit">
 							Có thể truy cập bất cứ lúc nào, bất cứ ở đâu
 						</div>
 					</div>
 				</div>
-				<div class="row py-md-4">
+				<div class="row pb-md-3">
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/cost-2.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Tiết kiệm thời gian và chi phí</div>
+						<div class="py-4 py-md-4 desc-benefit">Tiết kiệm thời gian và chi phí</div>
 					</div>
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/data-1.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Khả năng tích hợp và mở rộng không giới hạn</div>
+						<div class="py-4 py-md-4 desc-benefit">Khả năng tích hợp và mở rộng không giới hạn</div>
 					</div>
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/warrning-1.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Cảnh báo tức thời SMS, mail, Zalo,...</div>
+						<div class="py-4 py-md-4 desc-benefit">Cảnh báo tức thời SMS, mail, Zalo,...</div>
 					</div>
 				</div>
-				<div class="row py-md-4">
+				<div class="row pb-md-3">
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/file-1.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Tự đông báo cáo</div>
+						<div class="py-4 py-md-4 desc-benefit">Tự đông báo cáo</div>
 					</div>
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/solution-1.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Tự động đề xuất giải pháp TKNL</div>
+						<div class="py-4 py-md-4 desc-benefit">Tự động đề xuất giải pháp TKNL</div>
 					</div>
 					<div class="text-center col-md-4 pb-4 pb-md-0">
-						<div>
+						<div class="pb-md-3">
 							<img alt="Sencilla y rápida implantación" src="themes/assets/images/home/eco.png" />
 						</div>
-						<div class="py-4 py-md-3 desc-benefit">Giảm phát thải, bảo vệ môi trường</div>
+						<div class="py-4 py-md-4 desc-benefit">Giảm phát thải, bảo vệ môi trường</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="container-fluid">
-				<div class="row">
+				<div class="row" style="margin-top: 14px;">
 					<div class="col-lg-9 col-md-12" style="background-color: #111; padding: 38px">
 						<span style="color: #F47723; font-size: 32px; font-weight: bold;">Nếu bạn còn vướng mắc,</span>
 						<span style="color: #fff; font-size: 28px">chúng tôi sẽ giải quyết</span>
 					</div>
 					<div class="col-lg-3 col-md-12" style="text-align: center; background-color: #111; padding: 38px">
-						<a class="a-custom" href="https://amitech.vn/lien-he/">Liên Hệ</a>
+						<a class="a-custom" href="https://amitech.vn/lien-he/" style="width: 130px;">Liên Hệ</a>
 					</div>
 				</div>
 			</div>

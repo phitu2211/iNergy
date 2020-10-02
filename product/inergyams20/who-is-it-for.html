@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/site.css" />
 </head>
 
@@ -19,13 +20,32 @@
 		</div>
 	</div>
 	<div class="container">
+		
+		<div class="container-fluid d-none d-md-block header" style="background: none;">
+			<div class="d-flex justify-content-between header-content">
+				<a href="../../index.html">
+					<img src="../../themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top"
+						alt="Home" />
+				</a>
+				<div class="d-flex flex-column justify-content-center">
+					<div id="language">
+						<a href="../../index.html"><span style="border-left: none; color: #f47723;">VI</span></a>
+						<a href="../../en/index.html"><span class="en">EN</span></a>
+					</div>
+					<div id="phone-number">
+						<span>Tel</span>
+						+84 986 893 233
+					</div>
+				</div>
+			</div>
+		</div>
 		<header id="header">
 			<!-- MOBILE -->
 			<div class="container-fluid d-md-none header">
 				<div class="row">
 					<div class="col-7 d-flex align-items-center">
 						<a href="../../index.html">
-							<img src="../../themes/assets/logo.png" id="logo" style="height: 60px" alt="Home" />
+							<img src="../../themes/assets/logo.png" id="logo" class="p-3 p-md-0" style="height: 60px" alt="Home" />
 						</a>
 					</div>
 					<div class="col-5">
@@ -78,25 +98,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid d-none d-md-block header">
-				<div class="d-flex justify-content-between header-content">
-					<a href="../../index.html">
-						<img src="../../themes/assets/logo.png" class="img-fluid" id="logo" class="d-inline-block align-top"
-							alt="Home" />
-					</a>
-					<div class="d-flex flex-column justify-content-center">
-						<div id="language">
-							<a href="../../index.html"><span style="border-left: none; color: #f47723;">VI</span></a>
-							<a href="../../en/index.html"><span class="en">EN</span></a>
-						</div>
-						<div id="phone-number">
-							<span>Tel</span>
-							+84 986 893 233
-						</div>
-					</div>
-				</div>
 
-				<div class="d-flex justify-content-between" id="div-menu">
+			<div class="container-fluid d-none d-md-block header">
+
+				<div class="row justify-content-between" id="div-menu">
 					<div class="d-flex justify-content-around" id="nav">
 						<div id="menu">
 							<span>GIỚI THIỆU</span>
@@ -119,16 +124,12 @@
 			</div>
 			<div class="container-fluid">
 				<div class="sub-menu" id="sub-menu">
-					<div class="d-flex">
-						<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
-						<a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
-					</div>
+					<a href="../../inergy.html" class="sub-menu-item">iNERGY</a>
+					<a href="../../faq.html" class="sub-menu-item">Câu hỏi thường gặp</a>
 				</div>
 				<div class="sub-menu-1" id="sub-menu-1">
-					<div class="d-flex">
-						<a href="../inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
-						<a href="benefits.html" class="sub-menu-item">iNERGY AMS20</a>
-					</div>
+					<a href="../inergymonitor/benefits.html" class="sub-menu-item">iNERGY Monitor</a>
+					<a href="benefits.html" class="sub-menu-item">iNERGY AMS20</a>
 				</div>
 			</div>
 		</header>

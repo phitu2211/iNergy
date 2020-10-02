@@ -5,18 +5,26 @@
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
 	color: #111;
 }
 
 main img {
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
 
 main img:hover {
 	transform: scale(1.05);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
 }
 
 /* ----------------------- END DEFALUT------------------------- */
@@ -48,12 +56,15 @@ main img:hover {
 
 /* ----------------------- HEADER ------------------------- */
 #header {
-	border-bottom: 6px solid #f47723;
+	border-bottom: 5px solid #f47723;
+	position: sticky;
+	z-index: 1000;
+	top: 0;
 }
 
 .header {
-	background: url(../themes/assets/images/bg/bg-header.png);
-
+	/* background: url(../themes/assets/images/bg/bg-header.png); */
+	background: #f0f0f0;
 	/* background: #c9c8c8 url(/themes/assets/images/bg/stripes.png) repeat left top; */
 	background-size: cover;
 }
@@ -100,9 +111,14 @@ main img:hover {
 
 #menu,
 #menu-1 {
-	font-weight: 700;
+	font-weight: 600;
 	color: #000000;
 	font-style: normal;
+}
+
+#menu span,
+#menu-1 span {
+	vertical-align: middle;
 }
 
 #menu:hover,
@@ -115,6 +131,7 @@ main img:hover {
 	background: none;
 	border: none;
 	color: #111;
+	vertical-align: middle;
 	text-decoration: none;
 }
 
@@ -133,13 +150,15 @@ main img:hover {
 	color: #f47723;
 }
 
-.active {
+#menu.active,
+#menu-1.active {
 	cursor: pointer;
 	background-color: #495057;
 }
 
 .active span {
 	color: #fff;
+	font-weight: 500;
 }
 
 #nav div {
@@ -154,22 +173,10 @@ main img:hover {
 	overflow: hidden;
 	position: relative;
 	margin: 0px -15px;
-	-webkit-transition: height 0.2s ease;
-	-o-transition: height 0.2s ease;
-	transition: height 0.2s ease;
-}
-
-.show-1 {
-	background-color: #555;
-	margin: 0px -15px;
-	overflow: visible;
-	display: flex !important;
-	position: relative;
-	z-index: 111;
-	height: 60px !important;
-	-webkit-transition: height 0.5s ease;
-	-o-transition: height 0.5s ease;
-	transition: height 0.5s ease;
+	align-items: center;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 .show {
@@ -180,26 +187,26 @@ main img:hover {
 	position: relative;
 	z-index: 111;
 	height: 52px !important;
-	-webkit-transition: height 0.5s ease;
-	-o-transition: height 0.5s ease;
-	transition: height 0.5s ease;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 .sub-menu div,
 .sub-menu-1 div {
-	padding: 15px 20px;
+	padding: 15px 0px;
 }
 
 #sub-menu a {
 	color: #fff;
 	text-decoration: none;
-	padding: 0px 24px;
+	padding: 0px 15px;
 	display: block;
 }
 
 #sub-menu-1 a {
 	color: #fff;
-	padding: 0px 24px;
+	padding: 0px 15px;
 	text-decoration: none;
 	display: block;
 }
@@ -281,7 +288,7 @@ main img:hover {
 .mobile-nav a {
 	color: #fff;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -348,7 +355,6 @@ main img:hover {
 #language {
 	color: white;
 	text-align: right;
-	font-family: Open Sans, sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
 }
@@ -374,7 +380,7 @@ main img:hover {
 #phone-number {
 	color: #111;
 	padding-top: 10px;
-	font-weight: bold;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -384,7 +390,7 @@ main img:hover {
 }
 
 #div-menu {
-	padding-top: 4px;
+	padding-top: 0px;
 }
 
 a {
@@ -405,14 +411,14 @@ a {
 }
 
 #logo {
-	padding: 15px;
+	padding: 0px;
 }
 
 /* ----------------------- END HEADER ------------------------- */
 
 /* ----------------------- FOOTER ------------------------- */
 #main-footer {
-	background: #3A3B3F url(/themes/assets/images/bg/stripes.png) repeat left top;
+	background: #3a3b3f url(/themes/assets/images/bg/stripes.png) repeat left top;
 	margin: 0;
 	color: #fff;
 	border-top: 6px solid #f47723;
@@ -444,9 +450,9 @@ a {
 	font-size: 20px;
 	color: #fff;
 	text-align: center;
-	background-color: #3A3939;
+	background-color: #3a3939;
 	border-radius: 50%;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
 
 .social-content .linkedin:hover,
@@ -456,22 +462,25 @@ a {
 
 .social-content .contact {
 	background: #f47723;
-	width: 150px;
+	width: 130px;
 	color: #fff;
 	font-size: 1em;
 	text-align: center;
 	padding: 8px 0;
-	font-weight: bolder;
+	font-weight: 600;
 }
 
 .contact1 {
 	background: #f47723;
-	width: 150px;
+	width: 130px;
 	color: #fff;
+	margin-right: 15px;
 	font-size: 1em;
 	text-align: center;
 	padding: 8px 0;
-	font-weight: bolder;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 600;
 	cursor: pointer;
 	display: inline-block;
 }
@@ -561,6 +570,7 @@ a.contact:hover {
 .url {
 	background: #f2f2f2;
 	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
 	color: #5b5b5b;
 }
 
@@ -570,7 +580,39 @@ a.contact:hover {
 
 /* ----------------------------- HOME PAGE ---------------------------- */
 #slider {
-	border-bottom: 4px solid #f47723;
+	margin: 0 -1px;
+}
+
+.text-slider {
+	background: linear-gradient(90deg, #001048 -48.28%, rgba(0, 0, 0, 0) 100%);
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 2.5rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+.text-slider p {
+	margin-bottom: 0;
+	margin-left: 6rem;
+}
+
+.text-slider p:first-child {
+	position: relative;
+}
+
+.text-slider p:first-child::before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	width: 70px;
+	height: 4px;
+	background: #fff;
 }
 
 .carousel-inner img:hover {
@@ -595,7 +637,7 @@ a.contact:hover {
 	font-size: 32px;
 	color: #f47723;
 	text-align: center;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -611,7 +653,7 @@ a.contact:hover {
 	color: #fff;
 	font-size: 16px;
 	margin: 0 auto;
-	width: 230px;
+	width: 150px;
 	display: block;
 	padding: 11px 30px;
 }
@@ -623,7 +665,7 @@ a.contact:hover {
 }
 
 #intro p {
-	margin: 30px 0;
+	margin: 40px 0;
 	font-size: 18px;
 }
 
@@ -639,7 +681,7 @@ a.contact:hover {
 }
 
 #intro h1 {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 #logo-list {
@@ -678,8 +720,8 @@ a.contact:hover {
 
 #benefits h1 {
 	font-size: 32px;
-	font-weight: bold;
-	margin-bottom: 20px;
+	font-weight: 600;
+	margin-bottom: 40px;
 	color: #f47723;
 }
 
@@ -699,7 +741,7 @@ a.contact:hover {
 
 #content div a {
 	color: #000;
-	font-weight: bold;
+	font-weight: 600;
 	text-decoration: none;
 	font-size: 14px;
 }
@@ -749,6 +791,8 @@ a.contact:hover {
 	font-size: 24px;
 	color: #111;
 	min-height: 70px;
+	margin-top: 22px;
+	margin-bottom: 40px;
 }
 
 .catalog-ami {
@@ -854,6 +898,8 @@ a.contact:hover {
 @media (min-width: 1200px) {
 	.description {
 		min-height: 130px !important;
+		margin-top: 14px;
+		margin-bottom: 24px;
 	}
 }
 
@@ -946,6 +992,16 @@ a.contact:hover {
 	}
 }
 
+@media (max-width: 768px) {
+	html {
+		font-size: 60%;
+	}
+
+	.text-slider p:first-child::before {
+		top: -10px;
+	}
+}
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 	.menu-mobile {
 		width: 70%;
@@ -955,6 +1011,8 @@ a.contact:hover {
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 	.description {
 		min-height: 220px !important;
+		margin-top: 14px;
+		margin-bottom: 24px;
 	}
 
 	.title-2 {
