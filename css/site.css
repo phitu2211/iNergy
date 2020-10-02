@@ -418,7 +418,7 @@ a {
 
 /* ----------------------- FOOTER ------------------------- */
 #main-footer {
-	background: #3a3b3f url(/themes/assets/images/bg/stripes.png) repeat left top;
+	background: #3a3b3f url(themes/assets/images/bg/stripes.png) repeat left top;
 	margin: 0;
 	color: #fff;
 	border-top: 6px solid #f47723;
@@ -467,7 +467,6 @@ a {
 	font-size: 1em;
 	text-align: center;
 	padding: 8px 0;
-	font-weight: 600;
 }
 
 .contact1 {
@@ -480,7 +479,6 @@ a {
 	padding: 8px 0;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-weight: 600;
 	cursor: pointer;
 	display: inline-block;
 }
@@ -694,7 +692,6 @@ a.contact:hover {
 
 #page-header {
 	font-size: 30px;
-	font-weight: 400;
 	padding: 20px;
 }
 
