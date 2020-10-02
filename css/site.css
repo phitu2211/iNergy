@@ -418,7 +418,7 @@ a {
 
 /* ----------------------- FOOTER ------------------------- */
 #main-footer {
-	background: #3a3b3f url(themes/assets/images/bg/stripes.png) repeat left top;
+	background: #3a3b3f url(../themes/assets/images/bg/stripes.png) repeat left top;
 	margin: 0;
 	color: #fff;
 	border-top: 6px solid #f47723;
@@ -759,6 +759,8 @@ a.contact:hover {
 	background: #f47723 url(../themes/assets/images/ico/arrow-demo.png) no-repeat right center;
 	border-radius: 0;
 	color: #fff;
+	font-size: 16px;
+	background-size: 14px;
 	padding-right: 25px;
 	padding-bottom: 10px;
 }
@@ -768,13 +770,12 @@ a.contact:hover {
 }
 
 .div-function {
-	padding: 35px;
+	padding: 20px;
 }
 
 .div-function h3 {
 	font-size: 24px;
 	color: #111;
-	font-weight: normal;
 }
 
 .p-special {
@@ -788,6 +789,7 @@ a.contact:hover {
 	font-size: 24px;
 	color: #111;
 	min-height: 70px;
+	line-height: 36px;
 	margin-top: 22px;
 	margin-bottom: 40px;
 }
