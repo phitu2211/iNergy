@@ -446,7 +446,7 @@ a {
 }
 
 .social-content .linkedin,
-.social-content .twitter {
+.social-content .facebook {
 	font-size: 20px;
 	color: #fff;
 	text-align: center;
@@ -456,7 +456,7 @@ a {
 }
 
 .social-content .linkedin:hover,
-.social-content .twitter:hover {
+.social-content .facebook:hover {
 	color: #f47723;
 }
 
@@ -492,7 +492,7 @@ a {
 }
 
 a.linkedin:hover,
-a.twitter:hover {
+a.facebook:hover {
 	background-position: -40px 0;
 }
 
