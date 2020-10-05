@@ -107,6 +107,11 @@ h6 {
 
 #nav {
 	margin-left: 0px;
+	transition: all .5s ease;
+}
+
+#nav.add-logo {
+	margin-left: 120px !important;
 }
 
 #menu,
@@ -414,6 +419,22 @@ a {
 	padding: 0px;
 }
 
+.logo-web {
+	position: fixed;
+	z-index: 2000;
+	top: 15px;
+	height: 50px;
+	transition: all .5s ease;
+}
+
+.logo-web.small {
+	height: 26px !important;
+}
+
+.carousel-item {
+	position: relative;
+}
+
 /* ----------------------- END HEADER ------------------------- */
 
 /* ----------------------- FOOTER ------------------------- */
@@ -593,11 +614,12 @@ a.contact:hover {
 	font-size: 2.5rem;
 	color: #fff;
 	font-weight: bold;
+	max-width: 700px;
 }
 
 .text-slider p {
 	margin-bottom: 0;
-	margin-left: 6rem;
+	margin-left: calc(6rem + 1px);
 }
 
 .text-slider p:first-child {
