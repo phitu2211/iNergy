@@ -107,7 +107,7 @@ h6 {
 
 #nav {
 	margin-left: 0px;
-	transition: all .5s ease;
+	transition: all .3s ease-out;
 }
 
 #nav.add-logo {
@@ -424,7 +424,7 @@ a {
 	z-index: 2000;
 	top: 15px;
 	height: 50px;
-	transition: all .5s ease;
+	transition: all .3s ease-out;
 }
 
 .logo-web.small {
