@@ -82,6 +82,11 @@
 if ($(this).scrollTop() > 92) {
 	$('.logo-web').addClass('small');
 	$('#nav').addClass('add-logo');
+} else {
+	$('.logo-web').removeClass('small');
+	$('#nav').removeClass('add-logo');
+	$('.logo-web').height(50 - 0.26 * $(this).scrollTop());
+	$('#nav').css("margin-left", 1.3 * $(this).scrollTop() + "px");
 }
 
 function showAnswer(question) {
