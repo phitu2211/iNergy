@@ -968,14 +968,14 @@ a.contact:hover {
 		font-size: 16px;
 	}
 
-	.iframe-video {
-		height: 400px;
+	.iframe-video video {
+		height: auto;
 	}
 }
 
 @media (min-width: 1200px) {
-	.iframe-video iframe {
-		padding: 0 144px;
+	.iframe-video video {
+		height: 400px;
 	}
 }
 
@@ -1020,6 +1020,10 @@ a.contact:hover {
 
 	.text-slider p:first-child::before {
 		top: -10px;
+	}
+
+	.text-slider {
+		font-size: 80%;
 	}
 }
 
